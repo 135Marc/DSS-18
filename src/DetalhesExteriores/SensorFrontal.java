@@ -1,0 +1,23 @@
+package DetalhesExteriores;
+
+import java.util.Set;
+
+public class SensorFrontal extends DetalheExterior {
+
+    private final String tipo = "SensorFrontal";
+
+    public SensorFrontal(){
+        super();
+    }
+    public  SensorFrontal(double preco, Set<String> lista){
+        super(preco,lista);
+    }
+    public SensorFrontal(SensorFrontal sensor){
+        super(sensor);
+    }
+
+    @Override
+    public String getTipo() {
+        return this.tipo;
+    }
+}

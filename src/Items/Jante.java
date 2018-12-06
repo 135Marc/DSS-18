@@ -1,20 +1,25 @@
 package Items;
 
-public class Jante {
+import java.util.Set;
+
+public class Jante extends Item{
     private String tipo;
     private int espessura;
 
     public Jante() {
+        super();
         this.tipo=null;
         this.espessura=0;
     }
 
     public Jante(Jante js) {
+        super(js);
         this.tipo = js.getTipo();
         this.espessura= js.getEspessura();
     }
 
-    public Jante(String tipo, int espessura) {
+    public Jante(String tipo, int espessura,double preco,Set<String> lista){
+        super(preco,lista);
         this.tipo = tipo;
         this.espessura = espessura;
     }
@@ -53,4 +58,6 @@ public class Jante {
     public boolean equals(Jante j) {
         return (this.tipo.equalsIgnoreCase(j.getTipo()) && this.espessura==j.getEspessura());
     }
+
+
 }

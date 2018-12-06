@@ -1,6 +1,9 @@
 package Items;
 
-public class Pneu {
+import java.util.Set;
+
+public class Pneu extends Item{
+    private String tipo;
     private int largura;
     private String serie;
     private String construcao;
@@ -9,13 +12,15 @@ public class Pneu {
     private int indexvel;
 
     public Pneu() {
+        super();
         this.largura=0;
         this.serie=null;
         this.construcao=null;
         this.diametrointerior=this.indexcarga=this.indexvel=0;
     }
 
-    public Pneu(int largura, String serie, String construcao, int diametrointerior,int indexcarga, int indexvel) {
+    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, double preco, Set<String> lista) {
+        super(preco,lista);
         this.largura = largura;
         this.serie = serie;
         this.construcao = construcao;
@@ -25,6 +30,7 @@ public class Pneu {
     }
 
     public Pneu(Pneu p) {
+        super(p);
         this.largura=p.getLargura();
         this.serie=p.getSerie();
         this.construcao=p.getConstrucao();
@@ -96,5 +102,9 @@ public class Pneu {
                 .append(" " + this.getIndexcarga() + " ")
                 .append(this.getIndexvel());
         return sb.toString();
+    }
+
+    public String getTipo(){
+        return this.tipo;
     }
 }

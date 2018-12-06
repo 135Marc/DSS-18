@@ -1,18 +1,23 @@
 package Items;
 
-public class Motor {
+import java.util.Set;
+
+public class Motor extends Item {
     private String combustivel;
     private int potencia;
     private int kilometragem;
     private int consumomedio;
     private int emissoesco2;
+    private String tipo;
 
     public Motor() {
+        super();
         this.combustivel=null;
         this.potencia=this.kilometragem=this.consumomedio=this.emissoesco2=0;
     }
 
-    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2) {
+    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, double preco, Set<String> lista) {
+        super(preco,lista);
         this.combustivel = combustivel;
         this.potencia = potencia;
         this.kilometragem = kilometragem;
@@ -20,7 +25,8 @@ public class Motor {
         this.emissoesco2 = emissoesco2;
     }
 
-    public Motor (Motor m)  {
+    public Motor (Motor m){
+        super(m);
         this.combustivel = m.getCombustivel();
         this.potencia = m.getPotencia();
         this.kilometragem = m.getKilometragem();
@@ -85,6 +91,10 @@ public class Motor {
                 .append(" Emissões CO2: ")
                 .append(getEmissoesco2() + "g/km");
         return sb.toString();
+    }
+
+    public String getTipo(){
+        return this.tipo;
     }
 
 }
