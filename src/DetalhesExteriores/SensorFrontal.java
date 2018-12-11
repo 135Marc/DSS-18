@@ -20,4 +20,6 @@ public class SensorFrontal extends DetalheExterior {
     public String getTipo() {
         return this.tipo;
     }
+
+    public DetalheExterior clone(){return new SensorFrontal(this);}
 }

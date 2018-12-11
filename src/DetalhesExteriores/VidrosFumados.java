@@ -9,14 +9,19 @@ public class VidrosFumados extends DetalheExterior {
     public VidrosFumados(){
         super();
     }
+
     public  VidrosFumados(double preco, Set<String> lista){
         super(preco,lista);
     }
+
     public VidrosFumados(VidrosFumados vidro){
         super(vidro);
     }
+
     @Override
     public String getTipo() {
         return this.tipo;
     }
+
+    public DetalheExterior clone(){return new VidrosFumados(this);}
 }

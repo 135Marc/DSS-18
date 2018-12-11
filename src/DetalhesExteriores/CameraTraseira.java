@@ -23,5 +23,7 @@ public class CameraTraseira extends DetalheExterior {
         return this.tipo;
     }
 
+    public DetalheExterior clone(){return  new CameraTraseira(this);}
+
 
 }

@@ -19,5 +19,5 @@ public class ParachoquesMesmaCor extends DetalheExterior {
     public String getTipo() {
         return this.tipo;
     }
-
+    public DetalheExterior clone(){ return  new ParachoquesMesmaCor(this);}
 }

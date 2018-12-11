@@ -9,14 +9,19 @@ public class TetoAbrir extends DetalheExterior {
     public TetoAbrir(){
         super();
     }
+
     public TetoAbrir(double preco, Set<String> lista){
         super(preco, lista);
     }
+
     public  TetoAbrir(TetoAbrir teto){
         super(teto);
     }
+
     @Override
     public String getTipo() {
         return this.tipo;
     }
+
+    public  DetalheExterior clone(){return new TetoAbrir(this);}
 }

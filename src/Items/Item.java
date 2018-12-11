@@ -1,5 +1,7 @@
 package Items;
 
+import DetalhesExteriores.DetalheExterior;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -41,5 +43,7 @@ public abstract class Item {
         this.listaRestricao = lista;
     }
 
-    abstract String getTipo();
+    public abstract Item clone();
+
+    public abstract String getTipo();
 }

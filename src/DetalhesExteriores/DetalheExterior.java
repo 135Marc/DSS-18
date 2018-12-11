@@ -50,7 +50,7 @@ public abstract class DetalheExterior {
         listaRestricao.add(tipo);
     }
 
-    abstract String getTipo();
+    public abstract String getTipo();
 
     public void removeRestricao(String tipo){
 
@@ -61,5 +61,8 @@ public abstract class DetalheExterior {
 
         return listaRestricao.contains(tipo);
     }
+
+    public abstract DetalheExterior clone();
+
 
 }

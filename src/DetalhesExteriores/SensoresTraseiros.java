@@ -26,4 +26,6 @@ public class SensoresTraseiros extends DetalheExterior {
         return this.tipo;
     }
 
+    public DetalheExterior clone(){return new SensoresTraseiros(this);}
+
 }
