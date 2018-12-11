@@ -13,7 +13,7 @@ public class Pintura {
         this.cor = cor;
         this.tipo = tipo;
     }
-    
+
     public Pintura (Pintura p) {
         this.cor = p.getCor();
         this.tipo = p.getTipo();
