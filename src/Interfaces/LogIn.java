@@ -60,7 +60,6 @@ public class LogIn extends Application {
         primaryStage.setScene(nova);
         primaryStage.setTitle("Autenticar Cliente");
         primaryStage.show();
-
     }
 
 
