@@ -36,15 +36,20 @@ public class LogIn extends Application {
     }
 
     public void addUser() throws Exception {
-        this.utilizadores = new HashMap<>();
-        Utilizador u = new Utilizador(username.getText(),password.getText());
-        if (this.utilizadores.containsKey(username.getText())) {
-            throw new Exception("Utilizador existente");
+        populate();
+        String user = username.getText();
+        String pw = password.getText();
+        if (!this.utilizadores.containsKey(user)) throw new Exception("Utilizador não existente");
+        else if (this.utilizadores.containsKey(user)) {
+                Utilizador u = this.utilizadores.get(user);
+                if (u.getPassword().equals(pw)) {
+                    username.clear();
+                    password.clear();
+                    label1.setText("Autenticação bem sucedida!");
+                }
+                else throw new Exception("Password errada! Tenta novamente");
         }
-        else this.utilizadores.put(u.getUsername(),u);
-        username.clear();
-        password.clear();
-        label1.setText("Utilizador adicionado");
+
     }
 
     public static void main(String[] args) {
