@@ -24,17 +24,17 @@ public class LogIn extends Application {
     @FXML
     private Label label1;
 
-    private  Utilizadores userdb;
+    private  MainController mc;
 
 
 
     public void addUser() throws Exception {
-        this.userdb = new Utilizadores();
+        this.mc = new MainController();
         String user = username.getText();
         String pw = password.getText();
-        if (!this.userdb.hasUser(user)) throw new Exception("Utilizador não existente");
+        if (!this.mc.hasUser(user)) throw new Exception("Utilizador não existente");
         else {
-                if (this.userdb.passwordMatches(user,pw)) {
+                if (this.mc.passwordMatches(user,pw)) {
                     username.clear();
                     password.clear();
                     label1.setText("Autenticação bem sucedida!");

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Utilizadores {
+
     private Map<String,Utilizador> usermap;
 
     public Utilizadores() {
@@ -14,18 +15,11 @@ public class Utilizadores {
         usermap.put(u1.getUsername(),u1);
     }
 
-    public boolean hasUser(String id) {
-        return (this.usermap.containsKey(id));
+    public Map<String,Utilizador> getUserMap() {
+        return this.usermap;
     }
 
-
-    public boolean passwordMatches(String id,String password) {
-        Utilizador u = this.usermap.get(id);
-        return (u.getPassword().equals(password));
-    }
-
-    public void addUser(String id, String password) {
-            Utilizador u = new Utilizador(id,password);
-            this.usermap.put(id,u);
+    public void addToMap(String id,Utilizador u) {
+        this.usermap.put(id,u);
     }
 }
