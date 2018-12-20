@@ -31,7 +31,7 @@ public class Registo extends Application {
     @FXML
     private Label status;
 
-    private Map<String,Utilizador> utilizadores;
+    private Utilizadores userdb;
 
     public static void main(String[] args) {
         launch(args);
@@ -43,18 +43,17 @@ public class Registo extends Application {
         String passconf = pwconf.getText();
         //String mailaddress = email.getText();
         //String postal = postalcode.getText();
-        return (password.equals(passconf) || this.utilizadores.containsKey(username));
+        return (password.equals(passconf) && !this.userdb.hasUser(username));
     }
 
     public void registarCliente() throws Exception {
-        this.utilizadores = new HashMap<>();
+        userdb = new Utilizadores();
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
         if (!valid) throw new Exception("Registo inválido!");
         else {
-            Utilizador u = new Utilizador(username, password);
-            this.utilizadores.put(username, u);
+            userdb.addUser(username, password);
             status.setText("Utilizador adicionado");
             user.clear();
             pw.clear();

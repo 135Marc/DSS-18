@@ -24,25 +24,17 @@ public class LogIn extends Application {
     @FXML
     private Label label1;
 
-    private  Map<String,Utilizador> utilizadores;
+    private  Utilizadores userdb;
 
 
-    public void populate() {
-        this.utilizadores = new HashMap<>();
-        Utilizador u = new Utilizador("Grande","gigante");
-        Utilizador u1 = new Utilizador("Teste", "teste");
-        utilizadores.put(u.getUsername(),u);
-        utilizadores.put(u1.getUsername(),u1);
-    }
 
     public void addUser() throws Exception {
-        populate();
+        this.userdb = new Utilizadores();
         String user = username.getText();
         String pw = password.getText();
-        if (!this.utilizadores.containsKey(user)) throw new Exception("Utilizador não existente");
-        else if (this.utilizadores.containsKey(user)) {
-                Utilizador u = this.utilizadores.get(user);
-                if (u.getPassword().equals(pw)) {
+        if (!this.userdb.hasUser(user)) throw new Exception("Utilizador não existente");
+        else {
+                if (this.userdb.passwordMatches(user,pw)) {
                     username.clear();
                     password.clear();
                     label1.setText("Autenticação bem sucedida!");
