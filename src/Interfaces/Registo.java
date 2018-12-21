@@ -3,15 +3,20 @@ package Interfaces;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ResourceBundle;
 
-public class Registo extends Application {
+import static javafx.application.Application.launch;
+
+public class Registo implements Initializable {
     @FXML
     private TextField name;
     @FXML
@@ -31,10 +36,16 @@ public class Registo extends Application {
     @FXML
     private Label status;
 
-    private MainController mc;
+    private  MainController mc;
 
-    public static void main(String[] args) {
-        launch(args);
+    private MainView main;
+
+    public void setMainController(MainController mc) {
+        this.mc = mc;
+    }
+
+    public void init(MainView mv) {
+        this.main = mv;
     }
 
     public boolean validaRegisto() {
@@ -47,7 +58,6 @@ public class Registo extends Application {
     }
 
     public void registarCliente() throws Exception {
-        this.mc = new MainController();
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
@@ -58,18 +68,13 @@ public class Registo extends Application {
             user.clear();
             pw.clear();
             pwconf.clear();
+            this.mc.displayLogin();
         }
 
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Interfaces/registo.fxml"));
-        Pane view = loader.load();
-        Scene nova = new Scene(view,600,550);
-        primaryStage.setScene(nova);
-        primaryStage.setTitle("Registar Cliente");
-        primaryStage.show();
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }

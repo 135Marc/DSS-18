@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -13,10 +14,12 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ResourceBundle;
 
-public class LogIn extends Application {
+public class LogIn implements Initializable {
     @FXML
     private TextField username;
     @FXML
@@ -26,10 +29,18 @@ public class LogIn extends Application {
 
     private  MainController mc;
 
+    private MainView main;
+
+    public void setMainController(MainController mc) {
+        this.mc = mc;
+    }
+
+    public void init(MainView mv) {
+        this.main = mv;
+    }
 
 
     public void addUser() throws Exception {
-        this.mc = new MainController();
         String user = username.getText();
         String pw = password.getText();
         if (!this.mc.hasUser(user)) throw new Exception("Utilizador não existente");
@@ -44,21 +55,14 @@ public class LogIn extends Application {
 
     }
 
-    public static void main(String[] args) {
-        launch(args);
+    public void showRegisto() {
+        this.mc.displayRegistry();
     }
+
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/Interfaces/login.fxml"));
-        Pane view = loader.load();
-        Scene nova = new Scene(view,550,200);
-        primaryStage.setScene(nova);
-        primaryStage.setTitle("Autenticar Cliente");
-        primaryStage.show();
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
-
-
 
 }
