@@ -26,7 +26,6 @@ public class MainView extends Application {
     public void start(Stage primaryStage) throws Exception{
         this.window=primaryStage;
         mc = new MainController(this);
-        window.setTitle("Gestor de Sócios");
         showLogin();
     }
 
@@ -41,6 +40,7 @@ public class MainView extends Application {
             li.init(this);
             li.setMainController(mc);
             mc.setLogIn(li);
+            window.setTitle("Autenticar Cliente");
             window.show();
 
         } catch(IOException e) {
@@ -59,6 +59,7 @@ public class MainView extends Application {
             reg.init(this);
             reg.setMainController(mc);
             mc.setRegist(reg);
+            window.setTitle("Registar Cliente");
             window.show();
 
         } catch(IOException e) {
