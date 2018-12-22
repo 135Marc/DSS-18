@@ -10,7 +10,7 @@ public class TetoAbrir extends DetalheExterior {
         super();
     }
 
-    public TetoAbrir(double preco, Set<String> lista){
+    public TetoAbrir(float preco, Set<String> lista){
         super(preco, lista);
     }
 

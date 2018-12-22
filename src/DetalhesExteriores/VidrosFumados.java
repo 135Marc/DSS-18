@@ -10,7 +10,7 @@ public class VidrosFumados extends DetalheExterior {
         super();
     }
 
-    public  VidrosFumados(double preco, Set<String> lista){
+    public  VidrosFumados(float preco, Set<String> lista){
         super(preco,lista);
     }
 

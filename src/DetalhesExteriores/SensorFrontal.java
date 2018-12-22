@@ -9,7 +9,7 @@ public class SensorFrontal extends DetalheExterior {
     public SensorFrontal(){
         super();
     }
-    public  SensorFrontal(double preco, Set<String> lista){
+    public  SensorFrontal(float preco, Set<String> lista){
         super(preco,lista);
     }
     public SensorFrontal(SensorFrontal sensor){

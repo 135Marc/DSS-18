@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -47,6 +48,7 @@ public class MainView extends Application {
             e.printStackTrace();
         }
     }
+
 
     public void showRegistForm() {
         try {

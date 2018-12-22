@@ -14,7 +14,7 @@ public class Estofos extends DetalheInterior {
         this.tecido = "Pele";
     }
 
-    public Estofos(String cor, String tecido, double preco, Set<String> lista){
+    public Estofos(String cor, String tecido, float preco, Set<String> lista){
         super(preco, lista);
         this.cor = cor;
         this.tecido = tecido;

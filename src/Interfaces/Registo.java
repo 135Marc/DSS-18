@@ -48,20 +48,26 @@ public class Registo implements Initializable {
         this.main = mv;
     }
 
-    public boolean validaRegisto() {
+    private boolean validaRegisto() {
         String username = user.getText();
         String password = pw.getText();
         String passconf = pwconf.getText();
-        //String mailaddress = email.getText();
-        //String postal = postalcode.getText();
         return (password.equals(passconf) && !this.mc.hasUser(username));
+    }
+
+    private void showSignUpError(String errormsg) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Erro");
+        alert.setHeaderText("Registo Inválido:");
+        alert.setContentText(errormsg);
+        alert.showAndWait();
     }
 
     public void registarCliente() throws Exception {
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
-        if (!valid) throw new Exception("Registo inválido!");
+        if (!valid) showSignUpError("As passwords não coincidem! Tente novamente");
         else {
             mc.addUser(username, password);
             status.setText("Utilizador adicionado");

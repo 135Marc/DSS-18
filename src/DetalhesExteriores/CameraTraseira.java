@@ -10,7 +10,7 @@ public class CameraTraseira extends DetalheExterior {
         super();
     }
 
-    public CameraTraseira(double preco, Set<String> lista){
+    public CameraTraseira(float preco, Set<String> lista){
         super(preco,lista);
     }
 

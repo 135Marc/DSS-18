@@ -19,7 +19,7 @@ public class Pneu extends Item{
         this.diametrointerior=this.indexcarga=this.indexvel=0;
     }
 
-    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, double preco, Set<String> lista) {
+    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, float preco, Set<String> lista) {
         super(preco,lista);
         this.largura = largura;
         this.serie = serie;

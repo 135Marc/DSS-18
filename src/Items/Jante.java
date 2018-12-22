@@ -18,7 +18,7 @@ public class Jante extends Item{
         this.espessura= js.getEspessura();
     }
 
-    public Jante(String tipo, int espessura,double preco,Set<String> lista){
+    public Jante(String tipo, int espessura,float preco,Set<String> lista){
         super(preco,lista);
         this.tipo = tipo;
         this.espessura = espessura;
@@ -47,11 +47,11 @@ public class Jante extends Item{
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Tipo: ")
-                .append(getTipo())
-                .append(" Espessura: ")
+        sb.append("Jantes Tipo: ")
+                .append(getTipo() + "\n")
+                .append("Espessura : ")
                 .append(getEspessura())
-                .append("''");
+                .append(" polegadas ");
                 return sb.toString();
     }
 

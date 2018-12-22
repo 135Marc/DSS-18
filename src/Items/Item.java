@@ -6,14 +6,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public abstract class Item {
-    private double preco;
+    private float preco;
     private Set<String> listaRestricao;
 
     public Item(){
         this.preco = 0;
         this.listaRestricao = new HashSet<>();
     }
-    public Item(double preco,Set<String> lista){
+    public Item(float preco,Set<String> lista){
         this.preco = preco;
         this.listaRestricao = lista;
     }
@@ -23,19 +23,17 @@ public abstract class Item {
         this.listaRestricao = a.getListaRestricao();
     }
 
-    public double getPreco() {
+    public float getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco){
+    public void setPreco(float preco){
         this.preco = preco;
     }
 
     public Set<String> getListaRestricao() {
         Set<String> lista = new HashSet<>();
-        for(String a : this.listaRestricao){
-            lista.add(a);
-        }
+        lista.addAll(this.listaRestricao);
         return  lista;
     }
 

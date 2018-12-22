@@ -9,7 +9,7 @@ public class ParachoquesMesmaCor extends DetalheExterior {
     public ParachoquesMesmaCor(){
         super();
     }
-    public ParachoquesMesmaCor(double preco, Set<String> lista){
+    public ParachoquesMesmaCor(float preco, Set<String> lista){
         super(preco, lista);
     }
     public ParachoquesMesmaCor(ParachoquesMesmaCor paraC){

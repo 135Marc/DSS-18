@@ -6,10 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -39,18 +36,25 @@ public class LogIn implements Initializable {
         this.main = mv;
     }
 
+    public void showLoginError(String errormsg) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Erro");
+        alert.setHeaderText("Login Inválido:");
+        alert.setContentText(errormsg);
+        alert.showAndWait();
+    }
 
-    public void addUser() throws Exception {
+    public void addUser()  {
         String user = username.getText();
         String pw = password.getText();
-        if (!this.mc.hasUser(user)) throw new Exception("Utilizador não existente");
+        if (!this.mc.hasUser(user)) showLoginError("Utilizador inexistente,tente novamente!");
         else {
                 if (this.mc.passwordMatches(user,pw)) {
                     username.clear();
                     password.clear();
                     label1.setText("Autenticação bem sucedida!");
                 }
-                else throw new Exception("Password errada! Tenta novamente");
+                else showLoginError("Password inválida, tente novamente!");
         }
 
     }

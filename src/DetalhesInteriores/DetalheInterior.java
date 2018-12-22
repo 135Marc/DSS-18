@@ -5,7 +5,7 @@ import java.util.Set;
 
 public abstract class DetalheInterior {
 
-    private double preco;
+    private float preco;
     private Set<String> listaRestricao;
 
     public DetalheInterior(){
@@ -13,7 +13,7 @@ public abstract class DetalheInterior {
         this.listaRestricao = new HashSet<>();
     }
 
-    public DetalheInterior(double preco,Set<String> lista){
+    public DetalheInterior(float preco,Set<String> lista){
         this.preco = preco;
         this.listaRestricao = lista;
     }
@@ -24,21 +24,17 @@ public abstract class DetalheInterior {
     }
 
 
-    public void setPreco(double preco) {
+    public void setPreco(float preco) {
         this.preco = preco;
     }
 
-    public double getPreco(){
+    public float getPreco(){
         return this.preco;
     }
 
     public Set<String> getListaRestricao() {
         Set<String> novaLista = new HashSet<>();
-
-        for(String a : this.listaRestricao){
-            novaLista.add(a);
-        }
-
+        novaLista.addAll(this.listaRestricao);
         return novaLista;    }
 
     public void setListaRestricao(Set<String> listaRestricao){
@@ -58,7 +54,7 @@ public abstract class DetalheInterior {
         listaRestricao.remove(tipo);
     }
 
-    public boolean contemid(String tipo){
+    public boolean hasID(String tipo){
 
         return listaRestricao.contains(tipo);
     }
