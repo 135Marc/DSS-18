@@ -16,7 +16,7 @@ public class Motor extends Item {
         this.potencia=this.kilometragem=this.consumomedio=this.emissoesco2=0;
     }
 
-    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, double preco, Set<String> lista) {
+    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, float preco, Set<String> lista) {
         super(preco,lista);
         this.combustivel = combustivel;
         this.potencia = potencia;

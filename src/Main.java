@@ -1,3 +1,4 @@
+import DetalhesExteriores.DetalheExterior;
 import Items.*;
 
 import java.util.ArrayList;
