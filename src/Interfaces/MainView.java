@@ -69,6 +69,25 @@ public class MainView extends Application {
         }
     }
 
+    public void showConfigManager() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/configmanager.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,550,450);
+            window.setScene(nova);
+            ConfigManager cm = loader.getController();
+            cm.init(this);
+            cm.setMainController(mc);
+            mc.setConfigManager(cm);
+            window.setTitle("Gestor de Configurações");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         launch(args);
     }

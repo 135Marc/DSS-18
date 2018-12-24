@@ -28,6 +28,5 @@
       <Label layoutX="338.0" layoutY="299.0" text="NIF" />
       <PasswordField fx:id="pw" layoutX="50.0" layoutY="324.0" />
       <PasswordField fx:id="pwconf" layoutX="50.0" layoutY="392.0" />
-      <Label fx:id="status" layoutX="338.0" layoutY="384.0" text="Status" />
    </children>
 </AnchorPane>

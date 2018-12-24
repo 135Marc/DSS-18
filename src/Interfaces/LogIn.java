@@ -52,7 +52,7 @@ public class LogIn implements Initializable {
                 if (this.mc.passwordMatches(user,pw)) {
                     username.clear();
                     password.clear();
-                    label1.setText("Autenticação bem sucedida!");
+                    mc.displayConfigManager();
                 }
                 else showLoginError("Password inválida, tente novamente!");
         }
