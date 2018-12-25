@@ -16,6 +16,18 @@ public class MainController implements Initializable {
     @FXML
     private ConfigManager configmanager;
     @FXML
+    private Configuracao config;
+    @FXML
+    private ItemDisplay itemdisp;
+    @FXML
+    private EngineDisplay engdisp;
+    @FXML
+    private TireDisplay tiredisp;
+
+
+
+
+    @FXML
     private MainView mview;
 
     public MainController(MainView mv) {
@@ -36,6 +48,15 @@ public class MainController implements Initializable {
     }
 
     public void setConfigManager(ConfigManager cm) {this.configmanager = cm;}
+
+    public void setConfigEditor(Configuracao cfg) {this.config = cfg;}
+
+    public void setItemDisplay(ItemDisplay itd) {this.itemdisp = itd;}
+
+    public void setEngineDisplay(EngineDisplay egd) {this.engdisp = egd;}
+
+    public void setTireDisplay(TireDisplay tid) {this.tiredisp = tid;}
+
 
     public boolean hasUser(String id) {
         Map<String,Utilizador> umap = usersmap.getUserMap();
@@ -63,5 +84,9 @@ public class MainController implements Initializable {
     public void displayConfigManager() {
         mview.showConfigManager();
     }
+
+    public void displayConfigEditor(Configuracao cfg) {mview.showConfigEditor(cfg);}
+
+    public void displayItemFrame() {mview.showItemsFrame();}
 
 }

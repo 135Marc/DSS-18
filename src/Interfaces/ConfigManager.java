@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 public class ConfigManager implements Initializable {
 
     @FXML
-    private TableView<Carro> tv;
+    private TableView<Configuracao> tv;
     @FXML
     private Button removebtn;
     @FXML
@@ -36,25 +36,21 @@ public class ConfigManager implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        TableColumn<Carro,String> tc1 = new TableColumn<>("Nome");
-        TableColumn<Carro,String> tc2 = new TableColumn<>("Tipo");
-        TableColumn<Carro,Integer> tc3 = new TableColumn<>("Portas");
-        TableColumn<Carro,Configuracao> tc4 = new TableColumn<>("Preço");
+        TableColumn<Configuracao,String> tc1 = new TableColumn<>("Nome");
+        TableColumn<Configuracao,Float> tc2 = new TableColumn<>("Preço");
         tc1.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        tc2.setCellValueFactory(new PropertyValueFactory<>("tipo"));
-        tc3.setCellValueFactory(new PropertyValueFactory<>("numeroportas"));
-        tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
+        tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tv.getItems().addAll(defaultConfigs());
-        tv.getColumns().addAll(tc1, tc2,tc3,tc4);
+        tv.getColumns().addAll(tc1, tc2);
         removebtn.setDisable(true);
         editbtn.setDisable(true);
     }
 
-    public ObservableList<Carro> defaultConfigs() {
-        ObservableList<Carro> listcnfg = FXCollections.observableArrayList(
-                new Carro("Land Cruiser","Jipe",4,1000,null),
-                new Carro("Fodalhao", "Carro" ,2,10000,null),
-                new Carro("Smooth Rider","Carrinha",4,750,null));
+    public ObservableList<Configuracao> defaultConfigs() {
+        ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(
+                new Configuracao("Land Cruiser",1000,null,null,null),
+                new Configuracao("Low-Rider",10000,null,null,null),
+                new Configuracao("Smooth-Rider",50000,null,null,null));
         return listcnfg;
     }
 
@@ -64,8 +60,13 @@ public class ConfigManager implements Initializable {
     }
 
     public void removeConfig() {
-        Carro cfg = tv.getSelectionModel().getSelectedItem();
+        Configuracao cfg = tv.getSelectionModel().getSelectedItem();
         tv.getItems().remove(cfg);
+    }
+
+    public void configFrame() {
+        Configuracao cfg = tv.getSelectionModel().getSelectedItem();
+        mc.displayConfigEditor(cfg);
     }
 
 

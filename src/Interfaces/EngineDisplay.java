@@ -5,7 +5,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ItemDisplay implements Initializable {
+public class EngineDisplay implements Initializable {
 
     private  MainController mc;
 
@@ -23,5 +23,4 @@ public class ItemDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
     }
-
 }

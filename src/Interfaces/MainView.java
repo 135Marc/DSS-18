@@ -88,6 +88,82 @@ public class MainView extends Application {
         }
     }
 
+    public void showConfigEditor(Configuracao cfg) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/config.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,891,455);
+            window.setScene(nova);
+            Configuracao cm = new Configuracao(cfg);
+            cm.init(this);
+            cm.setMainController(mc);
+            mc.setConfigEditor(cm);
+            window.setTitle("Editor de Configuração");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showItemsFrame() { // NULL POINTER EXCEPTION -> É necessário passar-lhe uma configuração para abrir isto e os outros
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/itemdisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,807,452);
+            window.setScene(nova);
+            ItemDisplay id = loader.getController();
+            id.init(this);
+            id.setMainController(mc);
+            mc.setItemDisplay(id);
+            window.setTitle("Menu de Items");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showEngineFrame() { // NULL POINTER
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/enginedisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,600,400);
+            window.setScene(nova);
+            EngineDisplay ed = loader.getController();
+            ed.init(this);
+            ed.setMainController(mc);
+            mc.setEngineDisplay(ed);
+            window.setTitle("Menu de Motores");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showTireDisplay() { // NULL POINTER
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/tiredisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,600,400);
+            window.setScene(nova);
+            TireDisplay tid = loader.getController();
+            tid.init(this);
+            tid.setMainController(mc);
+            mc.setTireDisplay(tid);
+            window.setTitle("Menu de Pneus");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         launch(args);
     }
