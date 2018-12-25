@@ -4,13 +4,13 @@ import java.util.Set;
 
 public class TetoAbrir extends DetalheExterior {
 
-    private final String tipo = "tetoAbrir";
+    private final int tipo = 34;
 
     public TetoAbrir(){
         super();
     }
 
-    public TetoAbrir(float preco, Set<String> lista){
+    public TetoAbrir(float preco, Set<Integer> lista){
         super(preco, lista);
     }
 
@@ -19,7 +19,7 @@ public class TetoAbrir extends DetalheExterior {
     }
 
     @Override
-    public String getTipo() {
+    public Integer getTipo() {
         return this.tipo;
     }
 

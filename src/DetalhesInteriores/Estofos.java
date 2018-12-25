@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class Estofos extends DetalheInterior {
 
-    private final String tipo = "Estofos";
+    private final int tipo = 20;
     private String cor;
     private String tecido;
 
@@ -14,7 +14,7 @@ public class Estofos extends DetalheInterior {
         this.tecido = "Pele";
     }
 
-    public Estofos(String cor, String tecido, float preco, Set<String> lista){
+    public Estofos(String cor, String tecido, float preco, Set<Integer> lista){
         super(preco, lista);
         this.cor = cor;
         this.tecido = tecido;
@@ -46,7 +46,7 @@ public class Estofos extends DetalheInterior {
         return new Estofos(this);
     }
 
-    public String getTipo(){
+    public Integer getTipo(){
         return  this.tipo;
     }
 }

@@ -5,14 +5,14 @@ import java.util.Set;
 
 public abstract class DetalheExterior {
     private float preco;
-    private Set<String> listaRestricao;
+    private Set<Integer> listaRestricao;
 
     public DetalheExterior(){
         this.preco = 0;
         this.listaRestricao = new HashSet<>();
     }
 
-    public DetalheExterior(float preco,Set<String> lista){
+    public DetalheExterior(float preco,Set<Integer> lista){
         this.preco = preco;
         this.listaRestricao = lista;
     }
@@ -26,8 +26,8 @@ public abstract class DetalheExterior {
         return preco;
     }
 
-    public Set<String> getListaRestricao() {
-        Set<String> novaLista = new HashSet<>();
+    public Set<Integer> getListaRestricao() {
+        Set<Integer> novaLista = new HashSet<>();
         novaLista.addAll(this.listaRestricao);
         return novaLista;
     }
@@ -36,21 +36,21 @@ public abstract class DetalheExterior {
         this.preco = preco;
     }
 
-    public void setListaRestricao(Set<String> listaRestricao) {
+    public void setListaRestricao(Set<Integer> listaRestricao) {
         this.listaRestricao = listaRestricao;
     }
 
-    public void addRestricao(String tipo){
+    public void addRestricao(Integer tipo){
         listaRestricao.add(tipo);
     }
 
-    public abstract String getTipo();
+    public abstract Integer getTipo();
 
-    public void removeRestricao(String tipo){
+    public void removeRestricao(Integer tipo){
         listaRestricao.remove(tipo);
     }
 
-    public boolean hasID(String tipo){
+    public boolean hasID(Integer tipo){
         return listaRestricao.contains(tipo);
     }
 

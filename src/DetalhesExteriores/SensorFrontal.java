@@ -4,12 +4,12 @@ import java.util.Set;
 
 public class SensorFrontal extends DetalheExterior {
 
-    private final String tipo = "SensorFrontal";
+    private final int tipo = 33;
 
     public SensorFrontal(){
         super();
     }
-    public  SensorFrontal(float preco, Set<String> lista){
+    public  SensorFrontal(float preco, Set<Integer> lista){
         super(preco,lista);
     }
     public SensorFrontal(SensorFrontal sensor){
@@ -17,7 +17,7 @@ public class SensorFrontal extends DetalheExterior {
     }
 
     @Override
-    public String getTipo() {
+    public Integer getTipo() {
         return this.tipo;
     }
 

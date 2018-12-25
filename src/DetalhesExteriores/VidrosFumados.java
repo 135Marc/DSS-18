@@ -4,13 +4,13 @@ import java.util.Set;
 
 public class VidrosFumados extends DetalheExterior {
 
-    private final String tipo = "VidrosFumados";
+    private final int tipo = 35;
 
     public VidrosFumados(){
         super();
     }
 
-    public  VidrosFumados(float preco, Set<String> lista){
+    public  VidrosFumados(float preco, Set<Integer> lista){
         super(preco,lista);
     }
 
@@ -19,7 +19,7 @@ public class VidrosFumados extends DetalheExterior {
     }
 
     @Override
-    public String getTipo() {
+    public Integer getTipo() {
         return this.tipo;
     }
 

@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="455.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.Config">
+<AnchorPane prefHeight="455.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.Configuracao">
    <children>
       <Button layoutX="93.0" layoutY="48.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Componentes Base" />
       <Button layoutX="341.0" layoutY="48.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Detalhes Exteriores" />
