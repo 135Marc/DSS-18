@@ -3,6 +3,7 @@ package Items;
 import java.util.Set;
 
 public class Motor extends Item {
+    private final int id = 2;
     private String combustivel;
     private int potencia;
     private int kilometragem;
@@ -16,7 +17,7 @@ public class Motor extends Item {
         this.potencia=this.kilometragem=this.consumomedio=this.emissoesco2=0;
     }
 
-    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, float preco, Set<String> lista) {
+    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, float preco, Set<Integer> lista) {
         super(preco,lista);
         this.combustivel = combustivel;
         this.potencia = potencia;
@@ -95,6 +96,10 @@ public class Motor extends Item {
 
     public String getTipo(){
         return this.tipo;
+    }
+
+    public int getId(){
+        return this.id;
     }
 
 }

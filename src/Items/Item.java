@@ -7,13 +7,13 @@ import java.util.Set;
 
 public abstract class Item {
     private float preco;
-    private Set<String> listaRestricao;
+    private Set<Integer> listaRestricao;
 
     public Item(){
         this.preco = 0;
         this.listaRestricao = new HashSet<>();
     }
-    public Item(float preco,Set<String> lista){
+    public Item(float preco,Set<Integer> lista){
         this.preco = preco;
         this.listaRestricao = lista;
     }
@@ -31,17 +31,19 @@ public abstract class Item {
         this.preco = preco;
     }
 
-    public Set<String> getListaRestricao() {
-        Set<String> lista = new HashSet<>();
+    public Set<Integer> getListaRestricao() {
+        Set<Integer> lista = new HashSet<>();
         lista.addAll(this.listaRestricao);
         return  lista;
     }
 
-    public void setListaRestricao(Set<String> lista){
+    public void setListaRestricao(Set<Integer> lista){
         this.listaRestricao = lista;
     }
 
     public abstract Item clone();
 
     public abstract String getTipo();
+
+    public abstract int getId();
 }

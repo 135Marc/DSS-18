@@ -1,6 +1,7 @@
 package Items;
 
 public class Pintura {
+    private final int id = 3;
     private int cor;
     private String tipo;
 
@@ -47,5 +48,9 @@ public class Pintura {
 
     public Pintura clone () {
         return new Pintura(this);
+    }
+
+    public int getId(){
+        return this.id;
     }
 }
