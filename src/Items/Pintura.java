@@ -2,15 +2,14 @@ package Items;
 
 public class Pintura {
     private final int id = 3;
-    private int cor;
+    private String cor;
     private String tipo;
 
     public Pintura() {
-        this.cor=0;
-        this.tipo=null;
+        this.cor=this.tipo=null;
     }
 
-    public Pintura(int cor, String tipo) {
+    public Pintura(String cor, String tipo) {
         this.cor = cor;
         this.tipo = tipo;
     }
@@ -20,11 +19,11 @@ public class Pintura {
         this.tipo = p.getTipo();
     }
 
-    public int getCor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setCor(int cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
@@ -43,7 +42,7 @@ public class Pintura {
     }
 
     public boolean equals(Pintura p) {
-        return (this.cor == p.getCor() && this.tipo.equalsIgnoreCase(p.getTipo()));
+        return (this.cor.equals(p.getCor()) && this.tipo.equalsIgnoreCase(p.getTipo()));
     }
 
     public Pintura clone () {

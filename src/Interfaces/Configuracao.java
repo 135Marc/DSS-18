@@ -106,11 +106,11 @@ public class Configuracao implements Initializable {
         this.innerdetails.add(di);
     }
 
-    public void itemFrame() {
+    public void itemFrame() { //NULL POINTER
         this.mc.displayItemFrame();
     }
 
-    public void turnBack() {
+    public void turnBack() { //NULL POINTER
         this.mc.displayConfigManager();
     }
 
