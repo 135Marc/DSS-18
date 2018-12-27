@@ -3,6 +3,7 @@ package Items;
 import java.util.Set;
 
 public class Pneu extends Item{
+    private final int id = 4;
     private String tipo;
     private int largura;
     private String serie;
@@ -19,7 +20,7 @@ public class Pneu extends Item{
         this.diametrointerior=this.indexcarga=this.indexvel=0;
     }
 
-    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, float preco, Set<String> lista) {
+    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, float preco, Set<Integer> lista) {
         super(preco,lista);
         this.largura = largura;
         this.serie = serie;
@@ -106,5 +107,9 @@ public class Pneu extends Item{
 
     public String getTipo(){
         return this.tipo;
+    }
+
+    public int getId(){
+        return this.id;
     }
 }

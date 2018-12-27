@@ -1,14 +1,16 @@
 package Items;
 
 public class Pintura {
-    private String cor;
+    private final int id = 3;
+    private int cor;
     private String tipo;
 
     public Pintura() {
-        this.cor=this.tipo=null;
+        this.cor=0;
+        this.tipo=null;
     }
 
-    public Pintura(String cor, String tipo) {
+    public Pintura(int cor, String tipo) {
         this.cor = cor;
         this.tipo = tipo;
     }
@@ -18,11 +20,11 @@ public class Pintura {
         this.tipo = p.getTipo();
     }
 
-    public String getCor() {
+    public int getCor() {
         return cor;
     }
 
-    public void setCor(String cor) {
+    public void setCor(int cor) {
         this.cor = cor;
     }
 
@@ -46,5 +48,9 @@ public class Pintura {
 
     public Pintura clone () {
         return new Pintura(this);
+    }
+
+    public int getId(){
+        return this.id;
     }
 }
