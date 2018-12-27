@@ -48,8 +48,8 @@ public class Jante extends Item{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Jantes Tipo: ")
-                .append(getTipo() + "\n")
-                .append("Espessura : ")
+                .append(getTipo())
+                .append(" Espessura : ")
                 .append(getEspessura())
                 .append(" polegadas ");
                 return sb.toString();

@@ -22,4 +22,8 @@ public class TireDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
+    public void turnBack() {
+        this.mc.displayItemFrame();
+    }
 }

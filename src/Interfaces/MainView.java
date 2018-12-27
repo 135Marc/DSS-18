@@ -4,13 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+
 
 public class MainView extends Application {
 
@@ -88,14 +86,14 @@ public class MainView extends Application {
         }
     }
 
-    public void showConfigEditor(Configuracao cfg) {
+    public void showConfigEditor() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/config.fxml"));
             Pane view = loader.load();
             Scene nova = new Scene(view,891,455);
             window.setScene(nova);
-            Configuracao cm = new Configuracao(cfg);
+            Configuracao cm = loader.getController();
             cm.init(this);
             cm.setMainController(mc);
             mc.setConfigEditor(cm);

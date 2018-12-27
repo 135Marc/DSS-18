@@ -4,11 +4,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.EngineDisplay">
    <children>
       <Button layoutX="126.0" layoutY="319.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="99.0" text="Adicionar" />
-      <Button layoutX="333.0" layoutY="319.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="99.0" text="Voltar" />
+      <Button layoutX="333.0" layoutY="319.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="51.0" prefWidth="99.0" text="Voltar" />
       <TableView layoutX="68.0" layoutY="38.0" prefHeight="247.0" prefWidth="491.0" />
    </children>
 </AnchorPane>

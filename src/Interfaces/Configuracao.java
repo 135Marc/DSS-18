@@ -4,13 +4,21 @@ package Interfaces;
 import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.DetalheInterior;
 import Items.*;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Set;
 
 public class Configuracao implements Initializable {
+
+
+    @FXML
+    private TableView<Pintura> cart;
 
     private String nome;
     private float preco;
@@ -47,8 +55,15 @@ public class Configuracao implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        TableColumn<Pintura,String> tc3 = new TableColumn<>("Cor");
+        TableColumn<Pintura,String> tc4 = new TableColumn<>("Tipo");
+        tc3.setCellValueFactory(new PropertyValueFactory<>("cor"));
+        tc4.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        tc3.setPrefWidth(97);
+        tc4.setPrefWidth(102);
+        cart.getColumns().addAll(tc3,tc4);
     }
+
 
     public void setMainController(MainController mc) {
         this.mc = mc;
@@ -74,6 +89,7 @@ public class Configuracao implements Initializable {
         this.itemlist.add(i);
     }
 
+
     public Set<DetalheExterior> getOuterdetails() {
         return outerdetails;
     }
@@ -92,6 +108,10 @@ public class Configuracao implements Initializable {
 
     public void itemFrame() {
         this.mc.displayItemFrame();
+    }
+
+    public void turnBack() {
+        this.mc.displayConfigManager();
     }
 
 

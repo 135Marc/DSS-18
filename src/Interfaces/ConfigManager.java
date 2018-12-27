@@ -11,7 +11,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import Items.*;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class ConfigManager implements Initializable {
 
@@ -48,9 +50,9 @@ public class ConfigManager implements Initializable {
 
     public ObservableList<Configuracao> defaultConfigs() {
         ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(
-                new Configuracao("Land Cruiser",1000,null,null,null),
-                new Configuracao("Low-Rider",10000,null,null,null),
-                new Configuracao("Smooth-Rider",50000,null,null,null));
+                new Configuracao("Land Cruiser",1000,new HashSet<>(),null,null),
+                new Configuracao("Low-Rider",10000,new HashSet<>(),null,null),
+                new Configuracao("Smooth-Rider",50000,new HashSet<>(),null,null));
         return listcnfg;
     }
 
@@ -66,7 +68,7 @@ public class ConfigManager implements Initializable {
 
     public void configFrame() {
         Configuracao cfg = tv.getSelectionModel().getSelectedItem();
-        mc.displayConfigEditor(cfg);
+        mc.displayConfigEditor();
     }
 
 

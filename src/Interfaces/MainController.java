@@ -25,8 +25,6 @@ public class MainController implements Initializable {
     private TireDisplay tiredisp;
 
 
-
-
     @FXML
     private MainView mview;
 
@@ -85,8 +83,16 @@ public class MainController implements Initializable {
         mview.showConfigManager();
     }
 
-    public void displayConfigEditor(Configuracao cfg) {mview.showConfigEditor(cfg);}
+    public void displayConfigEditor() {mview.showConfigEditor();}
 
     public void displayItemFrame() {mview.showItemsFrame();}
+
+    public void displayEngineFrame() { mview.showEngineFrame();}
+
+    public void displayTireFrame() {mview.showTireDisplay();}
+
+    public Configuracao getConfig() {
+        return this.config;
+    }
 
 }
