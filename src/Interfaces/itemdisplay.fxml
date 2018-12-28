@@ -13,7 +13,7 @@
       <Label layoutX="374.0" layoutY="67.0" text="Pinturas Disponiveis" />
       <Button layoutX="613.0" layoutY="137.0" mnemonicParsing="false" onAction="#engineView" prefHeight="46.0" prefWidth="119.0" text="Motores" />
       <Button layoutX="613.0" layoutY="226.0" mnemonicParsing="false" onAction="#tireView" prefHeight="46.0" prefWidth="119.0" text="Pneus" />
-      <Button layoutX="201.0" layoutY="365.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="101.0" text="Adicionar" />
+      <Button layoutX="201.0" layoutY="365.0" mnemonicParsing="false" onAction="#adicionarItem" prefHeight="46.0" prefWidth="101.0" text="Adicionar" />
       <Button layoutX="373.0" layoutY="365.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="46.0" prefWidth="101.0" text="Voltar" />
    </children>
 </AnchorPane>

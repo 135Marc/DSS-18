@@ -78,6 +78,9 @@ public class ItemDisplay implements Initializable {
 
     public void tireView() { this.mc.displayTireFrame();}
 
+    public void adicionarItem() {
+        System.out.println("Carregaste em adicionar item");
+    }
 
 
 }
