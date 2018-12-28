@@ -66,12 +66,13 @@ public class ConfigManager implements Initializable {
 
     public void activateButton() {
         removebtn.setDisable(false);
-        editbtn.setDisable(false);
+        editbtn.setDisable(false); 
     }
 
     public void removeConfig() {
-        tv.getItems().remove(tv.getSelectionModel().getSelectedItem());
-        this.mc.removeConfig(tv.getSelectionModel().getSelectedItem());
+        Configuracao a = tv.getSelectionModel().getSelectedItem();
+        tv.getItems().remove(a);
+        this.mc.removeConfig(a);
     }
 
     public void addConfig() {
