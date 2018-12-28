@@ -16,7 +16,9 @@ public class Carros {
     public void adicionaConfig(String id,Configuracao cfg){
 
         List<Configuracao> lista = new ArrayList<>();
-        lista = listaConfigCliente.get(id);
+        if(listaConfigCliente.get(id) != null) {
+            lista = listaConfigCliente.get(id);
+        }
         lista.add(cfg);
         this.listaConfigCliente.put(id,lista);
     }
