@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class SensorFrontal extends DetalheExterior {
 
-    private final int tipo = 33;
+    private final int id = 33;
 
     public SensorFrontal(){
         super();
@@ -17,8 +17,8 @@ public class SensorFrontal extends DetalheExterior {
     }
 
     @Override
-    public Integer getTipo() {
-        return this.tipo;
+    public Integer getID() {
+        return this.id;
     }
 
     public DetalheExterior clone(){return new SensorFrontal(this);}

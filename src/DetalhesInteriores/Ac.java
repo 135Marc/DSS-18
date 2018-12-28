@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class Ac extends DetalheInterior {
 
-    private final int tipo = 22;
+    private final int id = 22;
 
     public  Ac(){
         super();
@@ -22,7 +22,7 @@ public class Ac extends DetalheInterior {
         return new Ac();
     }
 
-    public Integer getTipo(){
-        return  this.tipo;
+    public Integer getID(){
+        return  this.id;
     }
 }

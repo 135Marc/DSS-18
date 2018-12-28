@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class VidrosFumados extends DetalheExterior {
 
-    private final int tipo = 35;
+    private final int id = 35;
 
     public VidrosFumados(){
         super();
@@ -19,8 +19,8 @@ public class VidrosFumados extends DetalheExterior {
     }
 
     @Override
-    public Integer getTipo() {
-        return this.tipo;
+    public Integer getID() {
+        return this.id;
     }
 
     public DetalheExterior clone(){return new VidrosFumados(this);}

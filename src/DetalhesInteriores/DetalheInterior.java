@@ -41,7 +41,7 @@ public abstract class DetalheInterior {
         this.listaRestricao = listaRestricao;
     }
 
-    public abstract Integer getTipo();
+    public abstract Integer getID();
 
     public  abstract DetalheInterior clone();
 

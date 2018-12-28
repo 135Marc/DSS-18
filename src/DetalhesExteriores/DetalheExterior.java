@@ -44,7 +44,7 @@ public abstract class DetalheExterior {
         listaRestricao.add(tipo);
     }
 
-    public abstract Integer getTipo();
+    public abstract Integer getID();
 
     public void removeRestricao(Integer tipo){
         listaRestricao.remove(tipo);

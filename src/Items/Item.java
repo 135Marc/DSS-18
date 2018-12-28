@@ -46,4 +46,8 @@ public abstract class Item {
     public abstract String getTipo();
 
     public abstract int getId();
+
+    public boolean idRestrito(int i){
+        return this.listaRestricao.contains(i);
+    }
 }

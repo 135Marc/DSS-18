@@ -3,7 +3,7 @@ package DetalhesInteriores;
 import java.util.Set;
 
 public class Gps extends DetalheInterior{
-    private final int tipo = 21;
+    private final int id = 21;
 
     public  Gps(){
         super();
@@ -21,7 +21,7 @@ public class Gps extends DetalheInterior{
         return new Gps();
     }
 
-    public Integer getTipo(){
-        return  this.tipo;
+    public Integer getID(){
+        return  this.id;
     }
 }

@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class TetoAbrir extends DetalheExterior {
 
-    private final int tipo = 34;
+    private final int id = 34;
 
     public TetoAbrir(){
         super();
@@ -19,8 +19,8 @@ public class TetoAbrir extends DetalheExterior {
     }
 
     @Override
-    public Integer getTipo() {
-        return this.tipo;
+    public Integer getID() {
+        return this.id;
     }
 
     public  DetalheExterior clone(){return new TetoAbrir(this);}

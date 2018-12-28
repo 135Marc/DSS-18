@@ -86,7 +86,8 @@ public class Configuracao implements Initializable {
     }
 
     public void addItem(Item i) {
-        this.itemlist.add(i);
+        if(itemValido(i))
+         this.itemlist.add(i);
     }
 
 
@@ -95,7 +96,8 @@ public class Configuracao implements Initializable {
     }
 
     public void addOuterDetail(DetalheExterior de) {
-        this.outerdetails.add(de);
+        if(detExteriorValido(de))
+            this.outerdetails.add(de);
     }
 
     public Set<DetalheInterior> getInnerdetails() {
@@ -103,7 +105,8 @@ public class Configuracao implements Initializable {
     }
 
     public void addInnerDetail(DetalheInterior di) {
-        this.innerdetails.add(di);
+        if(detInteriorValido(di))
+            this.innerdetails.add(di);
     }
 
     public void itemFrame() { //NULL POINTER
@@ -114,6 +117,35 @@ public class Configuracao implements Initializable {
         this.mc.displayConfigManager();
     }
 
+    public boolean itemValido(Item i){
+
+        for(Item a : itemlist){
+            if(i.idRestrito(a.getId()) || a.idRestrito(i.getId())){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean detExteriorValido(DetalheExterior i){
+
+        for(DetalheExterior a : outerdetails){
+            if(a.hasID(i.getID()) || i.hasID(a.getID())){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean detInteriorValido(DetalheInterior i){
+
+        for(DetalheInterior a : innerdetails){
+            if(a.hasID(i.getID()) || i.hasID(a.getID())){
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 }

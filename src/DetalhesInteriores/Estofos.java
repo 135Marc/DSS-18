@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class Estofos extends DetalheInterior {
 
-    private final int tipo = 20;
+    private final int id = 20;
     private String cor;
     private String tecido;
 
@@ -46,7 +46,7 @@ public class Estofos extends DetalheInterior {
         return new Estofos(this);
     }
 
-    public Integer getTipo(){
-        return  this.tipo;
+    public Integer getID(){
+        return  this.id;
     }
 }

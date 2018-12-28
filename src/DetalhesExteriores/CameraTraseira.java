@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class CameraTraseira extends DetalheExterior {
 
-    private final int tipo = 30;
+    private final int id = 30;
 
     public CameraTraseira(){
         super();
@@ -20,8 +20,8 @@ public class CameraTraseira extends DetalheExterior {
     }
 
     @Override
-    public Integer getTipo() {
-        return this.tipo;
+    public Integer getID() {
+        return this.id;
     }
 
     public DetalheExterior clone(){return  new CameraTraseira(this);}
