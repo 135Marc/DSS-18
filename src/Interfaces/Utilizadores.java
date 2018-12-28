@@ -22,4 +22,8 @@ public class Utilizadores {
     public void addToMap(String id,Utilizador u) {
         this.usermap.put(id,u);
     }
+
+    public Utilizador getUser(String id) {
+        return this.usermap.get(id);
+    }
 }

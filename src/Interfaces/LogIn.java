@@ -52,6 +52,10 @@ public class LogIn implements Initializable {
                 if (this.mc.passwordMatches(user,pw)) {
                     username.clear();
                     password.clear();
+                    Utilizador u = mc.getUser(user);
+                    mc.setLoggedUser(u);
+                    mc.getLoggedUser().setUserConfigMap(new HashMap<>());
+                    System.out.println(mc.getLoggedUser());
                     mc.displayConfigManager();
                 }
                 else showLoginError("Password inválida, tente novamente!");

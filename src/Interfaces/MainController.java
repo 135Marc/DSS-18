@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
 
     private Utilizadores usersmap;
+    private Utilizador loggeduser;
     @FXML
     private Registo regist;
     @FXML
@@ -27,6 +28,7 @@ public class MainController implements Initializable {
 
     @FXML
     private MainView mview;
+
 
     public MainController(MainView mv) {
         this.usersmap = new Utilizadores();
@@ -61,6 +63,15 @@ public class MainController implements Initializable {
         return (umap.containsKey(id));
     }
 
+    public Utilizador getUser(String id) {
+        Utilizador u = usersmap.getUser(id);
+        return u;
+    }
+
+    public Utilizador getLoggedUser() {
+        return this.loggeduser;
+    }
+
     public boolean passwordMatches(String id,String password) {
         Utilizador u = usersmap.getUserMap().get(id);
         return (u.getPassword().equals(password));
@@ -69,6 +80,15 @@ public class MainController implements Initializable {
     public void addUser(String id, String password) {
         Utilizador u = new Utilizador(id,password);
         this.usersmap.addToMap(id,u);
+    }
+
+
+    public boolean noConfigs() {
+        return (this.loggeduser.getUserConfigMap().isEmpty());
+    }
+
+    public void setLoggedUser(Utilizador u) {
+        this.loggeduser = u;
     }
 
     public void displayRegistry() {
@@ -81,6 +101,7 @@ public class MainController implements Initializable {
 
     public void displayConfigManager() {
         mview.showConfigManager();
+
     }
 
     public void displayConfigEditor() {mview.showConfigEditor();}

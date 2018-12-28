@@ -28,7 +28,7 @@ public class MainView extends Application {
         showLogin();
     }
 
-    public void showLogin() {
+    public void showLogin() { // Pode ficar +/- assim.
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/login.fxml"));
@@ -48,7 +48,7 @@ public class MainView extends Application {
     }
 
 
-    public void showRegistForm() {
+    public void showRegistForm() { // Pode ficar +/- assim.
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/registo.fxml"));
@@ -67,16 +67,17 @@ public class MainView extends Application {
         }
     }
 
-    public void showConfigManager() {
+    public void showConfigManager() { // Cada utilizador terá isto diferente!
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/configmanager.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,550,450);
+            Scene nova = new Scene(view,720,464);
             window.setScene(nova);
             ConfigManager cm = loader.getController();
             cm.init(this);
             cm.setMainController(mc);
+            cm.populateTable();
             mc.setConfigManager(cm);
             window.setTitle("Gestor de Configurações");
             window.show();
@@ -86,7 +87,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showConfigEditor() {
+    public void showConfigEditor() { // Abrirá depois de ser selecionada uma!
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/config.fxml"));
@@ -105,7 +106,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showItemsFrame() { // NULL POINTER EXCEPTION -> É necessário passar-lhe uma configuração para abrir isto e os outros
+    public void showItemsFrame() { // É necessário passar-lhe uma configuração para abrir isto;
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/itemdisplay.fxml"));
@@ -124,7 +125,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showEngineFrame() { // NULL POINTER
+    public void showEngineFrame() { // É necessário passar-lhe uma configuração para abrir isto;
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/enginedisplay.fxml"));

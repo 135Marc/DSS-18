@@ -7,13 +7,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import Items.*;
 
 import java.net.URL;
-import java.util.HashSet;
-import java.util.ResourceBundle;
-import java.util.Set;
+import java.util.*;
 
 public class ConfigManager implements Initializable {
 
@@ -23,6 +22,8 @@ public class ConfigManager implements Initializable {
     private Button removebtn;
     @FXML
     private Button editbtn;
+    @FXML
+    private TextField configname;
 
     private  MainController mc;
 
@@ -38,23 +39,30 @@ public class ConfigManager implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+    public ObservableList<Configuracao> defaultConfigs() {
+        Map<String,Configuracao> merdas = new HashMap<>();
+        Configuracao teste = new Configuracao("mmmm",2000,new HashSet<>(),new HashSet<>(),new HashSet<>());
+        merdas.put(teste.getNome(),teste);
+        /*ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(new Configuracao("Land Cruiser", 1000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
+                new Configuracao("Low-Rider", 10000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
+                new Configuracao("Smooth-Rider", 50000, new HashSet<>(), new HashSet<>(), new HashSet<>()));*/
+        return FXCollections.observableArrayList(merdas.values());
+    }
+
+    public void populateTable() {
         TableColumn<Configuracao,String> tc1 = new TableColumn<>("Nome");
         TableColumn<Configuracao,Float> tc2 = new TableColumn<>("Preço");
         tc1.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
-        tv.getItems().addAll(defaultConfigs());
         tv.getColumns().addAll(tc1, tc2);
+        tv.getItems().addAll(this.mc.getLoggedUser().getUserConfigMap().values());
         removebtn.setDisable(true);
         editbtn.setDisable(true);
     }
 
-    public ObservableList<Configuracao> defaultConfigs() {
-        ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(
-                new Configuracao("Land Cruiser",1000,new HashSet<>(),null,null),
-                new Configuracao("Low-Rider",10000,new HashSet<>(),null,null),
-                new Configuracao("Smooth-Rider",50000,new HashSet<>(),null,null));
-        return listcnfg;
-    }
 
     public void activateButton() {
         removebtn.setDisable(false);
@@ -64,6 +72,15 @@ public class ConfigManager implements Initializable {
     public void removeConfig() {
         Configuracao cfg = tv.getSelectionModel().getSelectedItem();
         tv.getItems().remove(cfg);
+        this.mc.getLoggedUser().removeConfig(cfg);
+    }
+
+    public void addConfig() {
+        String name = configname.getText();
+        Configuracao cfg = new Configuracao(name,0,new HashSet<>(),new HashSet<>(),new HashSet<>());
+        this.mc.getLoggedUser().addConfig(cfg);
+        tv.getItems().add(cfg);
+        configname.clear();
     }
 
     public void configFrame() {

@@ -70,7 +70,6 @@ public class Registo implements Initializable {
         if (!valid) showSignUpError("As passwords não coincidem! Tente novamente");
         else {
             mc.addUser(username, password);
-            status.setText("Utilizador adicionado");
             user.clear();
             pw.clear();
             pwconf.clear();
