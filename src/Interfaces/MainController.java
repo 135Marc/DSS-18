@@ -19,7 +19,7 @@ public class MainController implements Initializable {
     @FXML
     private ConfigManager configmanager;
     @FXML
-    private Configuracao config;
+    private ConfigDisplay config;
     @FXML
     private ItemDisplay itemdisp;
     @FXML
@@ -52,7 +52,7 @@ public class MainController implements Initializable {
 
     public void setConfigManager(ConfigManager cm) {this.configmanager = cm;}
 
-    public void setConfigEditor(Configuracao cfg) {this.config = cfg;}
+    public void setConfigDisplay(ConfigDisplay cfg) {this.config = cfg;}
 
     public void setItemDisplay(ItemDisplay itd) {this.itemdisp = itd;}
 

@@ -90,14 +90,14 @@ public class MainView extends Application {
     public void showConfigEditor() { // Abrirá depois de ser selecionada uma!
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/Interfaces/config.fxml"));
+            loader.setLocation(getClass().getResource("/Interfaces/configdisplay.fxml"));
             Pane view = loader.load();
             Scene nova = new Scene(view,891,455);
             window.setScene(nova);
-            Configuracao cm = loader.getController();
+            ConfigDisplay cm = loader.getController();
             cm.init(this);
             cm.setMainController(mc);
-            mc.setConfigEditor(cm);
+            mc.setConfigDisplay(cm);
             window.setTitle("Editor de Configuração");
             window.show();
 
