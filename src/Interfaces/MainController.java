@@ -3,13 +3,15 @@ package Interfaces;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
+import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
-    private Utilizadores usersmap;
-    private Utilizador loggeduser;
+    private AppDesktop app;
+    private Carros carros;
+    private String id;
     @FXML
     private Registo regist;
     @FXML
@@ -31,7 +33,8 @@ public class MainController implements Initializable {
 
 
     public MainController(MainView mv) {
-        this.usersmap = new Utilizadores();
+        this.app = new AppDesktop();
+        this.carros = new Carros();
         mview = mv;
     }
 
@@ -59,36 +62,28 @@ public class MainController implements Initializable {
 
 
     public boolean hasUser(String id) {
-        Map<String,Utilizador> umap = usersmap.getUserMap();
-        return (umap.containsKey(id));
+        return app.userExiste(id);
     }
 
     public Utilizador getUser(String id) {
-        Utilizador u = usersmap.getUser(id);
-        return u;
-    }
-
-    public Utilizador getLoggedUser() {
-        return this.loggeduser;
+        return app.getUser(id);
     }
 
     public boolean passwordMatches(String id,String password) {
-        Utilizador u = usersmap.getUserMap().get(id);
-        return (u.getPassword().equals(password));
+        return app.passwoordMatch(id,password);
     }
 
     public void addUser(String id, String password) {
         Utilizador u = new Utilizador(id,password);
-        this.usersmap.addToMap(id,u);
+        this.app.registaUser(u);
     }
 
-
-    public boolean noConfigs() {
-        return (this.loggeduser.getUserConfigMap().isEmpty());
+    public void removeConfig(Configuracao a){
+        this.carros.removeConfig(this.id,a);
     }
 
-    public void setLoggedUser(Utilizador u) {
-        this.loggeduser = u;
+    public boolean noConfigs(String id) {
+        return carros.noConfig(id);
     }
 
     public void displayRegistry() {
@@ -112,8 +107,21 @@ public class MainController implements Initializable {
 
     public void displayTireFrame() {mview.showTireDisplay();}
 
-    public Configuracao getConfig() {
-        return this.config;
+    public String getId() {
+        return this.id;
     }
+
+    public void setId(String email) {
+        this.id = email;
+    }
+
+    public List<Configuracao> getConfigs(String id){
+        return this.carros.getConfigs(id);
+    }
+
+    public void addConfig(Configuracao a,String id){
+        this.carros.adicionaConfig(id,a);
+    }
+
 
 }

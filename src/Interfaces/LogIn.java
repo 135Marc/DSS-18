@@ -44,21 +44,21 @@ public class LogIn implements Initializable {
         alert.showAndWait();
     }
 
-    public void addUser()  {
+    public void longInUser()  {
         String user = username.getText();
         String pw = password.getText();
         if (!this.mc.hasUser(user)) showLoginError("Utilizador inexistente,tente novamente!");
         else {
-                if (this.mc.passwordMatches(user,pw)) {
+                boolean passCorreta = this.mc.passwordMatches(user,pw);
+                if (passCorreta && mc.getUser(user).getIsOn() == false) {
                     username.clear();
                     password.clear();
-                    Utilizador u = mc.getUser(user);
-                    mc.setLoggedUser(u);
-                    mc.getLoggedUser().setUserConfigMap(new HashMap<>());
-                    System.out.println(mc.getLoggedUser());
+                    mc.getUser(user).setOn();
                     mc.displayConfigManager();
                 }
-                else showLoginError("Password inválida, tente novamente!");
+                else if (passCorreta) showLoginError("Password inválida, tente novamente!");
+
+                else  showLoginError("Cliente já logado");
         }
 
     }

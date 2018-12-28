@@ -58,7 +58,7 @@ public class ConfigManager implements Initializable {
         tc1.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tv.getColumns().addAll(tc1, tc2);
-        tv.getItems().addAll(this.mc.getLoggedUser().getUserConfigMap().values());
+        tv.getItems().addAll(this.mc.getConfigs(mc.getId()));
         removebtn.setDisable(true);
         editbtn.setDisable(true);
     }
@@ -70,21 +70,20 @@ public class ConfigManager implements Initializable {
     }
 
     public void removeConfig() {
-        Configuracao cfg = tv.getSelectionModel().getSelectedItem();
-        tv.getItems().remove(cfg);
-        this.mc.getLoggedUser().removeConfig(cfg);
+        tv.getItems().remove(tv.getSelectionModel().getSelectedItem());
+        this.mc.removeConfig(tv.getSelectionModel().getSelectedItem());
     }
 
     public void addConfig() {
         String name = configname.getText();
         Configuracao cfg = new Configuracao(name,0,new HashSet<>(),new HashSet<>(),new HashSet<>());
-        this.mc.getLoggedUser().addConfig(cfg);
+        this.mc.addConfig(cfg,mc.getId());
         tv.getItems().add(cfg);
         configname.clear();
     }
 
     public void configFrame() {
-        Configuracao cfg = tv.getSelectionModel().getSelectedItem();
+        String a = tv.getSelectionModel().getSelectedItem().toString();
         mc.displayConfigEditor();
     }
 
