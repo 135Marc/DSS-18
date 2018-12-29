@@ -1,11 +1,28 @@
 package Interfaces;
 
+import DetalhesInteriores.Ac;
+import DetalhesInteriores.DetalheInterior;
+import DetalhesInteriores.Estofos;
+import DetalhesInteriores.Gps;
+import Items.Motor;
+import Items.Pneu;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class DetalheInteriorDisplay implements Initializable {
+
+   @FXML
+   private TableView<DetalheInterior> innertable;
 
     private  MainController mc;
     private MainView main;
@@ -20,12 +37,43 @@ public class DetalheInteriorDisplay implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        TableColumn<DetalheInterior,String> tc1 = new TableColumn<>("Tipo");
+        TableColumn<DetalheInterior,Float> tc2 = new TableColumn<>("Preço");
+        TableColumn<DetalheInterior,String> tc3 = new TableColumn<>("Cor");
+        TableColumn<DetalheInterior,String> tc4 = new TableColumn<>("Tecido");
+        tc1.setPrefWidth(97);
+        tc2.setPrefWidth(102);
+        tc3.setPrefWidth(97);
+        tc4.setPrefWidth(102);
+        tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
+        tc3.setCellValueFactory(new PropertyValueFactory<>("cor"));
+        tc4.setCellValueFactory(new PropertyValueFactory<>("tecido"));
+        innertable.getColumns().addAll(tc1,tc2,tc3,tc4);
+        innertable.getItems().addAll(loadInnerDetails());
     }
 
     public void turnBack() {
         this.mc.displayConfigEditor();
     }
 
+    public ObservableList<DetalheInterior> loadInnerDetails() {
+        Set<Integer> teste = new HashSet<Integer>();
+        teste.add(22);
+        Set<Integer> teste1 = new HashSet<>();
+        teste1.add(21);
+        Set<Integer> teste2 = new HashSet<>();
+        teste2.add(20);
+        ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(
+                new Ac("Ar Condicionado",50,teste),
+                new Gps("GPS",150,teste1),
+                new Estofos("Estofos","Branco","Cabedal",300,teste2));
+        return listcnfg;
+    }
+
+    public void adicionarDetalheInterior(){
+        DetalheInterior a = innertable.getSelectionModel().getSelectedItem();
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(a);
+    }
 
 }
