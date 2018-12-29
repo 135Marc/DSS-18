@@ -5,13 +5,16 @@ import java.util.Set;
 public class SensoresTraseiros extends DetalheExterior {
 
     private final int id = 32;
+    private String tipo ;
 
     public SensoresTraseiros(){
         super();
+        this.tipo = null;
     }
 
-    public SensoresTraseiros(float preco, Set<Integer> lista){
+    public SensoresTraseiros(String tipo,float preco, Set<Integer> lista){
         super(preco,lista);
+        this.tipo = tipo;
     }
 
     public SensoresTraseiros(SensoresTraseiros sensor){
@@ -24,5 +27,10 @@ public class SensoresTraseiros extends DetalheExterior {
     }
 
     public DetalheExterior clone(){return new SensoresTraseiros(this);}
+
+    @Override
+    public String getTipo() {
+        return tipo;
+    }
 
 }

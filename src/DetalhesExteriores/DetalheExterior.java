@@ -56,5 +56,7 @@ public abstract class DetalheExterior {
 
     public abstract DetalheExterior clone();
 
+    public abstract String getTipo();
+
 
 }

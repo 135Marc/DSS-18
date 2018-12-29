@@ -1,6 +1,6 @@
 package Interfaces;
 
-import Items.Jante;
+import Items.*;
 import Items.Motor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

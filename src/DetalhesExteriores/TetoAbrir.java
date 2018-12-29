@@ -5,13 +5,16 @@ import java.util.Set;
 public class TetoAbrir extends DetalheExterior {
 
     private final int id = 34;
+    private String tipo;
 
     public TetoAbrir(){
         super();
+        this.tipo = null;
     }
 
-    public TetoAbrir(float preco, Set<Integer> lista){
+    public TetoAbrir(String tipo,float preco, Set<Integer> lista){
         super(preco, lista);
+        this.tipo = tipo;
     }
 
     public  TetoAbrir(TetoAbrir teto){
@@ -24,4 +27,9 @@ public class TetoAbrir extends DetalheExterior {
     }
 
     public  DetalheExterior clone(){return new TetoAbrir(this);}
+
+    @Override
+    public String getTipo() {
+        return tipo;
+    }
 }

@@ -1,11 +1,26 @@
 package Interfaces;
 
+import DetalhesExteriores.CameraTraseira;
+import DetalhesExteriores.DetalheExterior;
+import DetalhesExteriores.Parachoques;
+import DetalhesExteriores.SensoresTraseiros;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class DetalheExteriorDisplay implements Initializable {
+
+    @FXML
+    private TableView<DetalheExterior> detsExt;
     private  MainController mc;
     private MainView main;
 
@@ -19,11 +34,40 @@ public class DetalheExteriorDisplay implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        TableColumn<DetalheExterior,String> tc1 = new TableColumn<>("Tipo");
+        TableColumn<DetalheExterior,String> tc2 = new TableColumn<>("Preco");
+        tc1.setPrefWidth(84);
+        tc2.setPrefWidth(115);
+        tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
+        detsExt.getColumns().addAll(tc1, tc2);
+        detsExt.getItems().addAll(loadDetsExte());
 
+    }
+
+    public ObservableList<DetalheExterior> loadDetsExte() {
+        Set<Integer> cameraTraseira = new HashSet<Integer>();
+        Set<Integer> paraChoques = new HashSet<Integer>();
+        Set<Integer> sensorTraseiro = new HashSet<Integer>();
+        cameraTraseira.add(30);
+        cameraTraseira.add(32);
+        paraChoques.add(31);
+        sensorTraseiro.add(32);
+        sensorTraseiro.add(30);
+
+        ObservableList<DetalheExterior> listcnfg = FXCollections.observableArrayList(
+                new CameraTraseira("Camera Traseira",1,cameraTraseira),
+                new Parachoques("ParaChoques da mesma Cor",150,paraChoques),
+                new SensoresTraseiros("Sensores Traseiros",90,sensorTraseiro));
+        return listcnfg;
     }
 
     public void turnBack() {
         this.mc.displayConfigEditor();
     }
 
+    public void addDet(){
+        DetalheExterior a = detsExt.getSelectionModel().getSelectedItem();
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addOuterDetail(a);
+    }
 }

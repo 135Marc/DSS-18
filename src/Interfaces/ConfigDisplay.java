@@ -1,7 +1,7 @@
 package Interfaces;
 
+import DetalhesExteriores.DetalheExterior;
 import Items.Item;
-import Items.Jante;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -32,13 +32,18 @@ public class ConfigDisplay  implements Initializable {
         tc4.setPrefWidth(102);
         String cenas = mc.getConfigNome();
         String id = mc.getId();
-        Configuracao merdas = mc.getConfig(id,cenas);
+        Configuracao cfg = mc.getConfig(id,cenas);
         cart.getColumns().addAll(tc3,tc4);
-        cart.getItems().addAll(atualilaItens(merdas));
+        cart.getItems().addAll(atualizaItens(cfg));
+        cart.getItems().addAll(atualizaDetExte(cfg));
     }
 
-    public Set<Item> atualilaItens(Configuracao cfg) {
+    public Set<Item> atualizaItens(Configuracao cfg) {
         return cfg.getItemlist();
+    }
+
+    public Set<DetalheExterior> atualizaDetExte(Configuracao cfg){
+        return cfg.getOuterdetails();
     }
 
     public void itemFrame() { //NULL POINTER
