@@ -5,13 +5,14 @@ import java.util.Set;
 public class Ac extends DetalheInterior {
 
     private final int id = 22;
+    private final String tipo = "Ar Condicionado";
 
     public  Ac(){
         super();
     }
 
-    public Ac(float preco, Set<Integer> lista){
-        super(preco,lista);
+    public Ac(String tipo,float preco, Set<Integer> lista){
+        super(tipo,preco,lista);
     }
 
     public Ac(Estofos gps){
@@ -25,4 +26,6 @@ public class Ac extends DetalheInterior {
     public Integer getID(){
         return  this.id;
     }
+
+    public String getTipo() { return this.tipo;}
 }

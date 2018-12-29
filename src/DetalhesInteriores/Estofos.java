@@ -7,6 +7,7 @@ public class Estofos extends DetalheInterior {
     private final int id = 20;
     private String cor;
     private String tecido;
+    private final String tipo = "Estofos";
 
     public  Estofos(){
         super();
@@ -14,8 +15,8 @@ public class Estofos extends DetalheInterior {
         this.tecido = "Pele";
     }
 
-    public Estofos(String cor, String tecido, float preco, Set<Integer> lista){
-        super(preco, lista);
+    public Estofos(String tipo,String cor, String tecido, float preco, Set<Integer> lista){
+        super(tipo,preco, lista);
         this.cor = cor;
         this.tecido = tecido;
     }
@@ -48,5 +49,8 @@ public class Estofos extends DetalheInterior {
 
     public Integer getID(){
         return  this.id;
+    }
+
+    public String getTipo() { return this.tipo;
     }
 }

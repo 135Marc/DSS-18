@@ -1,5 +1,6 @@
 package Interfaces;
 
+import DetalhesInteriores.DetalheInterior;
 import Items.Item;
 import Items.Jante;
 import javafx.fxml.FXML;
@@ -35,10 +36,15 @@ public class ConfigDisplay  implements Initializable {
         Configuracao merdas = mc.getConfig(id,cenas);
         cart.getColumns().addAll(tc3,tc4);
         cart.getItems().addAll(atualilaItens(merdas));
+        cart.getItems().addAll(atualizaDetalhesInteriores(merdas));
     }
 
     public Set<Item> atualilaItens(Configuracao cfg) {
         return cfg.getItemlist();
+    }
+
+    public Set<DetalheInterior> atualizaDetalhesInteriores (Configuracao cfg) {
+        return cfg.getInnerdetails();
     }
 
     public void itemFrame() { //NULL POINTER

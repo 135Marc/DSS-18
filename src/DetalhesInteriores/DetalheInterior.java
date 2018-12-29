@@ -6,23 +6,32 @@ import java.util.Set;
 public abstract class DetalheInterior {
 
     private float preco;
+    private String tipo;
     private Set<Integer> listaRestricao;
 
     public DetalheInterior(){
         this.preco = 0;
+        this.tipo=null;
         this.listaRestricao = new HashSet<>();
     }
 
-    public DetalheInterior(float preco,Set<Integer> lista){
+    public DetalheInterior(String tipo,float preco,Set<Integer> lista){
+        this.tipo=tipo;
         this.preco = preco;
         this.listaRestricao = lista;
     }
 
     public DetalheInterior(DetalheInterior det){
+        this.tipo=det.getTipo();
         this.preco = det.getPreco();
         this.listaRestricao = det.getListaRestricao();
     }
 
+    public abstract String getTipo();
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 
     public void setPreco(float preco) {
         this.preco = preco;
@@ -55,7 +64,10 @@ public abstract class DetalheInterior {
     }
 
     public boolean hasID(Integer tipo){
-
         return listaRestricao.contains(tipo);
     }
+
+
+
+
 }
