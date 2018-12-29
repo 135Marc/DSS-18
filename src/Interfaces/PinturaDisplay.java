@@ -43,7 +43,7 @@ public class PinturaDisplay implements Initializable {
 
     public ObservableList<Pintura> loadPaints() {
         Set<Integer> teste = new HashSet<Integer>();
-        teste.add(5);
+        teste.add(3);
         ObservableList<Pintura> listcnfg = FXCollections.observableArrayList(
                 new Pintura("Branca","Metalizada",1,teste),
                 new Pintura("Vermelha","Normal",1,teste),
