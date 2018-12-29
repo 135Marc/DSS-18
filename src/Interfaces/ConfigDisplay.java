@@ -1,10 +1,7 @@
 package Interfaces;
 
-<<<<<<< HEAD
 import DetalhesExteriores.DetalheExterior;
-=======
 import DetalhesInteriores.DetalheInterior;
->>>>>>> d1b410ece4959e647dd2d1015906f01fc97c1663
 import Items.Item;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -38,26 +35,20 @@ public class ConfigDisplay  implements Initializable {
         String id = mc.getId();
         Configuracao cfg = mc.getConfig(id,cenas);
         cart.getColumns().addAll(tc3,tc4);
-<<<<<<< HEAD
         cart.getItems().addAll(atualizaItens(cfg));
         cart.getItems().addAll(atualizaDetExte(cfg));
-=======
-        cart.getItems().addAll(atualilaItens(merdas));
-        cart.getItems().addAll(atualizaDetalhesInteriores(merdas));
->>>>>>> d1b410ece4959e647dd2d1015906f01fc97c1663
+        cart.getItems().addAll(atualizaDetalhesInteriores(cfg));
     }
 
     public Set<Item> atualizaItens(Configuracao cfg) {
         return cfg.getItemlist();
     }
 
-<<<<<<< HEAD
-    public Set<DetalheExterior> atualizaDetExte(Configuracao cfg){
+    public Set<DetalheExterior> atualizaDetExte(Configuracao cfg) {
         return cfg.getOuterdetails();
-=======
+    }
     public Set<DetalheInterior> atualizaDetalhesInteriores (Configuracao cfg) {
         return cfg.getInnerdetails();
->>>>>>> d1b410ece4959e647dd2d1015906f01fc97c1663
     }
 
     public void itemFrame() { //NULL POINTER
