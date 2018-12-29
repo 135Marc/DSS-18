@@ -11,7 +11,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class ItemDisplay implements Initializable {
 
@@ -54,6 +56,7 @@ public class ItemDisplay implements Initializable {
 
 
     public ObservableList<Pintura> loadPaints() {
+
         ObservableList<Pintura> listcnfg = FXCollections.observableArrayList(
                 new Pintura("Branca","Metalizada"),
                 new Pintura("Vermelha","Normal"),
@@ -62,10 +65,12 @@ public class ItemDisplay implements Initializable {
     }
 
     public ObservableList<Jante> loadWheels() {
+        Set<Integer> teste = new HashSet<Integer>();
+        teste.add(1);
         ObservableList<Jante> listcnfg = FXCollections.observableArrayList(
-                new Jante("Liga Leve",15,0,null),
-                new Jante("Larga",16,0,null),
-                new Jante("Neve",15,0,null));
+                new Jante("Liga Leve",15,0,teste),
+                new Jante("Larga",16,0,teste),
+                new Jante("Neve",15,0,teste));
         return listcnfg;
     }
 
@@ -80,10 +85,9 @@ public class ItemDisplay implements Initializable {
 
     public void adicionarItem() {
 
-        System.out.println(mc.getConfigNome());
-       /* Jante a = wheelt.getSelectionModel().getSelectedItem();
+        Jante a = wheelt.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-        mc.adicionaCarrinho(a);*/
+        mc.adicionaCarrinho(a);
     }
 
 

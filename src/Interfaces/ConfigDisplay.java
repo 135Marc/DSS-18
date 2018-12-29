@@ -1,5 +1,6 @@
 package Interfaces;
 
+import Items.Jante;
 import Items.Pintura;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,14 +13,14 @@ import java.util.ResourceBundle;
 
 public class ConfigDisplay  implements Initializable {
     @FXML
-    private TableView<Object> cart;
+    private TableView<Jante> cart;
     private MainController mc;
     private MainView main;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        TableColumn<Object,String> tc3 = new TableColumn<>("Nome");
-        TableColumn<Object,Float> tc4 = new TableColumn<>("Preço");
+        TableColumn<Jante,String> tc3 = new TableColumn<>("Nome");
+        TableColumn<Jante,Float> tc4 = new TableColumn<>("Preço");
         tc3.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tc3.setPrefWidth(97);
@@ -43,7 +44,7 @@ public class ConfigDisplay  implements Initializable {
         this.main = mv;
     }
 
-    public void adicionaCarrinho(Object a){
+    public void adicionaCarrinho(Jante a){
         cart.getItems().add(a);
     }
 

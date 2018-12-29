@@ -1,5 +1,6 @@
 package Interfaces;
 
+import Items.Jante;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
@@ -11,6 +12,7 @@ public class MainController implements Initializable {
     private AppDesktop app;
     private Carros carros;
     private String id;
+    private String nomeConfig;
     @FXML
     private Registo regist;
     @FXML
@@ -127,10 +129,13 @@ public class MainController implements Initializable {
     }
 
     public String getConfigNome(){
-       return this.configmanager.getNome();
+       return this.nomeConfig;
+    }
+    public void setNomeConfig(String a){
+        this.nomeConfig = a;
     }
 
-    public void adicionaCarrinho(Object a){
+    public void adicionaCarrinho(Jante a){
         configDisplay.adicionaCarrinho(a);
     }
 }
