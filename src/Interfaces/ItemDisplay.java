@@ -68,7 +68,7 @@ public class ItemDisplay implements Initializable {
         Set<Integer> teste = new HashSet<Integer>();
         teste.add(1);
         ObservableList<Jante> listcnfg = FXCollections.observableArrayList(
-                new Jante("Liga Leve",15,0,teste),
+                new Jante("Liga Leve",15,150,teste),
                 new Jante("Larga",16,0,teste),
                 new Jante("Neve",15,0,teste));
         return listcnfg;

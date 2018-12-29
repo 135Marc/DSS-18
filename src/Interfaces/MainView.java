@@ -97,6 +97,7 @@ public class MainView extends Application {
             ConfigDisplay cm = loader.getController();
             cm.init(this);
             cm.setMainController(mc);
+            cm.loadTable();
             mc.setConfigDisplay(cm);
             window.setTitle("Editor de Configuração");
             window.show();

@@ -43,6 +43,7 @@ public class MainController implements Initializable {
 
     }
 
+
     public void setRegist(Registo r) {
         this.regist=r;
     }
