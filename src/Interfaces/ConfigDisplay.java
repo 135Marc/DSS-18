@@ -45,6 +45,10 @@ public class ConfigDisplay  implements Initializable {
         this.mc.displayItemFrame();
     }
 
+    public void innerFrame() {this.mc.displayInnerFrame();}
+
+    public void outterFrame() {this.mc.displayOutterFrame();}
+
     public void turnBack( ) { //NULL POINTER
         this.mc.displayConfigManager();
     }

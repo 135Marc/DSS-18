@@ -8,12 +8,12 @@
 <AnchorPane prefHeight="455.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.ConfigDisplay">
    <children>
       <Button layoutX="93.0" layoutY="48.0" mnemonicParsing="false" onAction="#itemFrame" prefHeight="71.0" prefWidth="146.0" text="Componentes Base" />
-      <Button layoutX="341.0" layoutY="48.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Detalhes Exteriores" />
+      <Button layoutX="341.0" layoutY="48.0" mnemonicParsing="false" onAction="#outterFrame" prefHeight="71.0" prefWidth="146.0" text="Detalhes Exteriores" />
       <TableView fx:id="cart" layoutX="554.0" layoutY="84.0" prefHeight="212.0" prefWidth="294.0" />
       <Label layoutX="701.0" layoutY="324.0" text="Preço Total :" />
       <Button layoutX="202.0" layoutY="357.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="105.0" text="Submeter" />
       <Label layoutX="594.0" layoutY="48.0" text="Carrinho" />
-      <Button layoutX="93.0" layoutY="168.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Detalhes Interiores" />
+      <Button layoutX="93.0" layoutY="168.0" mnemonicParsing="false" onAction="#innerFrame" prefHeight="71.0" prefWidth="146.0" text="Detalhes Interiores" />
       <Button layoutX="341.0" layoutY="168.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Pacotes" />
       <Label layoutX="791.0" layoutY="324.0" text="0 €" />
       <Button layoutX="414.0" layoutY="357.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="51.0" prefWidth="105.0" text="Cancelar" />

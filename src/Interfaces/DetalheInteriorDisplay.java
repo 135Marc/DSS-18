@@ -23,6 +23,9 @@ public class DetalheInteriorDisplay implements Initializable {
 
     }
 
+    public void turnBack() {
+        this.mc.displayConfigEditor();
+    }
 
 
 }

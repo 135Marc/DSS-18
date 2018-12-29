@@ -28,7 +28,7 @@ public class MainView extends Application {
         showLogin();
     }
 
-    public void showLogin() { // Pode ficar +/- assim.
+    public void showLogin() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/login.fxml"));
@@ -48,7 +48,7 @@ public class MainView extends Application {
     }
 
 
-    public void showRegistForm() { // Pode ficar +/- assim.
+    public void showRegistForm() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/registo.fxml"));
@@ -67,7 +67,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showConfigManager() { // Cada utilizador terá isto diferente!
+    public void showConfigManager() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/configmanager.fxml"));
@@ -87,7 +87,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showConfigEditor() { // Abrirá depois de ser selecionada uma!
+    public void showConfigEditor() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/configdisplay.fxml"));
@@ -107,7 +107,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showItemsFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+    public void showItemsFrame() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/itemdisplay.fxml"));
@@ -126,7 +126,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showWheelFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+    public void showWheelFrame() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/jantedisplay.fxml"));
@@ -145,7 +145,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showPaintFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+    public void showPaintFrame() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/pinturadisplay.fxml"));
@@ -164,7 +164,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showEngineFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+    public void showEngineFrame() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/enginedisplay.fxml"));
@@ -183,7 +183,7 @@ public class MainView extends Application {
         }
     }
 
-    public void showTireDisplay() { // NULL POINTER
+    public void showTireDisplay() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/tiredisplay.fxml"));
@@ -201,6 +201,46 @@ public class MainView extends Application {
             e.printStackTrace();
         }
     }
+
+    public void showInnerDisplay() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/detalheinteriordisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,560,391);
+            window.setScene(nova);
+            DetalheInteriorDisplay indisp = loader.getController();
+            indisp.init(this);
+            indisp.setMainController(mc);
+            mc.setInnerDisplay(indisp);
+            window.setTitle("Menu de Detalhes Interiores");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showOutterDisplay() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/detalheexteriordisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,487,560);
+            window.setScene(nova);
+            DetalheExteriorDisplay outdisp = loader.getController();
+            outdisp.init(this);
+            outdisp.setMainController(mc);
+            mc.setOutterDisplay(outdisp);
+            window.setTitle("Menu de Detalhes Exteriores");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
     public static void main(String[] args) {
         launch(args);

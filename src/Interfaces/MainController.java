@@ -32,6 +32,10 @@ public class MainController implements Initializable {
     private EngineDisplay engdisp;
     @FXML
     private TireDisplay tiredisp;
+    @FXML
+    private DetalheExteriorDisplay outdisp;
+    @FXML
+    private DetalheInteriorDisplay indisp;
 
 
     @FXML
@@ -71,6 +75,14 @@ public class MainController implements Initializable {
 
     public void setTireDisplay(TireDisplay tid) {this.tiredisp = tid;}
 
+    public void setInnerDisplay(DetalheInteriorDisplay didisp) {
+        this.indisp=didisp;
+    }
+
+    public void setOutterDisplay(DetalheExteriorDisplay dedisp) {
+        this.outdisp=dedisp;
+    }
+
 
     public boolean hasUser(String id) {
         return app.userExiste(id);
@@ -107,7 +119,6 @@ public class MainController implements Initializable {
 
     public void displayConfigManager() {
         mview.showConfigManager();
-
     }
 
     public void displayConfigEditor() {mview.showConfigEditor();}
@@ -121,6 +132,10 @@ public class MainController implements Initializable {
     public void displayEngineFrame() { mview.showEngineFrame();}
 
     public void displayTireFrame() {mview.showTireDisplay();}
+
+    public void displayInnerFrame() {mview.showInnerDisplay();}
+
+    public void displayOutterFrame() {mview.showOutterDisplay();}
 
     public String getId() {
         return this.id;
