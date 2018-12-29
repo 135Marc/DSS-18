@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.PinturaDisplay">
    <children>
-      <Button layoutX="172.0" layoutY="321.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="91.0" text="Adicionar" />
+      <Button layoutX="172.0" layoutY="321.0" mnemonicParsing="false" onAction="#adicionaPintura" prefHeight="49.0" prefWidth="91.0" text="Adicionar" />
       <Button layoutX="340.0" layoutY="321.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="49.0" prefWidth="91.0" text="Voltar" />
       <TableView fx:id="paintable" layoutX="74.0" layoutY="46.0" prefHeight="224.0" prefWidth="481.0" />
    </children>

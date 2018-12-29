@@ -145,11 +145,9 @@ public class MainController implements Initializable {
     public String getConfigNome(){
        return this.nomeConfig;
     }
+
     public void setNomeConfig(String a){
         this.nomeConfig = a;
     }
 
-    public void adicionaCarrinho(Jante a){
-        configDisplay.adicionaCarrinho(a);
-    }
 }

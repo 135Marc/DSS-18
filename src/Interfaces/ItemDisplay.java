@@ -46,12 +46,6 @@ public class ItemDisplay implements Initializable {
 
     public void paintView() {this.mc.displayPaintFrame();}
 
-    /*
-    public void adicionarItem() {
-        Jante a = wheelt.getSelectionModel().getSelectedItem();
-        mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-        mc.adicionaCarrinho(a);
-    }*/
 
 
 }

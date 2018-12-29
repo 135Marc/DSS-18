@@ -58,6 +58,6 @@ public class JanteDisplay implements Initializable {
     public void adicionarItem() {
         Jante a = wheelt.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-        mc.adicionaCarrinho(a);
+
     }
 }
