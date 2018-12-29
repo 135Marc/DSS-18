@@ -1,20 +1,25 @@
 package Items;
 
-public class Pintura {
+import java.util.Set;
+
+public class Pintura extends Item {
     private final int id = 3;
     private String cor;
     private String tipo;
 
     public Pintura() {
+        super();
         this.cor=this.tipo=null;
     }
 
-    public Pintura(String cor, String tipo) {
+    public Pintura(String cor, String tipo, float preco, Set<Integer> lista) {
+        super(preco,lista);
         this.cor = cor;
         this.tipo = tipo;
     }
 
     public Pintura (Pintura p) {
+        super(p);
         this.cor = p.getCor();
         this.tipo = p.getTipo();
     }

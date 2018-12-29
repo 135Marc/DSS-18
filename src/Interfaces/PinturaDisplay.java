@@ -11,7 +11,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class PinturaDisplay implements Initializable {
 
@@ -40,10 +42,12 @@ public class PinturaDisplay implements Initializable {
     }
 
     public ObservableList<Pintura> loadPaints() {
+        Set<Integer> teste = new HashSet<Integer>();
+        teste.add(1);
         ObservableList<Pintura> listcnfg = FXCollections.observableArrayList(
-                new Pintura("Branca","Metalizada"),
-                new Pintura("Vermelha","Normal"),
-                new Pintura("Castanha","Premium"));
+                new Pintura("Branca","Metalizada",1,teste),
+                new Pintura("Vermelha","Normal",1,teste),
+                new Pintura("Castanha","Premium",1,teste));
         return listcnfg;
     }
 
@@ -51,10 +55,10 @@ public class PinturaDisplay implements Initializable {
         this.mc.displayItemFrame();
     }
 
-    /*
-    public void adicionarItem() {
+
+    public void adicionaPintura() {
         Pintura a = paintable.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-        mc.adicionaCarrinho(a); -> Mudar o tipo do metodo adicionaCarrinho!
-    }*/
+
+    }
 }
