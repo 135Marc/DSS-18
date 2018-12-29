@@ -8,7 +8,6 @@ import java.util.ResourceBundle;
 public class EngineDisplay implements Initializable {
 
     private  MainController mc;
-
     private MainView main;
 
     public void setMainController(MainController mc) {

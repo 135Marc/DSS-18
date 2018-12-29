@@ -1,6 +1,7 @@
 package Interfaces;
 
 import Items.Jante;
+import Items.Pintura;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
@@ -23,6 +24,10 @@ public class MainController implements Initializable {
     private ConfigDisplay configDisplay;
     @FXML
     private ItemDisplay itemdisp;
+    @FXML
+    private JanteDisplay jantedisp;
+    @FXML
+    private PinturaDisplay paintdisp;
     @FXML
     private EngineDisplay engdisp;
     @FXML
@@ -57,6 +62,10 @@ public class MainController implements Initializable {
     public void setConfigDisplay(ConfigDisplay cfg) {this.configDisplay = cfg;}
 
     public void setItemDisplay(ItemDisplay itd) {this.itemdisp = itd;}
+
+    public void setJanteDisplay(JanteDisplay jd) {this.jantedisp =jd;}
+
+    public void setPinturaDisplay(PinturaDisplay pd) {this.paintdisp = pd;}
 
     public void setEngineDisplay(EngineDisplay egd) {this.engdisp = egd;}
 
@@ -104,6 +113,10 @@ public class MainController implements Initializable {
     public void displayConfigEditor() {mview.showConfigEditor();}
 
     public void displayItemFrame() {mview.showItemsFrame();}
+
+    public void displayWheelFrame() {mview.showWheelFrame();}
+
+    public void displayPaintFrame() {mview.showPaintFrame();}
 
     public void displayEngineFrame() { mview.showEngineFrame();}
 

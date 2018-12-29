@@ -126,6 +126,44 @@ public class MainView extends Application {
         }
     }
 
+    public void showWheelFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/jantedisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,807,452);
+            window.setScene(nova);
+            JanteDisplay jd = loader.getController();
+            jd.init(this);
+            jd.setMainController(mc);
+            mc.setJanteDisplay(jd);
+            window.setTitle("Menu de Jantes");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showPaintFrame() { // É necessário passar-lhe uma configuração para abrir isto;
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/pinturadisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,807,452);
+            window.setScene(nova);
+            PinturaDisplay pd = loader.getController();
+            pd.init(this);
+            pd.setMainController(mc);
+            mc.setPinturaDisplay(pd);
+            window.setTitle("Menu de Pinturas");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void showEngineFrame() { // É necessário passar-lhe uma configuração para abrir isto;
         try {
             FXMLLoader loader = new FXMLLoader();

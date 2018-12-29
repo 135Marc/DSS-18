@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="452.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.ItemDisplay">
+<AnchorPane prefHeight="447.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.ItemDisplay">
    <children>
-      <TableView fx:id="wheelt" layoutX="72.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label layoutX="82.0" layoutY="67.0" text="Jantes Disponiveis" />
-      <TableView fx:id="paintable" layoutX="365.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label layoutX="374.0" layoutY="67.0" text="Pinturas Disponiveis" />
-      <Button layoutX="613.0" layoutY="137.0" mnemonicParsing="false" onAction="#engineView" prefHeight="46.0" prefWidth="119.0" text="Motores" />
-      <Button layoutX="613.0" layoutY="226.0" mnemonicParsing="false" onAction="#tireView" prefHeight="46.0" prefWidth="119.0" text="Pneus" />
-      <Button layoutX="201.0" layoutY="365.0" mnemonicParsing="false" onAction="#adicionarItem" prefHeight="46.0" prefWidth="101.0" text="Adicionar" />
-      <Button layoutX="373.0" layoutY="365.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="46.0" prefWidth="101.0" text="Voltar" />
+      <Button layoutX="100.0" layoutY="72.0" mnemonicParsing="false" onAction="#engineView" prefHeight="46.0" prefWidth="119.0" text="Motores" />
+      <Button layoutX="100.0" layoutY="189.0" mnemonicParsing="false" onAction="#tireView" prefHeight="46.0" prefWidth="119.0" text="Pneus" />
+      <Button layoutX="219.0" layoutY="337.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="46.0" prefWidth="101.0" text="Voltar" />
+      <Button layoutX="324.0" layoutY="72.0" mnemonicParsing="false" onAction="#wheelView" prefHeight="46.0" prefWidth="109.0" text="Jantes" />
+      <Button layoutX="314.0" layoutY="189.0" mnemonicParsing="false" onAction="#paintView" prefHeight="46.0" prefWidth="119.0" text="Pinturas" />
    </children>
 </AnchorPane>
