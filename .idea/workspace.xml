@@ -4,40 +4,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/Interfaces/MainController.java" line="91" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS-18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS-18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/EngineDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/EngineDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ItemDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ItemDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/LogIn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Pacote/Pacote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Pacote/Pacote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/config.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,11 +103,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ItemDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2364#2365#0" expanded="true" />
+                <element signature="e#2409#2410#0" expanded="true" />
+                <element signature="e#2570#2571#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+            <state relative-caret-position="190">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -141,8 +131,17 @@
       <file leaf-file-name="Configuracao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            <state relative-caret-position="240">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigDisplay.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,24 +149,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utilizador.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/Utilizador.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-              <folding>
-                <element signature="e#1320#1321#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogIn.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LogIn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+            <state relative-caret-position="210">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#801#802#0" expanded="true" />
                 <element signature="e#831#832#0" expanded="true" />
@@ -179,25 +174,10 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="540">
+              <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#displayConfigManager#0;class#MainController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Carros.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/Carros.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,8 +186,8 @@
       <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="1050">
+              <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#379#380#0" expanded="true" />
@@ -249,24 +229,26 @@
         <option value="$PROJECT_DIR$/src/Items/Pneu.java" />
         <option value="$PROJECT_DIR$/src/Items/Pintura.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Items/Jante.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/SignIn.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/SignIn.form" />
         <option value="$PROJECT_DIR$/src/Interfaces/login.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/regist.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/registo.fxml" />
-        <option value="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Utilizadores.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Registo.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/AppDesktop.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Utilizador.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/LogIn.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Carros.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/configdisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -309,6 +291,12 @@
               <item name="DSS-18" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSS-18" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DetalhesExteriores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSS-18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DSS-18" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -331,7 +319,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546038055680" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -341,6 +329,118 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Interfaces/ConfigManager.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainView">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method>
@@ -540,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544543041783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ConfigDisplay">
+      <created>1546041358978</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546041358978</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -548,6 +655,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -557,12 +665,12 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32832617" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32832617" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32939914" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2140625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2140625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -624,6 +732,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -633,7 +767,8 @@
     <MESSAGE value="Jantes caralho" />
     <MESSAGE value="Classe Pneu" />
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="ConfigDisplay" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConfigDisplay" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -651,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,7 +817,6 @@
           <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#displayConfigManager#0;class#MainController#0" />
           </folding>
         </state>
       </provider>
@@ -737,13 +868,6 @@
     <entry file="file://$PROJECT_DIR$/src/Interfaces/SignIn.form" />
     <entry file="file://$PROJECT_DIR$/src/LogIn.java" />
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/registo.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -772,37 +896,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Jante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Motor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Pintura.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Pneu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/CameraTraseira.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
@@ -828,18 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -858,16 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Carros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -880,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/AppDesktop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -894,10 +961,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/itemdisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="1050">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#379#380#0" expanded="true" />
@@ -906,24 +999,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/configdisplay.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/Jante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/Pintura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#displayConfigManager#0;class#MainController#0" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
+    <entry file="file://$PROJECT_DIR$/src/Items/Motor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+        <state relative-caret-position="135">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
           <folding>
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2364#2365#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="e#2570#2571#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/CameraTraseira.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/DetalheExterior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -970,7 +1136,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
