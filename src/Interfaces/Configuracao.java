@@ -8,7 +8,6 @@ import java.util.Set;
 
 public class Configuracao {
 
-
     private String nome;
     private float preco;
     private Set<Item> itemlist;

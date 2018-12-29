@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 public class ConfigDisplay  implements Initializable {
     @FXML
     private TableView<Object> cart;
-    private  MainController mc;
+    private MainController mc;
     private MainView main;
 
     @Override
