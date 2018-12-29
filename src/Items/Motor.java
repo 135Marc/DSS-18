@@ -14,25 +14,24 @@ public class Motor extends Item {
     public Motor() {
         super();
         this.combustivel=null;
-        this.potencia=this.kilometragem=this.consumomedio=this.emissoesco2=0;
+        this.potencia=this.consumomedio=0;
+        this.tipo=null;
     }
 
-    public Motor(String combustivel, int potencia, int kilometragem, int consumomedio, int emissoesco2, float preco, Set<Integer> lista) {
+    public Motor(String tipo,String combustivel, int potencia,  int consumomedio,  float preco, Set<Integer> lista) {
         super(preco,lista);
         this.combustivel = combustivel;
         this.potencia = potencia;
-        this.kilometragem = kilometragem;
         this.consumomedio = consumomedio;
-        this.emissoesco2 = emissoesco2;
+        this.tipo = tipo;
     }
 
     public Motor (Motor m){
         super(m);
         this.combustivel = m.getCombustivel();
         this.potencia = m.getPotencia();
-        this.kilometragem = m.getKilometragem();
         this.consumomedio = m.getConsumomedio();
-        this.emissoesco2 = m.getEmissoesco2();
+
     }
 
     public String getCombustivel() {
@@ -51,13 +50,6 @@ public class Motor extends Item {
         this.potencia = potencia;
     }
 
-    public int getKilometragem() {
-        return kilometragem;
-    }
-
-    public void setKilometragem(int kilometragem) {
-        this.kilometragem = kilometragem;
-    }
 
     public int getConsumomedio() {
         return consumomedio;
@@ -67,13 +59,6 @@ public class Motor extends Item {
         this.consumomedio = consumomedio;
     }
 
-    public int getEmissoesco2() {
-        return emissoesco2;
-    }
-
-    public void setEmissoesco2(int emissoesco2) {
-        this.emissoesco2 = emissoesco2;
-    }
 
     public Motor clone() {
         return new Motor(this);
@@ -85,12 +70,8 @@ public class Motor extends Item {
                 .append(getCombustivel())
                 .append(" Potência: ")
                 .append(getPotencia()+ " cv")
-                .append(" Kilometragem: ")
-                .append(getKilometragem() + " km")
                 .append(" Consumo médio: ")
-                .append(getConsumomedio() + "l/100km")
-                .append(" Emissões CO2: ")
-                .append(getEmissoesco2() + "g/km");
+                .append(getConsumomedio() + "l/100km");
         return sb.toString();
     }
 
