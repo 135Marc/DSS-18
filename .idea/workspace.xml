@@ -1,60 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Interfaces/MainController.java" line="90" />
+    <bookmark url="file://$PROJECT_DIR$/src/Interfaces/MainController.java" line="91" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Updates">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS-18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS-18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainView.class" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/config.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/configdisplay.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Pacote/Pacote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Pacote/Pacote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Carros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Carros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/MainController.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/config.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-=======
       <change afterPath="$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml" afterDir="false" />
@@ -62,12 +12,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,32 +70,29 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="15" />
+          <entry key="java" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="2477" />
+          <entry key="java" value="1801" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2477" />
+          <entry key="JAVA" value="1801" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -156,13 +103,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-=======
       <file leaf-file-name="ItemDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -201,33 +141,15 @@
       <file leaf-file-name="DetalheInteriorDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="105">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-=======
             <state relative-caret-position="330">
               <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
               <folding>
-                <element signature="e#2364#2365#0" expanded="true" />
-                <element signature="e#2409#2410#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-=======
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-=======
       <file leaf-file-name="DetalheExteriorDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -239,7 +161,6 @@
       </file>
       <file leaf-file-name="detalheexteriordisplay.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml">
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
@@ -251,33 +172,18 @@
       <file leaf-file-name="ConfigDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="210">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-              <folding>
-                <element signature="e#2974#2975#0" expanded="true" />
-                <element signature="e#3005#3006#0" expanded="true" />
-                <element signature="e#3110#3111#0" expanded="true" />
-                <element signature="e#3139#3140#0" expanded="true" />
-=======
             <state relative-caret-position="357">
               <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state>
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-=======
             <state relative-caret-position="540">
               <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
@@ -292,10 +198,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1050">
               <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
               <folding>
-                <element signature="e#2959#2960#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -344,17 +250,6 @@
         <option value="$PROJECT_DIR$/src/Interfaces/AppDesktop.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Utilizador.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/LogIn.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/Interfaces/configdisplay.fxml" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/Carros.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" />
-=======
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Carros.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" />
@@ -362,15 +257,11 @@
         <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-<<<<<<< HEAD
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-=======
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/detalheinteriordisplay.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml" />
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
       </list>
     </option>
   </component>
@@ -388,13 +279,15 @@
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,6 +316,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,7 +329,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546045564105" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546038055680" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -572,26 +467,10 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Application.MainView">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
-    </configuration>
-=======
-  <component name="RunManager" selected="Application.Main">
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -605,9 +484,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -621,9 +497,6 @@
       </extension>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interfaces.MainController" />
@@ -635,9 +508,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="MainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interfaces.MainView" />
@@ -649,9 +519,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Registo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interfaces.Registo" />
@@ -663,35 +530,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <method v="2">
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -700,9 +586,21 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
@@ -733,7 +631,6 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1546015784069" duration="3274000" />
       <workItem from="1546031335028" duration="6717000" />
-      <workItem from="1546043368598" duration="2192000" />
     </task>
     <task id="LOCAL-00001" summary="Jantes caralho">
       <created>1543431709987</created>
@@ -767,15 +664,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13485000" />
+    <option name="totallyTimeSpent" value="11293000" />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21638075" />
-=======
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -792,76 +683,62 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2140625" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32756758" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Profiler" order="9" />
       <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32864866" />
       <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32939914" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="JetGradle" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21638075" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32756758" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Profiler" order="9" />
-      <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32864866" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32939914" />
-      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32864866" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="JetGradle" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Profiler" order="9" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21416713" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32939914" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32864866" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -910,7 +787,69 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Utilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="60" column="58" lean-forward="true" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+          <folding>
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/AppDesktop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Carros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/out/production/DSS-18/sample/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/Controller.java" />
@@ -929,13 +868,8 @@
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/registo.fxml">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-=======
-        <state relative-caret-position="870">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -943,9 +877,6 @@
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/javafx.base/com/sun/javafx/reflect/MethodUtil.java" />
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/login.fxml">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Utilizador.java">
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
@@ -965,16 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Pneu.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="15">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-=======
-        <state relative-caret-position="1410">
-          <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
         </state>
       </provider>
     </entry>
@@ -982,13 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DetalhesInteriores/Estofos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1006,7 +922,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Utilizador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1018,141 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/AppDesktop.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIN.java" />
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIN.form" />
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/SignIn.java" />
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/SignIn.form" />
-    <entry file="file://$PROJECT_DIR$/src/LogIn.java" />
-    <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/registo.fxml">
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/itemdisplay.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/configdisplay.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Items/Jante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Pintura.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Motor.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Items/Pneu.java">
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/CameraTraseira.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/DetalheExterior.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/Parachoques.java">
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Registo.java">
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Carros.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Carros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1161,17 +941,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#609#610#0" expanded="true" />
             <element signature="e#668#669#0" expanded="true" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-=======
     <entry file="file://$PROJECT_DIR$/src/Interfaces/AppDesktop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1187,52 +960,25 @@
             <element signature="e#801#802#0" expanded="true" />
             <element signature="e#831#832#0" expanded="true" />
           </folding>
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="198">
-          <caret line="1232" selection-start-line="1232" selection-end-line="1232" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/com/sun/glass/ui/gtk/GtkApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="296" column="10" lean-forward="true" selection-start-line="296" selection-start-column="10" selection-end-line="296" selection-end-column="10" />
-=======
-        <state relative-caret-position="190">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     <entry file="file://$PROJECT_DIR$/src/Interfaces/itemdisplay.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ItemDisplay.java">
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="375">
-          <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-=======
         <state relative-caret-position="1050">
           <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
           <folding>
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1284,38 +1030,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-=======
-        <state relative-caret-position="540">
-          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="e#2974#2975#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3110#3111#0" expanded="true" />
-            <element signature="e#3139#3140#0" expanded="true" />
-=======
-=======
->>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/CameraTraseira.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1379,7 +1093,6 @@
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
->>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
           </folding>
         </state>
       </provider>
