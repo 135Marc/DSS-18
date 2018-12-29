@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Updates">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -53,6 +54,15 @@
       <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
 >>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/detalheinteriordisplay.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Configuracao.java" afterDir="false" />
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -169,30 +179,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="420">
+              <caret line="44" column="58" lean-forward="true" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuracao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
+      <file leaf-file-name="detalheinteriordisplay.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/detalheinteriordisplay.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file leaf-file-name="ConfigDisplay.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+      <file leaf-file-name="DetalheInteriorDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="105">
               <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
 >>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
+=======
+            <state relative-caret-position="330">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
               <folding>
                 <element signature="e#2364#2365#0" expanded="true" />
                 <element signature="e#2409#2410#0" expanded="true" />
@@ -202,6 +218,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -210,16 +227,31 @@
 =======
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
+=======
+      <file leaf-file-name="DetalheExteriorDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogIn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/LogIn.java">
+      <file leaf-file-name="detalheexteriordisplay.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml">
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="210">
               <caret line="56" selection-start-line="56" selection-end-line="56" />
 >>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
@@ -228,6 +260,12 @@
                 <element signature="e#3005#3006#0" expanded="true" />
                 <element signature="e#3110#3111#0" expanded="true" />
                 <element signature="e#3139#3140#0" expanded="true" />
+=======
+            <state relative-caret-position="357">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
               </folding>
             </state>
           </provider>
@@ -269,8 +307,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -320,13 +358,19 @@
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Carros.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/ItemDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/configdisplay.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+<<<<<<< HEAD
 >>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
+=======
+        <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/detalheinteriordisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml" />
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
       </list>
     </option>
   </component>
@@ -367,13 +411,13 @@
               <item name="DSS-18" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSS-18" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DetalhesExteriores" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSS-18" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSS-18" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="Items" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -733,7 +777,6 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21638075" />
 =======
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -867,6 +910,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/out/production/DSS-18/sample/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/Controller.java" />
@@ -899,6 +943,9 @@
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/javafx.base/com/sun/javafx/reflect/MethodUtil.java" />
     <entry file="jar:///usr/local/java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/login.fxml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Utilizador.java">
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
@@ -1046,6 +1093,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1055,6 +1103,9 @@
     </entry>
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Registo.java">
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
           <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
@@ -1140,6 +1191,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1158,6 +1210,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     <entry file="file://$PROJECT_DIR$/src/Interfaces/itemdisplay.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1190,13 +1244,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Jante.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1237,6 +1284,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1266,6 +1314,8 @@
             <element signature="e#3110#3111#0" expanded="true" />
             <element signature="e#3139#3140#0" expanded="true" />
 =======
+=======
+>>>>>>> 836504aa5ce5474d54a41518d01b496f8bb4ebcf
     <entry file="file://$PROJECT_DIR$/src/DetalhesExteriores/CameraTraseira.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1287,14 +1337,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Configuracao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/detalheinteriordisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DetalhesInteriores/Estofos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DetalhesInteriores/Gps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DetalhesInteriores/DetalheInterior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
 >>>>>>> 54ecda87babf1288cecd78ba1cfccb15f6794ce8
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/detalheexteriordisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="44" column="58" lean-forward="true" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
         </state>
       </provider>
     </entry>
