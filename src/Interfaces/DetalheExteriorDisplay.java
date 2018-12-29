@@ -1,9 +1,6 @@
 package Interfaces;
 
-import DetalhesExteriores.CameraTraseira;
-import DetalhesExteriores.DetalheExterior;
-import DetalhesExteriores.Parachoques;
-import DetalhesExteriores.SensoresTraseiros;
+import DetalhesExteriores.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -49,16 +46,25 @@ public class DetalheExteriorDisplay implements Initializable {
         Set<Integer> cameraTraseira = new HashSet<Integer>();
         Set<Integer> paraChoques = new HashSet<Integer>();
         Set<Integer> sensorTraseiro = new HashSet<Integer>();
+        Set<Integer> sensorFrontal = new HashSet<Integer>();
+        Set<Integer> tetoAbrir = new HashSet<Integer>();
+        Set<Integer> vidrosFumados = new HashSet<Integer>();
         cameraTraseira.add(30);
         cameraTraseira.add(32);
         paraChoques.add(31);
         sensorTraseiro.add(32);
         sensorTraseiro.add(30);
+        sensorFrontal.add(33);
+        tetoAbrir.add(34);
+        vidrosFumados.add(35);
 
         ObservableList<DetalheExterior> listcnfg = FXCollections.observableArrayList(
                 new CameraTraseira("Camera Traseira",1,cameraTraseira),
                 new Parachoques("ParaChoques da mesma Cor",150,paraChoques),
-                new SensoresTraseiros("Sensores Traseiros",90,sensorTraseiro));
+                new SensoresTraseiros("Sensores Traseiros",90,sensorTraseiro),
+                new SensorFrontal("Sensor Frontal",60,sensorFrontal),
+                new TetoAbrir("Teto Abrir",50,tetoAbrir),
+                new  VidrosFumados("Vidros Fumados",55,vidrosFumados));
         return listcnfg;
     }
 
