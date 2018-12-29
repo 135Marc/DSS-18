@@ -20,11 +20,12 @@ public class Pneu extends Item{
         this.diametrointerior=this.indexcarga=this.indexvel=0;
     }
 
-    public Pneu(int largura, String serie, String construcao, int diametrointerior, int indexcarga, int indexvel, float preco, Set<Integer> lista) {
+    public Pneu(int largura,  int diametrointerior, int indexcarga, int indexvel , String serie, String construcao,String tipo, float preco, Set<Integer> lista) {
         super(preco,lista);
         this.largura = largura;
         this.serie = serie;
         this.construcao = construcao;
+        this.tipo = tipo;
         this.indexcarga = indexcarga;
         this.indexvel = indexvel;
         this.diametrointerior=diametrointerior;
@@ -35,6 +36,7 @@ public class Pneu extends Item{
         this.largura=p.getLargura();
         this.serie=p.getSerie();
         this.construcao=p.getConstrucao();
+        this.tipo = p.getTipo();
         this.diametrointerior = p.getDiametrointerior();
         this.indexcarga=p.getIndexcarga();
         this.indexvel=p.getIndexvel();
@@ -62,6 +64,10 @@ public class Pneu extends Item{
 
     public void setSerie(String serie) {
         this.serie = serie;
+    }
+
+    public void setTipo (String tipo) {
+        this.tipo = tipo;
     }
 
     public String getConstrucao() {
