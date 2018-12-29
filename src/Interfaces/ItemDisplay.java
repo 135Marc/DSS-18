@@ -79,7 +79,11 @@ public class ItemDisplay implements Initializable {
     public void tireView() { this.mc.displayTireFrame();}
 
     public void adicionarItem() {
-        System.out.println("Carregaste em adicionar item");
+
+        System.out.println(mc.getConfigNome());
+       /* Jante a = wheelt.getSelectionModel().getSelectedItem();
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        mc.adicionaCarrinho(a);*/
     }
 
 

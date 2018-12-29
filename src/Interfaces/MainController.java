@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.List;
-import java.util.Map;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -19,7 +18,7 @@ public class MainController implements Initializable {
     @FXML
     private ConfigManager configmanager;
     @FXML
-    private ConfigDisplay config;
+    private ConfigDisplay configDisplay;
     @FXML
     private ItemDisplay itemdisp;
     @FXML
@@ -52,7 +51,7 @@ public class MainController implements Initializable {
 
     public void setConfigManager(ConfigManager cm) {this.configmanager = cm;}
 
-    public void setConfigDisplay(ConfigDisplay cfg) {this.config = cfg;}
+    public void setConfigDisplay(ConfigDisplay cfg) {this.configDisplay = cfg;}
 
     public void setItemDisplay(ItemDisplay itd) {this.itemdisp = itd;}
 
@@ -115,13 +114,23 @@ public class MainController implements Initializable {
         this.id = email;
     }
 
-    public List<Configuracao> getConfigs(String id){
-        return this.carros.getConfigs(id);
+    public List<Configuracao> getAllConfigs(String id){
+        return this.carros.getAllConfigs(id);
     }
 
     public void addConfig(Configuracao a,String id){
         this.carros.adicionaConfig(id,a);
     }
 
+    public Configuracao getConfig(String id,String nome){
+        return this.carros.getConfig(id,nome);
+    }
 
+    public String getConfigNome(){
+       return this.configmanager.getNome();
+    }
+
+    public void adicionaCarrinho(Object a){
+        configDisplay.adicionaCarrinho(a);
+    }
 }

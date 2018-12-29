@@ -43,6 +43,10 @@ public class ConfigDisplay  implements Initializable {
         this.main = mv;
     }
 
+    public void adicionaCarrinho(Object a){
+        cart.getItems().add(a);
+    }
+
 
 
 }

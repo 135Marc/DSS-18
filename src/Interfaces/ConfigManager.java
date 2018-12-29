@@ -9,7 +9,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import Items.*;
 
 import java.net.URL;
 import java.util.*;
@@ -28,6 +27,7 @@ public class ConfigManager implements Initializable {
     private  MainController mc;
 
     private MainView main;
+    private String nome = "ola";
 
     public void setMainController(MainController mc) {
         this.mc = mc;
@@ -58,7 +58,7 @@ public class ConfigManager implements Initializable {
         tc1.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tv.getColumns().addAll(tc1, tc2);
-        tv.getItems().addAll(this.mc.getConfigs(mc.getId()));
+        tv.getItems().addAll(this.mc.getAllConfigs(mc.getId()));
         removebtn.setDisable(true);
         editbtn.setDisable(true);
     }
@@ -84,10 +84,19 @@ public class ConfigManager implements Initializable {
     }
 
     public void configFrame() {
-        String a = tv.getSelectionModel().getSelectedItem().toString();
+        tv.getSelectionModel().getSelectedItem().toString();
+        String a =tv.getSelectionModel().getSelectedItem().getNome();
+        setNome(a);
         mc.displayConfigEditor();
     }
 
+    public String getNome(){
+        return this.nome;
+    }
+
+    public void setNome(String a){
+        this.nome = a;
+    }
 
 
 }

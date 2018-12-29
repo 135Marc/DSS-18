@@ -35,9 +35,19 @@ public class Carros {
         listaConfigCliente.put(id,lista);
     }
 
-    public List<Configuracao> getConfigs(String id){
+    public List<Configuracao> getAllConfigs(String id){
 
         return this.listaConfigCliente.get(id);
+    }
+
+    public Configuracao getConfig(String id,String nome){
+
+        for(Configuracao a : listaConfigCliente.get(id)){
+            if(a.getNome().equals(nome)){
+                return a;
+            }
+        }
+        return null;
     }
 
 
