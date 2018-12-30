@@ -72,6 +72,8 @@ public class ConfigDisplay  implements Initializable {
         this.main = mv;
     }
 
-
+    public  void pacotes(){
+        this.mc.displayPacoteFrame();
+    }
 
 }

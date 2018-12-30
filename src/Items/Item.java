@@ -50,4 +50,6 @@ public abstract class Item {
     public boolean idRestrito(int i){
         return this.listaRestricao.contains(i);
     }
+
+
 }

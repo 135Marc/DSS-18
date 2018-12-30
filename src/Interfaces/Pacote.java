@@ -1,4 +1,4 @@
-package Pacote;
+package Interfaces;
 
 import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.DetalheInterior;
@@ -7,7 +7,7 @@ import Items.Item;
 import java.util.HashSet;
 import java.util.Set;
 
-public abstract class Pacote {
+public class Pacote {
 
     private  float preco;
     private Set<DetalheInterior> detsInterior;
@@ -18,6 +18,12 @@ public abstract class Pacote {
         this.detsInterior = new HashSet<>();
         this.detsExterior = new HashSet<>();
         this.itens = new HashSet<>();
+    }
+
+    public Pacote (Set<Item> itens,Set<DetalheInterior> detsInterior,Set<DetalheExterior> detsExterior){
+        this.detsExterior=detsExterior;
+        this.itens = itens;
+        this.detsInterior = detsInterior;
     }
 
     public void setPreco(){
@@ -39,7 +45,21 @@ public abstract class Pacote {
     }
 
     public float getPreco(){
+        setPreco();
         return this.preco;
     }
+
+    public Set<Item> getItens(){
+        return this.itens;
+    }
+
+    public Set<DetalheInterior> getDetsInterior() {
+        return this.detsInterior;
+    }
+
+    public Set<DetalheExterior> getDetsExterior() {
+        return this.detsExterior;
+    }
+
 
 }

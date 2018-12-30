@@ -36,6 +36,8 @@ public class MainController implements Initializable {
     private DetalheExteriorDisplay outdisp;
     @FXML
     private DetalheInteriorDisplay indisp;
+    @FXML
+    private PacoteDisplay patote;
 
 
     @FXML
@@ -82,6 +84,8 @@ public class MainController implements Initializable {
     public void setOutterDisplay(DetalheExteriorDisplay dedisp) {
         this.outdisp=dedisp;
     }
+
+    public void setPacoteDisplay(PacoteDisplay pacote){this.patote = pacote;}
 
 
     public boolean hasUser(String id) {
@@ -136,6 +140,8 @@ public class MainController implements Initializable {
     public void displayInnerFrame() {mview.showInnerDisplay();}
 
     public void displayOutterFrame() {mview.showOutterDisplay();}
+
+    public void displayPacoteFrame(){mview.showPacoteDisplay();}
 
     public String getId() {
         return this.id;

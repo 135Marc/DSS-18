@@ -14,7 +14,7 @@
       <Button layoutX="202.0" layoutY="357.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="105.0" text="Submeter" />
       <Label layoutX="594.0" layoutY="48.0" text="Carrinho" />
       <Button layoutX="93.0" layoutY="168.0" mnemonicParsing="false" onAction="#innerFrame" prefHeight="71.0" prefWidth="146.0" text="Detalhes Interiores" />
-      <Button layoutX="341.0" layoutY="168.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="146.0" text="Pacotes" />
+      <Button layoutX="341.0" layoutY="168.0" mnemonicParsing="false" onAction="#pacotes" prefHeight="71.0" prefWidth="146.0" text="Pacotes" />
       <Label layoutX="791.0" layoutY="324.0" text="0 €" />
       <Button layoutX="414.0" layoutY="357.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="51.0" prefWidth="105.0" text="Cancelar" />
    </children>

@@ -240,6 +240,25 @@ public class MainView extends Application {
         }
     }
 
+    public void showPacoteDisplay(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/pacoteDisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,487,560);
+            window.setScene(nova);
+            PacoteDisplay pacoteDisp = loader.getController();
+            pacoteDisp.init(this);
+            pacoteDisp.setMainController(mc);
+            mc.setPacoteDisplay(pacoteDisp);
+            window.setTitle("Menu de Pacotes");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
     public static void main(String[] args) {

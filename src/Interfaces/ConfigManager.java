@@ -42,13 +42,13 @@ public class ConfigManager implements Initializable {
     }
 
     public ObservableList<Configuracao> defaultConfigs() {
-        Map<String,Configuracao> merdas = new HashMap<>();
+        Map<String,Configuracao> listaConfigs = new HashMap<>();
         Configuracao teste = new Configuracao("mmmm",2000,new HashSet<>(),new HashSet<>(),new HashSet<>());
-        merdas.put(teste.getNome(),teste);
+        listaConfigs.put(teste.getNome(),teste);
         /*ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(new Configuracao("Land Cruiser", 1000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
                 new Configuracao("Low-Rider", 10000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
                 new Configuracao("Smooth-Rider", 50000, new HashSet<>(), new HashSet<>(), new HashSet<>()));*/
-        return FXCollections.observableArrayList(merdas.values());
+        return FXCollections.observableArrayList(listaConfigs.values());
     }
 
     public void populateTable() {

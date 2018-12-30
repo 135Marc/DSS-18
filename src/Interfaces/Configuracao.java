@@ -4,6 +4,9 @@ package Interfaces;
 import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.DetalheInterior;
 import Items.*;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class Configuracao {
@@ -81,7 +84,6 @@ public class Configuracao {
         }
     }
 
-
     public boolean itemValido(Item i){
 
         for(Item a : itemlist){
@@ -110,6 +112,100 @@ public class Configuracao {
             }
         }
         return true;
+    }
+
+    public void removeItem(Item a){
+        this.itemlist.remove(a);
+        this.preco-=a.getPreco();
+    }
+
+    public void removeDetExt(DetalheExterior a){
+        this.getOuterdetails().remove(a);
+        this.preco-=a.getPreco();
+    }
+
+    public void removeDetInt(DetalheInterior a){
+        this.innerdetails.remove(a);
+        this.preco-=a.getPreco();
+    }
+
+    public void addPacote(Pacote a){
+
+        for(Item i :a.getItens()){
+            List<Item> lista = getListaItensRestringe(i);
+            for(Item b : lista) {
+                removeItem(b);
+            }
+            i.setPreco((float) (i.getPreco()*0.8));
+            addItem(i);
+        }
+
+        for(DetalheInterior i : a.getDetsInterior()){
+            List<DetalheInterior> listaInt = getListaDetsInteriorRestringe(i);
+            for(DetalheInterior b : listaInt){
+                removeDetInt(b);
+            }
+            i.setPreco((float) (i.getPreco()*0.8));
+            addInnerDetail(i);
+        }
+
+        for(DetalheExterior i : a.getDetsExterior()){
+            List<DetalheExterior> listaExt = getListaDetsExteriRestringe(i);
+            for(DetalheExterior b : listaExt){
+                removeDetExt(b);
+            }
+            i.setPreco((float) (i.getPreco()*0.8));
+            addOuterDetail(i);
+        }
+
+        preco = preco+a.getPreco();
+    }
+
+    public void removePacote(Pacote a){
+        for(Item i : a.getItens()){
+            removeItem(i);
+        }
+
+        for(DetalheExterior i : a.getDetsExterior()){
+            removeDetExt(i);
+        }
+
+        for(DetalheInterior i: a.getDetsInterior()){
+            removeDetInt(i);
+        }
+    }
+
+    public List<Item> getListaItensRestringe(Item i){
+        List<Item> lista = new ArrayList<>();
+
+        for(Item a : itemlist){
+            if(i.idRestrito(a.getId())){
+                lista.add(a);
+            }
+        }
+        return lista;
+    }
+
+    public List<DetalheExterior> getListaDetsExteriRestringe(DetalheExterior i){
+        List<DetalheExterior> lista = new ArrayList<>();
+
+        for(DetalheExterior a : outerdetails){
+            if(i.hasID(a.getID())){
+                lista.add(a);
+            }
+        }
+        return lista;
+    }
+
+    public List<DetalheInterior> getListaDetsInteriorRestringe(DetalheInterior i){
+        List<DetalheInterior> lista = new ArrayList<>();
+
+        for(DetalheInterior a : innerdetails){
+            if(i.hasID(a.getID())){
+                lista.add(a);
+            }
+        }
+        return lista;
     }
 
 
