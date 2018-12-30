@@ -47,6 +47,7 @@ public class ConfigDisplay  implements Initializable {
     public Set<DetalheExterior> atualizaDetExte(Configuracao cfg) {
         return cfg.getOuterdetails();
     }
+
     public Set<DetalheInterior> atualizaDetalhesInteriores (Configuracao cfg) {
         return cfg.getInnerdetails();
     }

@@ -33,8 +33,6 @@ public class Registo implements Initializable {
     private PasswordField pwconf;
     @FXML
     private TextField email;
-    @FXML
-    private Label status;
 
     private  MainController mc;
 
@@ -52,7 +50,8 @@ public class Registo implements Initializable {
         String username = user.getText();
         String password = pw.getText();
         String passconf = pwconf.getText();
-        return (password.equals(passconf) && !this.mc.hasUser(username));
+        boolean empty = (username.isEmpty() || password.isEmpty() || passconf.isEmpty());
+        return (password.equals(passconf) && !this.mc.hasUser(username) && !empty);
     }
 
     private void showSignUpError(String errormsg) {
@@ -67,7 +66,7 @@ public class Registo implements Initializable {
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
-        if (!valid) showSignUpError("As passwords não coincidem! Tente novamente");
+        if (!valid) showSignUpError("Verifique se os campos (*) estão preenchidos");
         else {
             mc.addUser(username, password);
             user.clear();

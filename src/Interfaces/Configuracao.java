@@ -53,8 +53,10 @@ public class Configuracao {
     }
 
     public void addItem(Item i) {
-        if(itemValido(i))
-         this.itemlist.add(i);
+        if(itemValido(i)) {
+            this.itemlist.add(i);
+            this.preco += i.getPreco();
+        }
     }
 
     public Set<DetalheExterior> getOuterdetails() {
@@ -62,8 +64,10 @@ public class Configuracao {
     }
 
     public void addOuterDetail(DetalheExterior de) {
-        if(detExteriorValido(de))
+        if(detExteriorValido(de)) {
             this.outerdetails.add(de);
+            this.preco+=de.getPreco();
+        }
     }
 
     public Set<DetalheInterior> getInnerdetails() {
@@ -71,8 +75,10 @@ public class Configuracao {
     }
 
     public void addInnerDetail(DetalheInterior di) {
-        if(detInteriorValido(di))
+        if(detInteriorValido(di)) {
             this.innerdetails.add(di);
+            this.preco+=di.getPreco();
+        }
     }
 
 
