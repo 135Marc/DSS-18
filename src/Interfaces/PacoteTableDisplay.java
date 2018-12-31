@@ -49,8 +49,11 @@ public class PacoteTableDisplay implements Initializable {
     }
 
     public ObservableSet<DetalheExterior> loadDetsExte() {
-
         ObservableSet<DetalheExterior> listcnfg = FXCollections.observableSet(mc.getPac().getDetsExterior());
-        return listcnfg;
+        return listcnfg;}
+
+    public void turnBack(){
+        this.mc.displayPacoteFrame();
     }
+
 }

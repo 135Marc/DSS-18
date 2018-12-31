@@ -1,9 +1,6 @@
 package Interfaces;
 
-import DetalhesExteriores.CameraTraseira;
-import DetalhesExteriores.DetalheExterior;
-import DetalhesExteriores.TetoAbrir;
-import DetalhesExteriores.VidrosFumados;
+import DetalhesExteriores.*;
 import DetalhesInteriores.Ac;
 import DetalhesInteriores.DetalheInterior;
 import Items.Item;
@@ -72,11 +69,38 @@ public class PacoteDisplay implements Initializable {
         pac.addDetExterior(teto);
         pac.addDetExterior(vidro);
         pac.addDetInterior(ar);
-
         mc.setPac(pac);
         this.mc.displayPacoteTableFrame();}
 
     public void pacoteConfort(){
-
+        Pacote pac = new Pacote();
+        Set<Integer> listaRestricap = new HashSet<Integer>();
+        listaRestricap.add(1);
+        Jante j = new Jante("Larga",15,125,listaRestricap);
+        Set<Integer> mRest = new HashSet<Integer>();
+        mRest.add(2);
+        Motor m = new Motor("Motor Elétrico",2000,7,8500,mRest);
+        Set<Integer> pRest = new HashSet<Integer>();
+        pRest.add(4);
+        Pneu p = new Pneu(13,12,11,14,"Z","R","Pneu Estrada",500,pRest);
+        Set<Integer> cameraTraseira = new HashSet<Integer>();
+        Set<Integer> sensorFrontal = new HashSet<Integer>();
+        cameraTraseira.add(30);
+        cameraTraseira.add(32);
+        sensorFrontal.add(33);
+        sensorFrontal.add(31);
+        CameraTraseira cam = new CameraTraseira("Camera Traseira",75,cameraTraseira);
+        SensorFrontal sensor = new SensorFrontal("Sensor Frontal",100,sensorFrontal);
+        Set<Integer> acs = new HashSet<Integer>();
+        acs.add(22);
+        Ac ar = new Ac("Ar condicionado",100,acs);
+        pac.addItem(j);
+        pac.addItem(m);
+        pac.addItem(p);
+        pac.addDetExterior(cam);
+        pac.addDetExterior(sensor);
+        pac.addDetInterior(ar);
+        mc.setPac(pac);
+        this.mc.displayPacoteTableFrame();
     }
 }
