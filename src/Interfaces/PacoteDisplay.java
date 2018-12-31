@@ -42,7 +42,6 @@ public class PacoteDisplay implements Initializable {
     }
 
     public void pacoteSport() {
-
         Pacote pac = new Pacote();
         Set<Integer> listaRestricap = new HashSet<Integer>();
         listaRestricap.add(1);

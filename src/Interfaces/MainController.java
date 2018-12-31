@@ -182,8 +182,12 @@ public class MainController implements Initializable {
     public boolean configExiste(String nome){
         return carros.configExiste(nome);
     }
-    
+
     public void setPac(Pacote pac) {
         this.pac = pac;
+    }
+
+    public Pacote getPac() {
+        return pac;
     }
 }
