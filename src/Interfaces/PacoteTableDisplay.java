@@ -24,5 +24,9 @@ public class PacoteTableDisplay implements Initializable {
 
     }
 
+    public void turnBack() {
+        this.mc.displayPacoteFrame();
+    }
+
 
 }
