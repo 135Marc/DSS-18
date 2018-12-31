@@ -13,17 +13,20 @@ public class Pacote {
     private Set<DetalheInterior> detsInterior;
     private Set<Item> itens;
     private Set<DetalheExterior> detsExterior;
+    private String tipo;
 
     public Pacote(){
         this.detsInterior = new HashSet<>();
         this.detsExterior = new HashSet<>();
         this.itens = new HashSet<>();
+        this.tipo = null;
     }
 
-    public Pacote (Set<Item> itens,Set<DetalheInterior> detsInterior,Set<DetalheExterior> detsExterior){
+    public Pacote (String tipo,Set<Item> itens,Set<DetalheInterior> detsInterior,Set<DetalheExterior> detsExterior){
         this.detsExterior=detsExterior;
         this.itens = itens;
         this.detsInterior = detsInterior;
+        this.tipo = tipo;
     }
 
     public void setPreco(){
@@ -61,5 +64,7 @@ public class Pacote {
         return this.detsExterior;
     }
 
-
+    public String getTipo() {
+        return tipo;
+    }
 }
