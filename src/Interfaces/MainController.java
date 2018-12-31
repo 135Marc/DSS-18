@@ -15,6 +15,7 @@ public class MainController implements Initializable {
     private Carros carros;
     private String id;
     private String nomeConfig;
+    private Pacote pac;
     @FXML
     private Registo regist;
     @FXML
@@ -181,5 +182,8 @@ public class MainController implements Initializable {
     public boolean configExiste(String nome){
         return carros.configExiste(nome);
     }
-
+    
+    public void setPac(Pacote pac) {
+        this.pac = pac;
+    }
 }
