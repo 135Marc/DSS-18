@@ -3,6 +3,7 @@ package Interfaces;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 public class Carros {
 
@@ -50,5 +51,17 @@ public class Carros {
         return null;
     }
 
+    public boolean configExiste(String nome){
+        Set<String> kSet = listaConfigCliente.keySet();
 
+        for(String a : kSet){
+            List<Configuracao> lista = listaConfigCliente.get(a);
+            for (Configuracao i : lista){
+                if(i.getNome().equals(nome))
+                    return true;
+            }
+        }
+
+        return false;
+    }
 }

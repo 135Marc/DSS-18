@@ -5,6 +5,7 @@ import Items.Pintura;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
+import java.util.Collection;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -175,6 +176,10 @@ public class MainController implements Initializable {
 
     public void setNomeConfig(String a){
         this.nomeConfig = a;
+    }
+
+    public boolean configExiste(String nome){
+        return carros.configExiste(nome);
     }
 
 }
