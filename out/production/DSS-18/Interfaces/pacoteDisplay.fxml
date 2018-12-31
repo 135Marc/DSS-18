@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane  prefHeight="800" prefWidth="891.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.PacoteDisplay">
+<AnchorPane prefHeight="221.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.PacoteDisplay">
 <children>
-    <Button layoutX="172.0" layoutY="321.0" mnemonicParsing="false" onAction="#adicionaPacote" prefHeight="49.0" prefWidth="91.0" text="Adicionar" />
-    <Button layoutX="349.0" layoutY="321.0" mnemonicParsing="false" onAction="#remove" prefHeight="49.0" prefWidth="91.0" text="Remove" />
-    <Button layoutX="560.0" layoutY="321.0" mnemonicParsing="false" onAction="#voltar" prefHeight="49.0" prefWidth="91.0" text="Voltar" />
-    <TableView fx:id="paintable" layoutX="74.0" layoutY="46.0" prefHeight="224.0" prefWidth="700.0" />
+    <Button layoutX="78.0" layoutY="46.0" mnemonicParsing="false" onAction="#showPacote" prefHeight="49.0" prefWidth="91.0" text="Comfort" />
+    <Button layoutX="292.0" layoutY="46.0" mnemonicParsing="false" onAction="#showPacote" prefHeight="49.0" prefWidth="91.0" text="Sport" />
+    <Button layoutX="202.0" layoutY="139.0" mnemonicParsing="false" onAction="#voltar" prefHeight="49.0" prefWidth="91.0" text="Voltar" />
 </children>
 </AnchorPane>

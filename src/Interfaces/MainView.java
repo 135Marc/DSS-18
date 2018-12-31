@@ -245,13 +245,32 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/pacoteDisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,487,560);
+            Scene nova = new Scene(view,485,221);
             window.setScene(nova);
             PacoteDisplay pacoteDisp = loader.getController();
             pacoteDisp.init(this);
             pacoteDisp.setMainController(mc);
             mc.setPacoteDisplay(pacoteDisp);
             window.setTitle("Menu de Pacotes");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showPacoteTableDisplay(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/pacotetabledisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,982,428);
+            window.setScene(nova);
+            PacoteTableDisplay pacotetDisp = loader.getController();
+            pacotetDisp.init(this);
+            pacotetDisp.setMainController(mc);
+            mc.setPacoteTableDisplay(pacotetDisp);
+            window.setTitle("Menu de Pacotes Expandido");
             window.show();
 
         } catch(IOException e) {

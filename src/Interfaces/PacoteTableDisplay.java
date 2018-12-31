@@ -1,17 +1,11 @@
 package Interfaces;
 
-import DetalhesExteriores.DetalheExterior;
-import DetalhesInteriores.DetalheInterior;
-import Items.Item;
-import Items.Motor;
 import javafx.fxml.Initializable;
 
 import java.net.URL;
-import java.util.HashSet;
 import java.util.ResourceBundle;
-import java.util.Set;
 
-public class PacoteDisplay implements Initializable {
+public class PacoteTableDisplay implements Initializable {
 
     private  MainController mc;
     private MainView main;
@@ -28,12 +22,7 @@ public class PacoteDisplay implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-
     }
 
-    public void voltar(){
-        this.mc.displayConfigEditor();
-    }
 
-    public void showPacote() { this.mc.displayPacoteTableFrame();}
 }

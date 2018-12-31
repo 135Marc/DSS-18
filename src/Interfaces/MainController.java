@@ -38,6 +38,8 @@ public class MainController implements Initializable {
     private DetalheInteriorDisplay indisp;
     @FXML
     private PacoteDisplay patote;
+    @FXML
+    private PacoteTableDisplay pacotetable;
 
 
     @FXML
@@ -86,6 +88,8 @@ public class MainController implements Initializable {
     }
 
     public void setPacoteDisplay(PacoteDisplay pacote){this.patote = pacote;}
+
+    public void setPacoteTableDisplay(PacoteTableDisplay pacotet) { this.pacotetable = pacotet;}
 
 
     public boolean hasUser(String id) {
@@ -142,6 +146,8 @@ public class MainController implements Initializable {
     public void displayOutterFrame() {mview.showOutterDisplay();}
 
     public void displayPacoteFrame(){mview.showPacoteDisplay();}
+
+    public void displayPacoteTableFrame() { mview.showPacoteTableDisplay();}
 
     public String getId() {
         return this.id;
