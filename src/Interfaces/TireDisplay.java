@@ -44,12 +44,12 @@ public class TireDisplay implements Initializable {
     }
 
     public ObservableList<Pneu> loadTires() {
-        Set<Integer> teste = new HashSet<Integer>();
-        teste.add(4);
+        Set<Integer> listaRest = new HashSet<Integer>();
+        listaRest.add(4);
         ObservableList<Pneu> listcnfg = FXCollections.observableArrayList(
-                new Pneu(20,2,150,4,"blele","R","Pneu de Merda",100,teste),
-                new Pneu(30,5,300,7,"blele","WR","Pneu de Neve",150,teste),
-                new Pneu(40,10,200,9,"blele","QR","Pneu de Camião",300,teste));
+                new Pneu(20,2,150,4,"blele","R","Pneu de Merda",100,listaRest),
+                new Pneu(30,5,300,7,"blele","WR","Pneu de Neve",150,listaRest),
+                new Pneu(40,10,200,9,"blele","QR","Pneu de Camião",300,listaRest));
         return listcnfg;
     }
 

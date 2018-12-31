@@ -58,16 +58,16 @@ public class DetalheInteriorDisplay implements Initializable {
     }
 
     public ObservableList<DetalheInterior> loadInnerDetails() {
-        Set<Integer> teste = new HashSet<Integer>();
-        teste.add(22);
-        Set<Integer> teste1 = new HashSet<>();
-        teste1.add(21);
-        Set<Integer> teste2 = new HashSet<>();
-        teste2.add(20);
+        Set<Integer> ac = new HashSet<Integer>();
+        ac.add(22);
+        Set<Integer> gps = new HashSet<>();
+        gps.add(21);
+        Set<Integer> estofo = new HashSet<>();
+        estofo.add(20);
         ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(
-                new Ac("Ar Condicionado",50,teste),
-                new Gps("GPS",150,teste1),
-                new Estofos("Estofos","Branco","Cabedal",300,teste2));
+                new Ac("Ar Condicionado",50,ac),
+                new Gps("GPS",150,gps),
+                new Estofos("Estofos","Branco","Cabedal",300,estofo));
         return listcnfg;
     }
 

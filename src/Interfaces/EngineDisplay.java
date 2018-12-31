@@ -51,12 +51,12 @@ public class EngineDisplay implements Initializable {
     }
 
     public ObservableList<Motor> loadPneus(){
-        Set<Integer> teste = new HashSet<Integer>();
-        teste.add(2);
+        Set<Integer> listaRestricao = new HashSet<Integer>();
+        listaRestricao.add(2);
         ObservableList<Motor> listcnfg = FXCollections.observableArrayList(
-                new Motor("Gasoleo",1600,4,500,teste),
-                new Motor("Gasolina",2000,6,500,teste),
-                new Motor("Eletrico",1600,0,500,teste));
+                new Motor("Gasoleo",1600,4,500,listaRestricao),
+                new Motor("Gasolina",2000,6,500,listaRestricao),
+                new Motor("Eletrico",1600,0,500,listaRestricao));
         return listcnfg;
     }
 

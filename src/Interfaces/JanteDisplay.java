@@ -42,12 +42,12 @@ public class JanteDisplay implements Initializable {
     }
 
     public ObservableList<Jante> loadWheels() {
-        Set<Integer> teste = new HashSet<Integer>();
-        teste.add(1);
+        Set<Integer> listaRestricap = new HashSet<Integer>();
+        listaRestricap.add(1);
         ObservableList<Jante> listcnfg = FXCollections.observableArrayList(
-                new Jante("Liga Leve",15,150,teste),
-                new Jante("Larga",16,0,teste),
-                new Jante("Neve",15,0,teste));
+                new Jante("Liga Leve",15,150,listaRestricap),
+                new Jante("Larga",16,0,listaRestricap),
+                new Jante("Neve",15,0,listaRestricap));
         return listcnfg;
     }
 
