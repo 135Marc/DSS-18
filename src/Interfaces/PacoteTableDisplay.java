@@ -80,4 +80,8 @@ public class PacoteTableDisplay implements Initializable {
         this.mc.displayPacoteFrame();
     }
 
+    public void adiciona(){
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getPac());
+    }
+
 }
