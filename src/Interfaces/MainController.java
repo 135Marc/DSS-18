@@ -1,13 +1,9 @@
 package Interfaces;
 
-import Items.Jante;
-import Items.Pintura;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import java.net.URL;
-import java.util.Collection;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class MainController implements Initializable {
 
@@ -15,7 +11,12 @@ public class MainController implements Initializable {
     private Carros carros;
     private String id;
     private String nomeConfig;
-    private Pacote pac;
+    private Pacote conforPac;
+    private Pacote sporPac;
+    private boolean sportPac;
+    private boolean confortPac;
+    private boolean pacoteEscolhidoSport = false;
+    private boolean pacoteEscolhidoConfort = false;
     @FXML
     private Registo regist;
     @FXML
@@ -41,7 +42,9 @@ public class MainController implements Initializable {
     @FXML
     private PacoteDisplay patote;
     @FXML
-    private PacoteTableDisplay pacotetable;
+    private PacoteSportTableDisplay pacotetable;
+    @FXML
+    private PacoteConfortTableDisplay pacoteConfortTableDisplay;
 
 
     @FXML
@@ -91,7 +94,9 @@ public class MainController implements Initializable {
 
     public void setPacoteDisplay(PacoteDisplay pacote){this.patote = pacote;}
 
-    public void setPacoteTableDisplay(PacoteTableDisplay pacotet) { this.pacotetable = pacotet;}
+    public void setPacoteTableDisplay(PacoteSportTableDisplay pacotet) { this.pacotetable = pacotet;}
+
+    public void setPacoteConfortTableDisplay(PacoteConfortTableDisplay pacote) {this.pacoteConfortTableDisplay = pacote;}
 
 
     public boolean hasUser(String id) {
@@ -149,7 +154,9 @@ public class MainController implements Initializable {
 
     public void displayPacoteFrame(){mview.showPacoteDisplay();}
 
-    public void displayPacoteTableFrame() { mview.showPacoteTableDisplay();}
+    public void displayPacoteTableFrame() { mview.showPacoteSportTableDisplay();}
+
+    public void displayPacoteConfortTableFrame() { mview.showPacoteConfortTableDisplay();}
 
     public String getId() {
         return this.id;
@@ -183,11 +190,43 @@ public class MainController implements Initializable {
         return carros.configExiste(nome);
     }
 
-    public void setPac(Pacote pac) {
-        this.pac = pac;
+    public void setSportPac(Pacote pac) {
+       this.sporPac = pac;
+       this.sportPac = true;
+       this.pacoteEscolhidoSport = false;
+
+    }
+    public void setConforPac(Pacote pac) {
+        this.conforPac = pac;
+        this.confortPac = true;
+        this.pacoteEscolhidoConfort = false;
     }
 
-    public Pacote getPac() {
-        return pac;
+    public Pacote getSporPac() {
+        return this.sporPac;
+    }
+
+    public Pacote getConforPac(){
+        return this.conforPac;
+    }
+
+    public boolean isSportPac() {
+        return sportPac;
+    }
+
+    public boolean isConfortPac() {
+        return confortPac;
+    }
+    public boolean getPacoteEscolhidoSport(){
+        return this.pacoteEscolhidoSport;
+    }
+    public void setPacoteEscolhidoSport(){
+        this.pacoteEscolhidoSport = !pacoteEscolhidoSport;
+    }
+    public boolean getPacoteEscolhidoConfort(){
+        return this.pacoteEscolhidoConfort;
+    }
+    public void setpacoteEscolhidoConfort(){
+        this.pacoteEscolhidoConfort = !pacoteEscolhidoConfort;
     }
 }

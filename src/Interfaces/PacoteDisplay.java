@@ -19,7 +19,6 @@ public class PacoteDisplay implements Initializable {
     private  MainController mc;
     private MainView main;
 
-
     public void setMainController(MainController mc) {
         this.mc = mc;
     }
@@ -69,8 +68,11 @@ public class PacoteDisplay implements Initializable {
         pac.addDetExterior(teto);
         pac.addDetExterior(vidro);
         pac.addDetInterior(ar);
-        mc.setPac(pac);
-        this.mc.displayPacoteTableFrame();}
+        if(mc.isSportPac() == false) {
+            mc.setSportPac(pac);
+        }
+        this.mc.displayPacoteTableFrame();
+    }
 
     public void pacoteConfort(){
         Pacote pac = new Pacote();
@@ -100,7 +102,9 @@ public class PacoteDisplay implements Initializable {
         pac.addDetExterior(cam);
         pac.addDetExterior(sensor);
         pac.addDetInterior(ar);
-        mc.setPac(pac);
-        this.mc.displayPacoteTableFrame();
+        if(mc.isConfortPac() == false){
+            mc.setConforPac(pac);
+        }
+        this.mc.displayPacoteConfortTableFrame();
     }
 }

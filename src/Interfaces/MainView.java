@@ -259,14 +259,14 @@ public class MainView extends Application {
         }
     }
 
-    public void showPacoteTableDisplay(){
+    public void showPacoteSportTableDisplay(){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/Interfaces/pacotetabledisplay.fxml"));
+            loader.setLocation(getClass().getResource("/Interfaces/pacoteSportTabledisplay.fxml"));
             Pane view = loader.load();
             Scene nova = new Scene(view,982,428);
             window.setScene(nova);
-            PacoteTableDisplay pacotetDisp = loader.getController();
+            PacoteSportTableDisplay pacotetDisp = loader.getController();
             pacotetDisp.init(this);
             pacotetDisp.setMainController(mc);
             pacotetDisp.loadItems();
@@ -280,6 +280,29 @@ public class MainView extends Application {
             e.printStackTrace();
         }
     }
+
+    public void showPacoteConfortTableDisplay(){
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/pacoteConfortTableDisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,982,428);
+            window.setScene(nova);
+            PacoteConfortTableDisplay pacotetDisp = loader.getController();
+            pacotetDisp.init(this);
+            pacotetDisp.setMainController(mc);
+            pacotetDisp.loadItems();
+            pacotetDisp.loadDetalhesExteriores();
+            pacotetDisp.loadDetalhesInteriores();
+            mc.setPacoteConfortTableDisplay(pacotetDisp);
+            window.setTitle("Menu de Pacotes Expandido");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 

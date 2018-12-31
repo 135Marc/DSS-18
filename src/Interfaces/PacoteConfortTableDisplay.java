@@ -3,9 +3,6 @@ package Interfaces;
 import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.DetalheInterior;
 import Items.Item;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.collections.ObservableSet;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -13,11 +10,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
-public class PacoteTableDisplay implements Initializable {
+public class PacoteConfortTableDisplay implements Initializable {
 
     @FXML
     private TableView<Item> itens;
@@ -51,7 +46,7 @@ public class PacoteTableDisplay implements Initializable {
         tc5.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc6.setCellValueFactory(new PropertyValueFactory<>("preco"));
         itens.getColumns().addAll(tc5,tc6);
-        itens.getItems().addAll(this.mc.getPac().getItens());
+        itens.getItems().addAll(this.mc.getConforPac().getItens());
     }
 
     public void loadDetalhesInteriores() {
@@ -62,7 +57,7 @@ public class PacoteTableDisplay implements Initializable {
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
         detInt.getColumns().addAll(tc3,tc4);
-        detInt.getItems().addAll(this.mc.getPac().getDetsInterior());
+        detInt.getItems().addAll(this.mc.getConforPac().getDetsInterior());
     }
 
     public void loadDetalhesExteriores() {
@@ -73,7 +68,7 @@ public class PacoteTableDisplay implements Initializable {
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         detsExt.getColumns().addAll(tc1, tc2);
-        detsExt.getItems().addAll(this.mc.getPac().getDetsExterior());
+        detsExt.getItems().addAll(this.mc.getConforPac().getDetsExterior());
     }
 
     public void turnBack(){
@@ -81,7 +76,19 @@ public class PacoteTableDisplay implements Initializable {
     }
 
     public void adiciona(){
-        mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getPac());
+        if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()){
+            return;
+        }
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getConforPac());
+        mc.setpacoteEscolhidoConfort();
+    }
+
+    public void remove(){
+        if(mc.getPacoteEscolhidoConfort() == false){
+            return;
+        }
+        mc.getConfig(mc.getId(),mc.getConfigNome()).removePacote(mc.getConforPac());
+        mc.setpacoteEscolhidoConfort();
     }
 
 }
