@@ -76,4 +76,15 @@ public class ConfigDisplay  implements Initializable {
         this.mc.displayPacoteFrame();
     }
 
+    public void removeSelecao() {
+        Object o = cart.getSelectionModel().getSelectedItem();
+        String nome = mc.getConfigNome();
+        String id = mc.getId();
+        Configuracao cfg = mc.getConfig(id,nome);
+        if (o instanceof Item) cfg.removeItem((Item) o);
+        if (o instanceof DetalheInterior) cfg.removeDetInt((DetalheInterior) o);
+        if (o instanceof DetalheExterior) cfg.removeDetExt((DetalheExterior) o);
+        this.mc.displayConfigEditor();
+    }
+
 }
