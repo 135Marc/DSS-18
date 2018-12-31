@@ -67,4 +67,14 @@ public class Pacote {
     public String getTipo() {
         return tipo;
     }
+
+    public void addDetInterior(DetalheInterior di) {
+            this.detsInterior.add(di);
+    }
+    public void addDetExterior(DetalheExterior di) {
+        this.detsExterior.add(di);
+    }
+    public void addItem(Item di) {
+        this.itens.add(di);
+    }
 }

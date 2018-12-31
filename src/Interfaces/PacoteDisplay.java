@@ -35,5 +35,12 @@ public class PacoteDisplay implements Initializable {
         this.mc.displayConfigEditor();
     }
 
-    public void showPacote() { this.mc.displayPacoteTableFrame();}
+    public void pacoteSport() {
+
+        Pacote pac = new Pacote();
+        this.mc.displayPacoteTableFrame();}
+
+    public void pacoteConfort(){
+
+    }
 }
