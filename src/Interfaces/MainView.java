@@ -269,6 +269,9 @@ public class MainView extends Application {
             PacoteTableDisplay pacotetDisp = loader.getController();
             pacotetDisp.init(this);
             pacotetDisp.setMainController(mc);
+            pacotetDisp.loadItems();
+            pacotetDisp.loadDetalhesExteriores();
+            pacotetDisp.loadDetalhesInteriores();
             mc.setPacoteTableDisplay(pacotetDisp);
             window.setTitle("Menu de Pacotes Expandido");
             window.show();
