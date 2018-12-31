@@ -4,10 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
@@ -43,8 +40,8 @@ public class ConfigManager implements Initializable {
 
     public ObservableList<Configuracao> defaultConfigs() {
         Map<String,Configuracao> listaConfigs = new HashMap<>();
-        Configuracao teste = new Configuracao("mmmm",2000,new HashSet<>(),new HashSet<>(),new HashSet<>());
-        listaConfigs.put(teste.getNome(),teste);
+        Configuracao cfg = new Configuracao("mmmm",2000,new HashSet<>(),new HashSet<>(),new HashSet<>());
+        listaConfigs.put(cfg.getNome(),cfg);
         /*ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(new Configuracao("Land Cruiser", 1000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
                 new Configuracao("Low-Rider", 10000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
                 new Configuracao("Smooth-Rider", 50000, new HashSet<>(), new HashSet<>(), new HashSet<>()));*/
@@ -76,8 +73,20 @@ public class ConfigManager implements Initializable {
         this.mc.removeConfig(a);
     }
 
+    public void configErro(String errormsg) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Erro");
+        alert.setHeaderText("Nome já Existe");
+        alert.setContentText(errormsg);
+        alert.showAndWait();
+    }
+
     public void addConfig() {
         String name = configname.getText();
+        if(mc.configExiste(name) == true){
+            configErro("");
+            return;
+        }
         Configuracao cfg = new Configuracao(name,0,new HashSet<>(),new HashSet<>(),new HashSet<>());
         this.mc.addConfig(cfg,mc.getId());
         tv.getItems().add(cfg);

@@ -43,6 +43,5 @@ public class PacoteDisplay implements Initializable {
 
     public void remove(){
 
-        
     }
 }
