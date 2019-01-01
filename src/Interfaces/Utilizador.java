@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Utilizador {
-    private SimpleStringProperty username;
-    private SimpleStringProperty password;
+    private String username;
+    private String password;
     private boolean isOn;
 
     public Utilizador() {
@@ -16,37 +16,29 @@ public class Utilizador {
     }
 
     public Utilizador(String username, String password) {
-        this.username = new SimpleStringProperty(username);
-        this.password = new SimpleStringProperty(password);
+        this.username = username;
+        this.password = password;
     }
 
     public Utilizador (Utilizador u) {
-        this.username.set(u.getUsername());
-        this.password.set(u.getPassword());
+        this.username= u.getUsername();
+        this.password = u.getPassword();
     }
 
     public String getUsername() {
-        return username.get();
-    }
-
-    public SimpleStringProperty usernameProperty() {
         return username;
     }
 
     public void setUsername(String username) {
-        this.username.set(username);
+        this.username =username;
     }
 
     public String getPassword() {
-        return password.get();
-    }
-
-    public SimpleStringProperty passwordProperty() {
         return password;
     }
 
     public void setPassword(String password) {
-        this.password.set(password);
+        this.password = password;
     }
 
     public void setOn(){
