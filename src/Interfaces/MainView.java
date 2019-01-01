@@ -112,7 +112,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/itemdisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,807,452);
+            Scene nova = new Scene(view,518,447);
             window.setScene(nova);
             ItemDisplay id = loader.getController();
             id.init(this);
@@ -131,7 +131,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/jantedisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,807,452);
+            Scene nova = new Scene(view,600,400);
             window.setScene(nova);
             JanteDisplay jd = loader.getController();
             jd.init(this);
@@ -150,7 +150,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/pinturadisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,807,452);
+            Scene nova = new Scene(view,600,400);
             window.setScene(nova);
             PinturaDisplay pd = loader.getController();
             pd.init(this);

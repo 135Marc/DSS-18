@@ -40,11 +40,11 @@ public class DetalheInteriorDisplay implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<DetalheInterior,String> tc1 = new TableColumn<>("Tipo");
-        TableColumn<DetalheInterior,Float> tc2 = new TableColumn<>("Preço");
+        TableColumn<DetalheInterior,Float> tc2 = new TableColumn<>("Preço(€)");
         TableColumn<DetalheInterior,String> tc3 = new TableColumn<>("Cor");
         TableColumn<DetalheInterior,String> tc4 = new TableColumn<>("Tecido");
-        TableColumn<DetalheInterior,Float> tc5 = new TableColumn<>("Preço");
-        tc1.setPrefWidth(97);
+        TableColumn<DetalheInterior,Float> tc5 = new TableColumn<>("Preço(€)");
+        tc1.setPrefWidth(150);
         tc2.setPrefWidth(102);
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);

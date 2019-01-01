@@ -34,12 +34,12 @@ public class EngineDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         TableColumn<Motor,String> tc3 = new TableColumn<>("Tipo");
-        TableColumn<Motor,Integer> tc4 = new TableColumn<>("Potencia");
-        TableColumn<Motor,String> tc5 = new TableColumn<>("Consumo");
-        TableColumn<Motor,Integer> tc6 = new TableColumn<>("Preco");
+        TableColumn<Motor,Integer> tc4 = new TableColumn<>("Potencia(cv)");
+        TableColumn<Motor,String> tc5 = new TableColumn<>("Consumo(l/100km)");
+        TableColumn<Motor,Integer> tc6 = new TableColumn<>("Preco(€)");
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);
-        tc5.setPrefWidth(97);
+        tc5.setPrefWidth(150);
         tc6.setPrefWidth(102);
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc4.setCellValueFactory(new PropertyValueFactory<>("potencia"));
@@ -67,5 +67,6 @@ public class EngineDisplay implements Initializable {
     public void adicionarMotor(){
         Motor a = motores.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        motores.getSelectionModel().clearSelection();
     }
 }

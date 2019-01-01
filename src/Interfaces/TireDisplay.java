@@ -1,6 +1,5 @@
 package Interfaces;
 
-import Items.Jante;
 import Items.Pneu;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,7 +8,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.net.URL;
 import java.util.HashSet;
 import java.util.ResourceBundle;
@@ -34,8 +32,8 @@ public class TireDisplay implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<Pneu,String> tc1 = new TableColumn<>("Tipo");
-        TableColumn<Pneu,Float> tc2 = new TableColumn<>("Preço");
-        tc1.setPrefWidth(97);
+        TableColumn<Pneu,Float> tc2 = new TableColumn<>("Preço(€)");
+        tc1.setPrefWidth(150);
         tc2.setPrefWidth(102);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -62,6 +60,6 @@ public class TireDisplay implements Initializable {
     public void adicionarItem() {
         Pneu a = tabelapneu.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-
+        tabelapneu.getSelectionModel().clearSelection();
     }
 }

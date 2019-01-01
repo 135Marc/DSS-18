@@ -24,7 +24,6 @@ public class PacoteSportTableDisplay implements Initializable {
     private  MainController mc;
     private MainView main;
 
-
     public void setMainController(MainController mc) {
         this.mc = mc;
     }
@@ -35,13 +34,15 @@ public class PacoteSportTableDisplay implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        itens.setSelectionModel(null);
+        detsExt.setSelectionModel(null);
+        detInt.setSelectionModel(null);
     }
 
     public void loadItems() {
         TableColumn<Item, String> tc5 = new TableColumn<>("Tipo ");
-        TableColumn<Item, Float> tc6 = new TableColumn<>("Preco");
-        tc5.setPrefWidth(84);
+        TableColumn<Item, Float> tc6 = new TableColumn<>("Preco(€)");
+        tc5.setPrefWidth(150);
         tc6.setPrefWidth(115);
         tc5.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc6.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -51,8 +52,8 @@ public class PacoteSportTableDisplay implements Initializable {
 
     public void loadDetalhesInteriores() {
         TableColumn<DetalheInterior, String> tc3 = new TableColumn<>("Tipo ");
-        TableColumn<DetalheInterior, Float> tc4 = new TableColumn<>("Preco");
-        tc3.setPrefWidth(84);
+        TableColumn<DetalheInterior, Float> tc4 = new TableColumn<>("Preco(€)");
+        tc3.setPrefWidth(135);
         tc4.setPrefWidth(115);
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -62,8 +63,8 @@ public class PacoteSportTableDisplay implements Initializable {
 
     public void loadDetalhesExteriores() {
         TableColumn<DetalheExterior, String> tc1 = new TableColumn<>("Tipo ");
-        TableColumn<DetalheExterior, Float> tc2 = new TableColumn<>("Preco");
-        tc1.setPrefWidth(84);
+        TableColumn<DetalheExterior, Float> tc2 = new TableColumn<>("Preco(€)");
+        tc1.setPrefWidth(150);
         tc2.setPrefWidth(115);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -76,17 +77,13 @@ public class PacoteSportTableDisplay implements Initializable {
     }
 
     public void adiciona(){
-        if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()){
-            return;
-        }
+        if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()) return;
         mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getSporPac());
         mc.setPacoteEscolhidoSport();
     }
 
     public void remove(){
-        if(mc.getPacoteEscolhidoSport() == false){
-            return;
-        }
+        if(!mc.getPacoteEscolhidoSport()) return;
         mc.getConfig(mc.getId(),mc.getConfigNome()).removePacote(mc.getSporPac());
         mc.setPacoteEscolhidoSport();
 

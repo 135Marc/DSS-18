@@ -24,7 +24,6 @@ public class PacoteConfortTableDisplay implements Initializable {
     private  MainController mc;
     private MainView main;
 
-
     public void setMainController(MainController mc) {
         this.mc = mc;
     }
@@ -35,12 +34,14 @@ public class PacoteConfortTableDisplay implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        itens.setSelectionModel(null);
+        detsExt.setSelectionModel(null);
+        detInt.setSelectionModel(null);
     }
 
     public void loadItems() {
         TableColumn<Item, String> tc5 = new TableColumn<>("Tipo ");
-        TableColumn<Item, Float> tc6 = new TableColumn<>("Preco");
+        TableColumn<Item, Float> tc6 = new TableColumn<>("Preco(€)");
         tc5.setPrefWidth(84);
         tc6.setPrefWidth(115);
         tc5.setCellValueFactory(new PropertyValueFactory<>("tipo"));
@@ -51,7 +52,7 @@ public class PacoteConfortTableDisplay implements Initializable {
 
     public void loadDetalhesInteriores() {
         TableColumn<DetalheInterior, String> tc3 = new TableColumn<>("Tipo ");
-        TableColumn<DetalheInterior, Float> tc4 = new TableColumn<>("Preco");
+        TableColumn<DetalheInterior, Float> tc4 = new TableColumn<>("Preco(€)");
         tc3.setPrefWidth(84);
         tc4.setPrefWidth(115);
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
@@ -62,7 +63,7 @@ public class PacoteConfortTableDisplay implements Initializable {
 
     public void loadDetalhesExteriores() {
         TableColumn<DetalheExterior, String> tc1 = new TableColumn<>("Tipo ");
-        TableColumn<DetalheExterior, Float> tc2 = new TableColumn<>("Preco");
+        TableColumn<DetalheExterior, Float> tc2 = new TableColumn<>("Preco(€)");
         tc1.setPrefWidth(84);
         tc2.setPrefWidth(115);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
@@ -76,17 +77,13 @@ public class PacoteConfortTableDisplay implements Initializable {
     }
 
     public void adiciona(){
-        if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()){
-            return;
-        }
+        if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()) return;
         mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getConforPac());
         mc.setpacoteEscolhidoConfort();
     }
 
     public void remove(){
-        if(mc.getPacoteEscolhidoConfort() == false){
-            return;
-        }
+        if(!mc.getPacoteEscolhidoConfort()) return;
         mc.getConfig(mc.getId(),mc.getConfigNome()).removePacote(mc.getConforPac());
         mc.setpacoteEscolhidoConfort();
     }

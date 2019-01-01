@@ -41,7 +41,7 @@ public class ConfigManager implements Initializable {
 
     public void populateTable() {
         TableColumn<Configuracao,String> tc1 = new TableColumn<>("Nome");
-        TableColumn<Configuracao,Float> tc2 = new TableColumn<>("Preço");
+        TableColumn<Configuracao,Float> tc2 = new TableColumn<>("Preço(€)");
         tc1.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tv.getColumns().addAll(tc1, tc2);

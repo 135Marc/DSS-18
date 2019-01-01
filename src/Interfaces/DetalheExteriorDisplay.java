@@ -32,8 +32,8 @@ public class DetalheExteriorDisplay implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<DetalheExterior,String> tc1 = new TableColumn<>("Tipo");
-        TableColumn<DetalheExterior,String> tc2 = new TableColumn<>("Preco");
-        tc1.setPrefWidth(84);
+        TableColumn<DetalheExterior,String> tc2 = new TableColumn<>("Preco(€)");
+        tc1.setPrefWidth(150);
         tc2.setPrefWidth(115);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -60,7 +60,7 @@ public class DetalheExteriorDisplay implements Initializable {
 
         ObservableList<DetalheExterior> listcnfg = FXCollections.observableArrayList(
                 new CameraTraseira("Camera Traseira",1,cameraTraseira),
-                new Parachoques("ParaChoques da mesma Cor",150,paraChoques),
+                new Parachoques("ParaChoques",150,paraChoques),
                 new SensoresTraseiros("Sensores Traseiros",90,sensorTraseiro),
                 new SensorFrontal("Sensor Frontal",60,sensorFrontal),
                 new TetoAbrir("Teto Abrir",50,tetoAbrir),
@@ -75,5 +75,6 @@ public class DetalheExteriorDisplay implements Initializable {
     public void addDet(){
         DetalheExterior a = detsExt.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addOuterDetail(a);
+        detsExt.getSelectionModel().clearSelection();
     }
 }

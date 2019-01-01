@@ -32,7 +32,7 @@ public class JanteDisplay implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<Jante,String> tc3 = new TableColumn<>("Tipo");
-        TableColumn<Jante,Integer> tc4 = new TableColumn<>("Espessura");
+        TableColumn<Jante,Integer> tc4 = new TableColumn<>("Espessura('')");
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
@@ -58,6 +58,7 @@ public class JanteDisplay implements Initializable {
     public void adicionarItem() {
         Jante a = wheelt.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        wheelt.getSelectionModel().clearSelection();
 
     }
 }

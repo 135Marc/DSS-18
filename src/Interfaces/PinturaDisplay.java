@@ -33,11 +33,14 @@ public class PinturaDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<Pintura,String> tc1 = new TableColumn<>("Cor");
         TableColumn<Pintura,String> tc2 = new TableColumn<>("Tipo");
+        TableColumn<Pintura,Float> tc3 = new TableColumn<>("Preço(€)");
         tc1.setPrefWidth(84);
         tc2.setPrefWidth(115);
+        tc3.setPrefWidth(97);
         tc1.setCellValueFactory(new PropertyValueFactory<>("cor"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("tipo"));
-        paintable.getColumns().addAll(tc1, tc2);
+        tc3.setCellValueFactory(new PropertyValueFactory<>("preco"));
+        paintable.getColumns().addAll(tc1, tc2,tc3);
         paintable.getItems().addAll(loadPaints());
     }
 
@@ -45,9 +48,9 @@ public class PinturaDisplay implements Initializable {
         Set<Integer> teste = new HashSet<Integer>();
         teste.add(3);
         ObservableList<Pintura> listcnfg = FXCollections.observableArrayList(
-                new Pintura("Branca","Metalizada",1,teste),
-                new Pintura("Vermelha","Normal",1,teste),
-                new Pintura("Castanha","Premium",1,teste));
+                new Pintura("Branca","Metalizada",400,teste),
+                new Pintura("Vermelha","Normal",250,teste),
+                new Pintura("Castanha","Premium",650,teste));
         return listcnfg;
     }
 
@@ -59,6 +62,6 @@ public class PinturaDisplay implements Initializable {
     public void adicionaPintura() {
         Pintura a = paintable.getSelectionModel().getSelectedItem();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
-
+        paintable.getSelectionModel().clearSelection();
     }
 }
