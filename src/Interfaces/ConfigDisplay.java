@@ -31,9 +31,9 @@ public class ConfigDisplay  implements Initializable {
         tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);
-        String cenas = mc.getConfigNome();
+        String nome = mc.getConfigNome();
         String id = mc.getId();
-        Configuracao cfg = mc.getConfig(id,cenas);
+        Configuracao cfg = mc.getConfig(id,nome);
         cart.getColumns().addAll(tc3,tc4);
         cart.getItems().addAll(atualizaItens(cfg));
         cart.getItems().addAll(atualizaDetExte(cfg));

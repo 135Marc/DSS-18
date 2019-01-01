@@ -207,7 +207,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/detalheinteriordisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,560,391);
+            Scene nova = new Scene(view,1001,486);
             window.setScene(nova);
             DetalheInteriorDisplay indisp = loader.getController();
             indisp.init(this);

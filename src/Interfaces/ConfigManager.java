@@ -38,15 +38,6 @@ public class ConfigManager implements Initializable {
 
     }
 
-    public ObservableList<Configuracao> defaultConfigs() {
-        Map<String,Configuracao> listaConfigs = new HashMap<>();
-        Configuracao cfg = new Configuracao("mmmm",2000,new HashSet<>(),new HashSet<>(),new HashSet<>());
-        listaConfigs.put(cfg.getNome(),cfg);
-        /*ObservableList<Configuracao> listcnfg = FXCollections.observableArrayList(new Configuracao("Land Cruiser", 1000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
-                new Configuracao("Low-Rider", 10000, new HashSet<>(), new HashSet<>(), new HashSet<>()),
-                new Configuracao("Smooth-Rider", 50000, new HashSet<>(), new HashSet<>(), new HashSet<>()));*/
-        return FXCollections.observableArrayList(listaConfigs.values());
-    }
 
     public void populateTable() {
         TableColumn<Configuracao,String> tc1 = new TableColumn<>("Nome");
@@ -74,22 +65,21 @@ public class ConfigManager implements Initializable {
     }
 
     public void configErro(String errormsg) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Erro");
-        alert.setHeaderText("Nome já Existe");
+        alert.setHeaderText("Nome de configuração existente");
         alert.setContentText(errormsg);
         alert.showAndWait();
     }
 
     public void addConfig() {
         String name = configname.getText();
-        if(mc.configExiste(name) == true){
-            configErro("");
-            return;
+        if(mc.configExiste(name)) configErro("Tente com um nome diferente");
+        else {
+            Configuracao cfg = new Configuracao(name, 0, new HashSet<>(), new HashSet<>(), new HashSet<>());
+            this.mc.addConfig(cfg, mc.getId());
+            tv.getItems().add(cfg);
         }
-        Configuracao cfg = new Configuracao(name,0,new HashSet<>(),new HashSet<>(),new HashSet<>());
-        this.mc.addConfig(cfg,mc.getId());
-        tv.getItems().add(cfg);
         configname.clear();
     }
 

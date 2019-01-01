@@ -120,9 +120,6 @@ public class MainController implements Initializable {
         this.carros.removeConfig(this.id,a);
     }
 
-    public boolean noConfigs(String id) {
-        return carros.noConfig(id);
-    }
 
     public void displayRegistry() {
         mview.showRegistForm();

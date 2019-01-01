@@ -2,8 +2,6 @@ package Interfaces;
 
 import DetalhesExteriores.*;
 import DetalhesInteriores.Ac;
-import DetalhesInteriores.DetalheInterior;
-import Items.Item;
 import Items.Jante;
 import Items.Motor;
 import Items.Pneu;
@@ -37,7 +35,7 @@ public class PacoteDisplay implements Initializable {
         this.mc.displayConfigEditor();
     }
 
-    public void pacoteSport() {
+    public void pacoteSport() { // DEMASIADO ESPARGUETE -> CORRIGIR DEPOIS!!
         Pacote pac = new Pacote();
         Set<Integer> listaRestricap = new HashSet<Integer>();
         listaRestricap.add(1);
@@ -74,7 +72,7 @@ public class PacoteDisplay implements Initializable {
         this.mc.displayPacoteTableFrame();
     }
 
-    public void pacoteConfort(){
+    public void pacoteConfort(){ // DEMASIADO ESPARGUETE -> CORRIGIR DEPOIS!!
         Pacote pac = new Pacote();
         Set<Integer> listaRestricap = new HashSet<Integer>();
         listaRestricap.add(1);

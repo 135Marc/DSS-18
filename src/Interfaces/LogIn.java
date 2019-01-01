@@ -37,7 +37,7 @@ public class LogIn implements Initializable {
     }
 
     public void showLoginError(String errormsg) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Erro");
         alert.setHeaderText("Login Inválido:");
         alert.setContentText(errormsg);
@@ -58,7 +58,7 @@ public class LogIn implements Initializable {
                 }
                 else if (passCorreta) showLoginError("Password inválida, tente novamente!");
 
-                else  showLoginError("Cliente já logado");
+                else  showLoginError("Cliente já autenticado");
         }
 
     }

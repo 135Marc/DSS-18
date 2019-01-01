@@ -55,7 +55,7 @@ public class Registo implements Initializable {
     }
 
     private void showSignUpError(String errormsg) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Erro");
         alert.setHeaderText("Registo Inválido:");
         alert.setContentText(errormsg);
@@ -66,7 +66,7 @@ public class Registo implements Initializable {
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
-        if (!valid) showSignUpError("Verifique se os campos (*) estão preenchidos");
+        if (!valid) showSignUpError("Verifique se os campos (*) estão bem preenchidos!");
         else {
             mc.addUser(username, password);
             user.clear();
