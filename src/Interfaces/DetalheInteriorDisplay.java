@@ -45,13 +45,15 @@ public class DetalheInteriorDisplay implements Initializable {
         TableColumn<DetalheInterior,Float> tc2 = new TableColumn<>("Preço(€)");
         TableColumn<DetalheInterior,String> tc3 = new TableColumn<>("Cor");
         TableColumn<DetalheInterior,String> tc4 = new TableColumn<>("Tecido");
-        TableColumn<DetalheInterior,Float> tc5 = new TableColumn<>("Preço(€)");
         tc1.setPrefWidth(150);
         tc2.setPrefWidth(102);
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);
-        tc5.setPrefWidth(102);
-        innertable.getColumns().addAll(tc1,tc2);
+        tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
+        tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
+        tc3.setCellValueFactory(new PropertyValueFactory<>("cor"));
+        tc4.setCellValueFactory(new PropertyValueFactory<>("tecido"));
+        innertable.getColumns().addAll(tc1,tc2,tc3,tc4);
         innertable.getItems().addAll(loadInnerDetails());
     }
 
@@ -64,12 +66,12 @@ public class DetalheInteriorDisplay implements Initializable {
         ac.add(22);
         Set<Integer> gps = new HashSet<>();
         gps.add(21);
-        Set<Integer> estofo = new HashSet<>();
-        estofo.add(20);
+        Set<Integer> estof = new HashSet<>();
+        estof.add(20);
         ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(
                 new Ac("Ar Condicionado",50,ac),
                 new Gps("GPS",150,gps),
-                new Estofos("Pele","beje","cabedal",100,estofo));
+                new Estofos("Pele","beje","cabedal",100,estof));
         return listcnfg;
     }
 
