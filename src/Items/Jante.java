@@ -6,6 +6,7 @@ public class Jante extends Item{
     private final int id = 1;
     private String tipo;
     private int espessura;
+    private boolean ePacote = false;
 
     public Jante() {
         super();
@@ -62,6 +63,16 @@ public class Jante extends Item{
 
     public int getId(){
         return this.id;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 
 

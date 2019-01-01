@@ -137,6 +137,7 @@ public class Configuracao {
                 removeItem(b);
             }
             i.setPreco((float) (i.getPreco()*0.8));
+            i.setPacote();
             addItem(i);
         }
 
@@ -146,6 +147,7 @@ public class Configuracao {
                 removeDetInt(b);
             }
             i.setPreco((float) (i.getPreco()*0.8));
+            i.setPacote();
             addInnerDetail(i);
         }
 
@@ -155,6 +157,7 @@ public class Configuracao {
                 removeDetExt(b);
             }
             i.setPreco((float) (i.getPreco()*0.8));
+            i.setPacote();
             addOuterDetail(i);
         }
 

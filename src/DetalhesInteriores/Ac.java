@@ -6,6 +6,7 @@ public class Ac extends DetalheInterior {
 
     private final int id = 22;
     private final String tipo = "Ar Condicionado";
+    private boolean ePacote = false;
 
     public  Ac(){
         super();
@@ -28,4 +29,14 @@ public class Ac extends DetalheInterior {
     }
 
     public String getTipo() { return this.tipo;}
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
+    }
 }

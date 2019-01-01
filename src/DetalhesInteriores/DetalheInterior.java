@@ -67,7 +67,9 @@ public abstract class DetalheInterior {
         return listaRestricao.contains(tipo);
     }
 
+    public abstract boolean getEPacote();
 
+    public abstract void setPacote();
 
 
 }

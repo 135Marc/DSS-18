@@ -6,6 +6,7 @@ public class SensoresTraseiros extends DetalheExterior {
 
     private final int id = 32;
     private String tipo ;
+    private boolean ePacote=false;
 
     public SensoresTraseiros(){
         super();
@@ -31,6 +32,16 @@ public class SensoresTraseiros extends DetalheExterior {
     @Override
     public String getTipo() {
         return tipo;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 
 }

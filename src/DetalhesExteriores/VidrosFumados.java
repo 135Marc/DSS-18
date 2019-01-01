@@ -6,6 +6,7 @@ public class VidrosFumados extends DetalheExterior {
 
     private final int id = 35;
     String tipo;
+    private boolean ePacote=false;
 
     public VidrosFumados(){
         super();
@@ -31,5 +32,15 @@ public class VidrosFumados extends DetalheExterior {
     @Override
     public String getTipo() {
         return tipo;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }

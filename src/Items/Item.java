@@ -51,5 +51,9 @@ public abstract class Item {
         return this.listaRestricao.contains(i);
     }
 
+    public abstract boolean getEPacote();
+
+    public abstract void setPacote();
+
 
 }

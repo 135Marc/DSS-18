@@ -7,6 +7,7 @@ public class CameraTraseira extends DetalheExterior {
 
     private final int id = 30;
     private String tipo;
+    private boolean ePacote=false;
 
     public CameraTraseira(){
         super();
@@ -32,4 +33,15 @@ public class CameraTraseira extends DetalheExterior {
     public String getTipo() {
         return tipo;
     }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
+    }
+
 }

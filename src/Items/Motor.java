@@ -7,6 +7,7 @@ public class Motor extends Item {
     private int potencia;
     private int consumomedio;
     private String tipo;
+    private boolean ePacote = false;
 
     public Motor() {
         super();
@@ -63,8 +64,16 @@ public class Motor extends Item {
         return this.tipo;
     }
 
-    public int getId(){
-        return this.id;
+    public int getId(){ return this.id; }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 
 }

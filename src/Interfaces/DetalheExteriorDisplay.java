@@ -5,12 +5,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Set;
 
@@ -74,7 +77,35 @@ public class DetalheExteriorDisplay implements Initializable {
 
     public void addDet(){
         DetalheExterior a = detsExt.getSelectionModel().getSelectedItem();
+        if(!DetExtValidoParaAdicionar(a)){
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Confirmaçao de restrição");
+            alert.setHeaderText("Para adicionar este Item serão removidos itens incompativeis ");
+            alert.setContentText("Confirma a remoção de todos os itens incompativeis para adicionar este?");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+
+                for(DetalheExterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getOuterdetails()){
+                    if(a.getListaRestricao().contains(i.getID())){
+                        mc.getConfig(mc.getId(),mc.getConfigNome()).removeDetExt(i);
+                    }
+                }
+            }
+            else {
+                return;
+            }
+        }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addOuterDetail(a);
-        detsExt.getSelectionModel().clearSelection();
+    }
+
+    public Boolean DetExtValidoParaAdicionar(DetalheExterior a){
+
+        for(DetalheExterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getOuterdetails()){
+            if(a.getListaRestricao().contains(i.getID())){
+                return false;
+            }
+        }
+        return true;
     }
 }

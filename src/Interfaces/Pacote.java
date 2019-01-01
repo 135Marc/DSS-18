@@ -71,6 +71,7 @@ public class Pacote {
     public void addDetInterior(DetalheInterior di) {
             this.detsInterior.add(di);
     }
+
     public void addDetExterior(DetalheExterior di) {
         this.detsExterior.add(di);
     }

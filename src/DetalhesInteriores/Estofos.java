@@ -8,6 +8,7 @@ public class Estofos extends DetalheInterior {
     private String cor;
     private String tecido;
     private final String tipo = "Estofos";
+    private boolean ePacote=false;
 
     public  Estofos(){
         super();
@@ -51,6 +52,15 @@ public class Estofos extends DetalheInterior {
         return  this.id;
     }
 
-    public String getTipo() { return this.tipo;
+    public String getTipo() { return this.tipo; }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }

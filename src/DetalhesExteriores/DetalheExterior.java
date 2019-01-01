@@ -58,5 +58,9 @@ public abstract class DetalheExterior {
 
     public abstract String getTipo();
 
+    public abstract boolean getEPacote();
+
+    public abstract void setPacote();
+
 
 }

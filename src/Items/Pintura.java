@@ -6,6 +6,7 @@ public class Pintura extends Item {
     private final int id = 3;
     private String cor;
     private String tipo;
+    private boolean ePacote =false;
 
     public Pintura() {
         super();
@@ -56,5 +57,15 @@ public class Pintura extends Item {
 
     public int getId(){
         return this.id;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }

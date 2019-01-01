@@ -85,34 +85,28 @@ public class ConfigDisplay  implements Initializable {
         alert.showAndWait();
     }
 
-    public boolean naopodeRemover(Object o) {
-        boolean isConfort = this.mc.isConfortPac();
-        boolean isSport = this.mc.isSportPac();
-        if (isConfort) {
-            Pacote confortpac = this.mc.getConforPac();
-            isConfort = (confortpac.getDetsExterior().contains(o) || confortpac.getItens().contains(o) || confortpac.getDetsInterior().contains(o));
-        }
-        else if (isSport) {
-            Pacote sportPac = this.mc.getSporPac();
-            isSport = (sportPac.getDetsExterior().contains(o) || sportPac.getItens().contains(o) || sportPac.getDetsInterior().contains(o));
-        }
-        return (isConfort || isSport);
-
-    }
-
     public void removeSelecao() {
         Object o = cart.getSelectionModel().getSelectedItem();
         String nome = mc.getConfigNome();
         String id = mc.getId();
         Configuracao cfg = mc.getConfig(id,nome);
-        if (!naopodeRemover(o)){
-            if (o instanceof Item) cfg.removeItem((Item) o);
-            if (o instanceof DetalheInterior) cfg.removeDetInt((DetalheInterior) o);
-            if (o instanceof DetalheExterior) cfg.removeDetExt((DetalheExterior) o);
+
+        if (o instanceof Item){
+            if(((Item) o).getEPacote()) avisoPacote("Não pode remover itens de um pacote!");
+            else
+            cfg.removeItem((Item) o);
         }
-        else if (naopodeRemover(o)) {
-            avisoPacote("Não pode remover itens de um pacote!");
+        if (o instanceof DetalheInterior){
+            if(((DetalheInterior) o).getEPacote()) avisoPacote("Não pode remover itens de um pacote!");
+            else
+            cfg.removeDetInt((DetalheInterior) o);
         }
+        if (o instanceof DetalheExterior){
+            if(((DetalheExterior) o).getEPacote()) avisoPacote("Não pode remover itens de um pacote!");
+            else
+            cfg.removeDetExt((DetalheExterior) o);
+        }
+
         this.mc.displayConfigEditor();
     }
 

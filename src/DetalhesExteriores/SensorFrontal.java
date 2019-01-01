@@ -6,6 +6,7 @@ public class SensorFrontal extends DetalheExterior {
 
     private final int id = 33;
     private String tipo;
+    private boolean ePacote = false;
 
     public SensorFrontal(){
         super();
@@ -32,6 +33,15 @@ public class SensorFrontal extends DetalheExterior {
         return tipo;
     }
 
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
+    }
 
 }
 

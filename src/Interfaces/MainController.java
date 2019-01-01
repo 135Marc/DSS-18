@@ -214,15 +214,19 @@ public class MainController implements Initializable {
     public boolean isConfortPac() {
         return confortPac;
     }
+
     public boolean getPacoteEscolhidoSport(){
         return this.pacoteEscolhidoSport;
     }
+
     public void setPacoteEscolhidoSport(){
         this.pacoteEscolhidoSport = !pacoteEscolhidoSport;
     }
+
     public boolean getPacoteEscolhidoConfort(){
         return this.pacoteEscolhidoConfort;
     }
+
     public void setpacoteEscolhidoConfort(){
         this.pacoteEscolhidoConfort = !pacoteEscolhidoConfort;
     }

@@ -11,6 +11,7 @@ public class Pneu extends Item{
     private int diametrointerior;
     private int indexcarga;
     private int indexvel;
+    private boolean ePacote = false;
 
     public Pneu() {
         super();
@@ -117,5 +118,15 @@ public class Pneu extends Item{
 
     public int getId(){
         return this.id;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }

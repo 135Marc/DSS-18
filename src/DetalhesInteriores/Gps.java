@@ -5,6 +5,7 @@ import java.util.Set;
 public class Gps extends DetalheInterior{
     private final int id = 21;
     private final String tipo="GPS";
+    private boolean ePacote = false;
 
     public  Gps(){
         super();
@@ -27,4 +28,14 @@ public class Gps extends DetalheInterior{
     }
 
     public String getTipo() { return this.tipo;}
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
+    }
 }

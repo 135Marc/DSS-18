@@ -6,6 +6,7 @@ public class TetoAbrir extends DetalheExterior {
 
     private final int id = 34;
     private String tipo;
+    private boolean ePacote = false;
 
     public TetoAbrir(){
         super();
@@ -31,5 +32,15 @@ public class TetoAbrir extends DetalheExterior {
     @Override
     public String getTipo() {
         return tipo;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }

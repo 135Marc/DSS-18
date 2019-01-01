@@ -10,12 +10,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Set;
 
@@ -24,7 +27,6 @@ public class DetalheInteriorDisplay implements Initializable {
    @FXML
    private TableView<DetalheInterior> innertable;
    @FXML
-   private TableView<DetalheInterior> estofotable;
 
     private  MainController mc;
     private MainView main;
@@ -49,15 +51,8 @@ public class DetalheInteriorDisplay implements Initializable {
         tc3.setPrefWidth(97);
         tc4.setPrefWidth(102);
         tc5.setPrefWidth(102);
-        tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
-        tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
-        tc3.setCellValueFactory(new PropertyValueFactory<>("cor"));
-        tc4.setCellValueFactory(new PropertyValueFactory<>("tecido"));
-        tc5.setCellValueFactory(new PropertyValueFactory<>("preco"));
         innertable.getColumns().addAll(tc1,tc2);
-        estofotable.getColumns().addAll(tc3,tc4,tc5);
         innertable.getItems().addAll(loadInnerDetails());
-        estofotable.getItems().addAll(loadEstofos());
     }
 
     public void turnBack() {
@@ -69,30 +64,48 @@ public class DetalheInteriorDisplay implements Initializable {
         ac.add(22);
         Set<Integer> gps = new HashSet<>();
         gps.add(21);
-        ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(
-                new Ac("Ar Condicionado",50,ac),
-                new Gps("GPS",150,gps));
-        return listcnfg;
-    }
-
-    public ObservableList<DetalheInterior> loadEstofos() {
         Set<Integer> estofo = new HashSet<>();
         estofo.add(20);
-        ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(new Estofos("Estofos","Branco","Cabedal",300,estofo));
+        ObservableList<DetalheInterior> listcnfg = FXCollections.observableArrayList(
+                new Ac("Ar Condicionado",50,ac),
+                new Gps("GPS",150,gps),
+                new Estofos("Pele","beje","cabedal",100,estofo));
         return listcnfg;
     }
 
+
     public void adicionarDetalheInterior(){
-        DetalheInterior a = estofotable.getSelectionModel().getSelectedItem();
-        DetalheInterior b = innertable.getSelectionModel().getSelectedItem();
-        if (a!=null) {
-            mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(a);
-            estofotable.getSelectionModel().clearSelection();
+        DetalheInterior a = innertable.getSelectionModel().getSelectedItem();
+        if(!DetIntValidoParaAdicionar(a)){
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Confirmaçao de restrição");
+            alert.setHeaderText("Para adicionar este Item serão removidos itens incompativeis ");
+            alert.setContentText("Confirma a remoção de todos os itens incompativeis para adicionar este?");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+
+                for(DetalheInterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getInnerdetails()){
+                    if(a.getListaRestricao().contains(i.getID())){
+                        mc.getConfig(mc.getId(),mc.getConfigNome()).removeDetInt(i);
+                    }
+                }
+            }
+            else {
+                return;
+            }
         }
-        else if (b!=null) {
-            mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(b);
-            innertable.getSelectionModel().clearSelection();
+        mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(a);
+    }
+
+    public Boolean DetIntValidoParaAdicionar(DetalheInterior a){
+
+        for(DetalheInterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getInnerdetails()){
+            if(a.getListaRestricao().contains(i.getID())){
+                return false;
+            }
         }
+        return true;
     }
 
 }

@@ -6,6 +6,7 @@ public class Parachoques extends DetalheExterior {
 
     private final int id = 31;
     private String tipo;
+    private boolean ePacote=false;
 
     public Parachoques(){
         super();
@@ -28,5 +29,15 @@ public class Parachoques extends DetalheExterior {
     @Override
     public String getTipo() {
         return tipo;
+    }
+
+    @Override
+    public boolean getEPacote() {
+        return this.ePacote;
+    }
+
+    @Override
+    public void setPacote() {
+        this.ePacote = !this.ePacote;
     }
 }
