@@ -56,7 +56,6 @@ public class TireDisplay implements Initializable {
     }
 
 
-
     public void turnBack() {
         this.mc.displayItemFrame();
     }
@@ -83,6 +82,7 @@ public class TireDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        tabelapneu.getSelectionModel().clearSelection();
     }
 
     public Boolean itemValidoParaAdicionar(Item a){

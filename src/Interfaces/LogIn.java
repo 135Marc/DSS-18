@@ -22,7 +22,7 @@ public class LogIn implements Initializable {
     @FXML
     private PasswordField password;
     @FXML
-    private Label label1;
+    private ChoiceBox<String> regtype;
 
     private  MainController mc;
 
@@ -50,7 +50,7 @@ public class LogIn implements Initializable {
         if (!this.mc.hasUser(user)) showLoginError("Utilizador inexistente,tente novamente!");
         else {
                 boolean passCorreta = this.mc.passwordMatches(user,pw);
-                if (passCorreta && mc.getUser(user).getIsOn() == false) {
+                if (passCorreta && !mc.getUser(user).getIsOn()) {
                     username.clear();
                     password.clear();
                     mc.getUser(user).setOn();
@@ -70,7 +70,8 @@ public class LogIn implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        regtype.getItems().add("Utilizador");
+        regtype.getItems().add("Funcionário");
     }
 
 }

@@ -33,6 +33,8 @@ public class Registo implements Initializable {
     private PasswordField pwconf;
     @FXML
     private TextField email;
+    @FXML
+    private ChoiceBox<String> cidade;
 
     private  MainController mc;
 
@@ -50,6 +52,11 @@ public class Registo implements Initializable {
         String username = user.getText();
         String password = pw.getText();
         String passconf = pwconf.getText();
+        String mail = email.getText();
+        String morada = address.getText();
+        String nome = name.getText();
+        String codpostal = postalcode.getText();
+        String idfiscal = nif.getText();
         boolean empty = (username.isEmpty() || password.isEmpty() || passconf.isEmpty());
         return (password.equals(passconf) && !this.mc.hasUser(username) && !empty);
     }
@@ -60,6 +67,8 @@ public class Registo implements Initializable {
         alert.setHeaderText("Registo Inválido:");
         alert.setContentText(errormsg);
         alert.showAndWait();
+        String city = cidade.getSelectionModel().getSelectedItem();
+        System.out.println(city);
     }
 
     public void registarCliente() throws Exception {
@@ -79,6 +88,9 @@ public class Registo implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        cidade.getItems().add("Braga");
+        cidade.getItems().add("Lisboa");
+        cidade.getItems().add("Porto");
 
     }
 }

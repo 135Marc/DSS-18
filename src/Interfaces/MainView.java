@@ -12,9 +12,7 @@ import java.io.IOException;
 
 public class MainView extends Application {
 
-    @FXML
     private Stage window;
-    @FXML
     private MainController mc;
 
     public MainView() {
@@ -207,7 +205,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/detalheinteriordisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,1001,486);
+            Scene nova = new Scene(view,533,487);
             window.setScene(nova);
             DetalheInteriorDisplay indisp = loader.getController();
             indisp.init(this);

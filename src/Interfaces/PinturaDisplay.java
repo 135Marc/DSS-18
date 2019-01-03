@@ -85,6 +85,7 @@ public class PinturaDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        paintable.getSelectionModel().clearSelection();
     }
 
     public Boolean itemValidoParaAdicionar(Item a){

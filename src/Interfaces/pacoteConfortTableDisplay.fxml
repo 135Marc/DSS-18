@@ -7,9 +7,9 @@
 
 <AnchorPane prefHeight="428.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.PacoteConfortTableDisplay">
     <children>
-        <Button layoutX="315.0" layoutY="339.0" mnemonicParsing="false" onAction="#adiciona" prefHeight="51.0" prefWidth="95.0" text="Adicionar" />
+        <Button layoutX="241.0" layoutY="339.0" mnemonicParsing="false" onAction="#adiciona" prefHeight="51.0" prefWidth="95.0" text="Adicionar" />
         <Button layoutX="415.0" layoutY="339.0" mnemonicParsing="false" onAction="#remove" prefHeight="51.0" prefWidth="95.0" text="Remover" />
-        <Button layoutX="565.0" layoutY="339.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="51.0" prefWidth="101.0" text="Voltar" />
+        <Button layoutX="592.0" layoutY="339.0" mnemonicParsing="false" onAction="#turnBack" prefHeight="51.0" prefWidth="101.0" text="Voltar" />
         <TableView fx:id="itens" layoutX="49.0" layoutY="69.0" prefHeight="230.0" prefWidth="258.0" />
         <TableView fx:id="detInt" layoutX="712.0" layoutY="80.0" prefHeight="230.0" prefWidth="236.0" />
         <TableView fx:id="detsExt" layoutX="385.0" layoutY="75.0" prefHeight="230.0" prefWidth="269.0" />

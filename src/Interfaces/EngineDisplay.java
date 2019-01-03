@@ -89,6 +89,7 @@ public class EngineDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        motores.getSelectionModel().clearSelection();
     }
 
     public Boolean itemValidoParaAdicionar(Item a){

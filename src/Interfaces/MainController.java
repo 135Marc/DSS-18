@@ -17,33 +17,19 @@ public class MainController implements Initializable {
     private boolean confortPac;
     private boolean pacoteEscolhidoSport = false;
     private boolean pacoteEscolhidoConfort = false;
-    @FXML
     private Registo regist;
-    @FXML
     private LogIn logz;
-    @FXML
     private ConfigManager configmanager;
-    @FXML
     private ConfigDisplay configDisplay;
-    @FXML
     private ItemDisplay itemdisp;
-    @FXML
     private JanteDisplay jantedisp;
-    @FXML
     private PinturaDisplay paintdisp;
-    @FXML
     private EngineDisplay engdisp;
-    @FXML
     private TireDisplay tiredisp;
-    @FXML
     private DetalheExteriorDisplay outdisp;
-    @FXML
     private DetalheInteriorDisplay indisp;
-    @FXML
     private PacoteDisplay patote;
-    @FXML
     private PacoteSportTableDisplay pacotetable;
-    @FXML
     private PacoteConfortTableDisplay pacoteConfortTableDisplay;
 
 

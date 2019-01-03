@@ -26,7 +26,7 @@ public class DetalheInteriorDisplay implements Initializable {
 
    @FXML
    private TableView<DetalheInterior> innertable;
-   @FXML
+
 
     private  MainController mc;
     private MainView main;
@@ -98,6 +98,7 @@ public class DetalheInteriorDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(a);
+        innertable.getSelectionModel().clearSelection();
     }
 
     public Boolean DetIntValidoParaAdicionar(DetalheInterior a){

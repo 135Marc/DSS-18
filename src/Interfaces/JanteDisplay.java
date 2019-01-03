@@ -81,6 +81,7 @@ public class JanteDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
+        wheelt.getSelectionModel().clearSelection();
     }
 
     public Boolean itemValidoParaAdicionar(Item a){

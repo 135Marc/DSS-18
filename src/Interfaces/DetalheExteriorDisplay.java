@@ -97,6 +97,7 @@ public class DetalheExteriorDisplay implements Initializable {
             }
         }
         mc.getConfig(mc.getId(),mc.getConfigNome()).addOuterDetail(a);
+        detsExt.getSelectionModel().clearSelection();
     }
 
     public Boolean DetExtValidoParaAdicionar(DetalheExterior a){
