@@ -77,7 +77,17 @@ public class DetalheExteriorDisplay implements Initializable {
 
     public void addDet(){
         DetalheExterior a = detsExt.getSelectionModel().getSelectedItem();
-        if(!DetExtValidoParaAdicionar(a)){
+
+        if(fazPartePacote(a) || pacoteRestringe(a)){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Erro");
+            alert.setHeaderText("Não pode adicionar este detalhe pois já tem um deste tipo adicionado na configurção" +
+                                "ou tem um detalhe no pacote que restringe este");
+            alert.showAndWait();
+            return;
+        }
+
+        else if(!detExtValidoParaAdicionar(a)){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Confirmaçao de restrição");
             alert.setHeaderText("Para adicionar este Item serão removidos itens incompativeis ");
@@ -100,7 +110,7 @@ public class DetalheExteriorDisplay implements Initializable {
         detsExt.getSelectionModel().clearSelection();
     }
 
-    public Boolean DetExtValidoParaAdicionar(DetalheExterior a){
+    public Boolean detExtValidoParaAdicionar(DetalheExterior a){
 
         for(DetalheExterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getOuterdetails()){
             if(a.getListaRestricao().contains(i.getID())){
@@ -108,5 +118,25 @@ public class DetalheExteriorDisplay implements Initializable {
             }
         }
         return true;
+    }
+
+    public boolean fazPartePacote(DetalheExterior a){
+
+        for(DetalheExterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getOuterdetails()){
+            if(i.getID() == a.getID() && i.getEPacote()){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean pacoteRestringe(DetalheExterior a){
+
+        for(DetalheExterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getOuterdetails()){
+            if(i.getListaRestricao().contains(a.getID()) && i.getEPacote()){
+                return true;
+            }
+        }
+        return false;
     }
 }

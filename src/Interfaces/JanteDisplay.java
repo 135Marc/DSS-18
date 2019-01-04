@@ -61,7 +61,16 @@ public class JanteDisplay implements Initializable {
 
     public void adicionarItem() {
         Jante a = wheelt.getSelectionModel().getSelectedItem();
-        if(!itemValidoParaAdicionar(a)){
+
+        if(fazPartePacote(a)) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Erro");
+            alert.setHeaderText("Não pode adicionar este item pois já tem um deste tipo adicionado na configurção");
+            alert.showAndWait();
+            return;
+        }
+
+       else if(!itemValidoParaAdicionar(a)){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Confirmaçao de restrição");
             alert.setHeaderText("Para adicionar este Item serão removidos itens incompativeis ");
@@ -92,5 +101,15 @@ public class JanteDisplay implements Initializable {
             }
         }
         return true;
+    }
+
+    public boolean fazPartePacote(Item a){
+
+        for(Item i : mc.getConfig(mc.getId(),mc.getConfigNome()).getItemlist()){
+            if(i.getId() == a.getId() && i.getEPacote()){
+                return true;
+            }
+        }
+        return false;
     }
 }

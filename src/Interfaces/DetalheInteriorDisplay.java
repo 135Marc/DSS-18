@@ -1,5 +1,6 @@
 package Interfaces;
 
+import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.Ac;
 import DetalhesInteriores.DetalheInterior;
 import DetalhesInteriores.Estofos;
@@ -78,7 +79,16 @@ public class DetalheInteriorDisplay implements Initializable {
 
     public void adicionarDetalheInterior(){
         DetalheInterior a = innertable.getSelectionModel().getSelectedItem();
-        if(!DetIntValidoParaAdicionar(a)){
+
+        if(fazPartePacote(a) || pacoteRestringe(a)) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Erro");
+            alert.setHeaderText("Não pode adicionar este detalhe pois já tem um deste tipo adicionado na configurção");
+            alert.showAndWait();
+            return;
+        }
+
+        else if(!DetIntValidoParaAdicionar(a)){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Confirmaçao de restrição");
             alert.setHeaderText("Para adicionar este Item serão removidos itens incompativeis ");
@@ -111,4 +121,23 @@ public class DetalheInteriorDisplay implements Initializable {
         return true;
     }
 
+    public boolean fazPartePacote(DetalheInterior a){
+
+        for(DetalheInterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getInnerdetails()){
+            if(i.getID() == a.getID() && i.getEPacote()){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean pacoteRestringe(DetalheInterior a){
+
+        for(DetalheInterior i : mc.getConfig(mc.getId(),mc.getConfigNome()).getInnerdetails()){
+            if(i.getListaRestricao().contains(a.getID()) && i.getEPacote()){
+                return true;
+            }
+        }
+        return false;
+    }
 }

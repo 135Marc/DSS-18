@@ -161,19 +161,21 @@ public class Configuracao {
             addOuterDetail(i);
         }
 
-        preco = preco+a.getPreco();
     }
 
     public void removePacote(Pacote a){
         for(Item i : a.getItens()){
+            i.setPacote();
             removeItem(i);
         }
 
         for(DetalheExterior i : a.getDetsExterior()){
+            i.setPacote();
             removeDetExt(i);
         }
 
         for(DetalheInterior i: a.getDetsInterior()){
+            i.setPacote();
             removeDetInt(i);
         }
     }
