@@ -70,7 +70,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/funcionariodisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,844,564);
+            Scene nova = new Scene(view,842,710);
             window.setScene(nova);
             FuncionarioDisplay fd = loader.getController();
             fd.init(this);
