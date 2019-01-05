@@ -2,8 +2,10 @@ package Interfaces;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
@@ -17,6 +19,10 @@ public class FuncionarioDisplay implements Initializable {
 
     @FXML
     private TableView<Configuracao> configs;
+    @FXML
+    private TextField id;
+    @FXML
+    private TextField numero;
     private MainView main;
 
     public void setMainController(MainController mc) {
@@ -45,7 +51,25 @@ public class FuncionarioDisplay implements Initializable {
 
 
     public void processa(){
+        if(mc.getFabrica().stockDisponivelParaCOnfig(configs.getSelectionModel().getSelectedItem())){
+            mc.getFabrica().consomeStock(configs.getSelectionModel().getSelectedItem());
+            mc.getFabrica().removeConfig(configs.getSelectionModel().getSelectedItem());
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information Dialog");
+            alert.setHeaderText("Configuração processada");
+            alert.showAndWait();
+        }
+        else{
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Informação");
+            alert.setHeaderText("Não há stock suficiente para processar esta configuração");
+            alert.showAndWait();
+        }
 
+    }
+
+    public void adicionaIventario(){
+        mc.getFabrica().addStock(Integer.parseInt(id.getText()),Integer.parseInt(numero.getText()));
     }
 
 }

@@ -3,6 +3,7 @@ package Interfaces;
 import DetalhesExteriores.DetalheExterior;
 import DetalhesInteriores.DetalheInterior;
 import Items.Item;
+import javafx.scene.control.Alert;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +24,16 @@ public class Fabrica {
     }
 
     public void addStock(int idComp, int numero){
-        stock.put(idComp,stock.get(idComp)+numero);
+        if (stock.containsKey(idComp)) {
+            stock.put(idComp, stock.get(idComp) + numero);
+        }
+        else
+            stock.put(idComp,numero);
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Iformação");
+        alert.setHeaderText("Stock adicionado");
+        alert.showAndWait();
     }
 
     public void consomeStock(Configuracao a){
