@@ -52,14 +52,37 @@ public class Fabrica {
     public boolean stockDisponivelParaCOnfig(Configuracao a){
 
         for(Item i : a.getItemlist()){
-            if(stock.get(i.getId()) == 0)
+            if(!stock.containsKey(i.getId())){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Informação");
+                alert.setHeaderText("Não existe stock, tem de adicionar antes de processar encomenda");
+                alert.showAndWait();
+                return false;
+            }
+
+            else if(stock.get(i.getId()) == 0)
                 return false;
         }
         for(DetalheInterior d : a.getInnerdetails()){
+            if(!stock.containsKey(d.getID())){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Informação");
+                alert.setHeaderText("Não existe stock, tem de adicionar antes de processar encomenda");
+                alert.showAndWait();
+                return false;
+            }
             if(stock.get(d.getID()) == 0)
                 return false;
         }
         for(DetalheExterior det : a.getOuterdetails()){
+
+            if(!stock.containsKey(det.getID())){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Informação");
+                alert.setHeaderText("Não existe stock, tem de adicionar antes de processar encomenda");
+                alert.showAndWait();
+                return false;
+            }
             if(stock.get(det.getID()) == 0)
                 return false;
         }
