@@ -55,4 +55,12 @@ public class Fabrica {
         }
         return true;
     }
+
+    public List<Configuracao> allconfigs(){
+        return this.configsSubmetidas;
+    }
+
+    public void removeConfig(Configuracao a){
+        this.configsSubmetidas.remove(a);
+    }
 }

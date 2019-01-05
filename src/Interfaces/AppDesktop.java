@@ -6,10 +6,12 @@ public class AppDesktop {
 
     private Hashtable<String,String> userIdPass;
     private Set<Utilizador> users;
+    private Fabrica fabrica;
 
     public AppDesktop() {
         this.userIdPass = new Hashtable<>();
         this.users = new HashSet<>();
+        this.fabrica = new Fabrica();
     }
 
     public void registaUser(Utilizador a){
@@ -35,4 +37,7 @@ public class AppDesktop {
         return userIdPass.get(id).equals(pass);
     }
 
+    public Fabrica getFabrica(){
+        return this.fabrica;
+    }
 }

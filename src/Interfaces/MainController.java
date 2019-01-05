@@ -234,4 +234,8 @@ public class MainController implements Initializable {
     public void setpacoteEscolhidoConfort(){
         this.pacoteEscolhidoConfort = !pacoteEscolhidoConfort;
     }
+
+    public Fabrica getFabrica(){
+        return this.app.getFabrica();
+    }
 }

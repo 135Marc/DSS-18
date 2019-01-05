@@ -46,12 +46,23 @@ public class ConfigManager implements Initializable {
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         tv.getColumns().addAll(tc1, tc2);
         if(this.mc.getAllConfigs(mc.getId()) != null) {
-            tv.getItems().addAll(this.mc.getAllConfigs(mc.getId()));
+            tv.getItems().addAll(loadConfig(this.mc.getId()));
         }
         removebtn.setDisable(true);
         editbtn.setDisable(true);
     }
 
+    public List<Configuracao> loadConfig(String id){
+        List<Configuracao> lista = new ArrayList<>();
+
+
+        for(Configuracao a : this.mc.getAllConfigs(mc.getId())){
+            if(!a.getSubmetida()){
+                lista.add(a);
+            }
+        }
+        return lista;
+    }
 
     public void activateButton() {
         removebtn.setDisable(false);
@@ -89,6 +100,8 @@ public class ConfigManager implements Initializable {
         mc.setNomeConfig(a);
         mc.displayConfigEditor();
     }
+
+
 
 
 }

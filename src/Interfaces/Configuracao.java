@@ -16,6 +16,7 @@ public class Configuracao {
     private Set<Item> itemlist;
     private Set<DetalheExterior> outerdetails;
     private Set<DetalheInterior> innerdetails;
+    private boolean submetida = false;
 
 
     public Configuracao () {
@@ -211,6 +212,14 @@ public class Configuracao {
             }
         }
         return lista;
+    }
+
+    public boolean getSubmetida(){
+        return this.submetida;
+    }
+
+    public void setSubmetida(){
+        this.submetida = true;
     }
 
 

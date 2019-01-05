@@ -77,6 +77,18 @@ public class ConfigDisplay  implements Initializable {
         this.mc.displayPacoteFrame();
     }
 
+    public void submeter(){
+        this.mc.getFabrica().addConfig(mc.getConfig(mc.getId(),mc.getConfigNome()));
+        mc.getConfig(mc.getId(),mc.getConfigNome()).setSubmetida();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Configuração Submetida");
+        alert.setHeaderText("A sua configuração foi submetida com sucesso");
+        alert.showAndWait();
+        this.mc.displayConfigManager();
+    }
+
+
+
     public void avisoPacote(String errormsg) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Remoção não efetuada");
