@@ -102,6 +102,11 @@ public class TireDisplay implements Initializable {
                 return;
             }
         }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Detalhe adicionado com sucesso");
+        alert.showAndWait();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
         tabelapneu.getSelectionModel().clearSelection();
     }

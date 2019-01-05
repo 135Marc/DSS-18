@@ -106,6 +106,12 @@ public class DetalheExteriorDisplay implements Initializable {
                 return;
             }
         }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Detalhe adicionado com sucesso");
+        alert.showAndWait();
+
         mc.getConfig(mc.getId(),mc.getConfigNome()).addOuterDetail(a);
         detsExt.getSelectionModel().clearSelection();
     }

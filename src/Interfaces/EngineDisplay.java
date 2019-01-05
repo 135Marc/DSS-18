@@ -95,6 +95,10 @@ public class EngineDisplay implements Initializable {
                 return;
             }
         }
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Motor adicionado com sucesso");
+        alert.showAndWait();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addItem(a);
         motores.getSelectionModel().clearSelection();
     }

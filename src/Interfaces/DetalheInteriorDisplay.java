@@ -107,6 +107,11 @@ public class DetalheInteriorDisplay implements Initializable {
                 return;
             }
         }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Detalhe adicionado com sucesso");
+        alert.showAndWait();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addInnerDetail(a);
         innertable.getSelectionModel().clearSelection();
     }

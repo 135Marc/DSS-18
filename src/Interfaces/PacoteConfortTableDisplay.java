@@ -5,6 +5,7 @@ import DetalhesInteriores.DetalheInterior;
 import Items.Item;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -78,12 +79,20 @@ public class PacoteConfortTableDisplay implements Initializable {
 
     public void adiciona(){
         if(mc.getPacoteEscolhidoConfort() || mc.getPacoteEscolhidoSport()) return;
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Pacote adicionado com sucesso");
+        alert.showAndWait();
         mc.getConfig(mc.getId(),mc.getConfigNome()).addPacote(mc.getConforPac());
         mc.setpacoteEscolhidoConfort();
     }
 
     public void remove(){
         if(!mc.getPacoteEscolhidoConfort()) return;
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText("Pacote removido com sucesso");
+        alert.showAndWait();
         mc.getConfig(mc.getId(),mc.getConfigNome()).removePacote(mc.getConforPac());
         mc.setpacoteEscolhidoConfort();
     }
