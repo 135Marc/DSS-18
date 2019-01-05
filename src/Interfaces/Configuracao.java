@@ -17,6 +17,7 @@ public class Configuracao {
     private Set<DetalheExterior> outerdetails;
     private Set<DetalheInterior> innerdetails;
     private boolean submetida = false;
+    private boolean processada = false;
 
 
     public Configuracao () {
@@ -220,6 +221,13 @@ public class Configuracao {
 
     public void setSubmetida(){
         this.submetida = true;
+    }
+
+    public boolean getProcessada(){
+        return this.processada;
+    }
+    public void setProcessada(){
+        this.processada = true;
     }
 
 

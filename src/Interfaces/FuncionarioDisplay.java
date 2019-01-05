@@ -65,11 +65,19 @@ public class FuncionarioDisplay implements Initializable {
             alert.setHeaderText("Não há stock suficiente para processar esta configuração");
             alert.showAndWait();
         }
+        this.mc.displayFuncFrame();
 
     }
 
     public void adicionaIventario(){
         mc.getFabrica().addStock(Integer.parseInt(id.getText()),Integer.parseInt(numero.getText()));
+        id.clear();
+        numero.clear();
+    }
+
+    public void logout(){
+        mc.getUser(mc.getId()).setOff();
+        mc.displayLogin();
     }
 
 }

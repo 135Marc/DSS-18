@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab4f708c-1f7e-49ba-a61b-2c15a8573931" name="Default Changelist" comment="" />
+    <list default="true" id="ab4f708c-1f7e-49ba-a61b-2c15a8573931" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS-18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS-18.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/CameraTraseira.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/DetalheExterior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/Parachoques.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensorFrontal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/SensoresTraseiros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/TetoAbrir.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesExteriores/VidrosFumados.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Ac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/DetalheInterior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Estofos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/DetalhesInteriores/Gps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/AppDesktop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Carros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ConfigManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Configuracao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/DetalheExteriorDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/DetalheExteriorDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/DetalheInteriorDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/DetalheInteriorDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/EngineDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/EngineDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Fabrica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Fabrica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/FuncionarioDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/FuncionarioDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ItemDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/ItemDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/JanteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/JanteDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Pacote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Pacote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteConfortTableDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteConfortTableDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteSportTableDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PacoteSportTableDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PinturaDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/PinturaDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Registo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/TireDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Interfaces/Utilizador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Jante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Motor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pintura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Items/Pneu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSS-18/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSS-18/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,31 +59,31 @@
     <session id="-1912236957">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="5" />
-          <entry key="java" value="34" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="34" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="32" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="83" />
-          <entry key="java" value="2391" />
+          <entry key="fxml" value="40" />
+          <entry key="java" value="2006" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2391" />
-          <entry key="XML" value="83" />
+          <entry key="JAVA" value="2006" />
+          <entry key="XML" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
@@ -50,7 +96,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pacote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/Pacote.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -59,95 +105,86 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/Fabrica.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1683#1684#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="TireDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/TireDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="1260">
               <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="PinturaDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="1125">
               <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+      <file leaf-file-name="EngineDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="60">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fabrica.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/Fabrica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="method#avisoPacote#0;class#ConfigDisplay#0" />
-                <element signature="method#removeSelecao#0;class#ConfigDisplay#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="FuncionarioDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JanteDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/JanteDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="94" column="60" lean-forward="true" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
+            <state relative-caret-position="1065">
+              <caret line="94" column="60" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="PacoteConfortTableDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteConfortTableDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="94" column="28" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="94" selection-end-column="28" />
+            <state relative-caret-position="990">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="PacoteSportTableDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="990">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -180,23 +217,23 @@
         <option value="$PROJECT_DIR$/src/Interfaces/AppDesktop.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/MainController.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Configuracao.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/configmanager.fxml" />
         <option value="$PROJECT_DIR$/src/Interfaces/Registo.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/LogIn.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Utilizador.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/EngineDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/JanteDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/TireDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/PacoteConfortTableDisplay.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml" />
-        <option value="$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/TireDisplay.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MainView.java" />
         <option value="$PROJECT_DIR$/src/Interfaces/Fabrica.java" />
       </list>
     </option>
@@ -219,6 +256,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,18 +287,133 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546729209221" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546727746273" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/DSS-18/Interfaces/Fabrica.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/DSS-18/Interfaces/FuncionarioDisplay.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/DSS-18/Interfaces/MainView.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/DSS-18/Interfaces/funcionariodisplay.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Interfaces/Fabrica.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -282,9 +437,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -311,7 +463,7 @@
       <workItem from="1546203760227" duration="18000" />
       <workItem from="1546218692458" duration="3724000" />
       <workItem from="1546629750102" duration="2145000" />
-      <workItem from="1546724146753" duration="5085000" />
+      <workItem from="1546724146753" duration="3452000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1546224695931</created>
@@ -352,45 +504,45 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7980000" />
+    <option name="totallyTimeSpent" value="6347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="988" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25453576" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3244186" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32618025" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Profiler" order="9" />
-      <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32403433" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32939914" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3267442" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25416666" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="JetGradle" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Profiler" order="9" />
+      <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32939914" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="JetGradle" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +562,90 @@
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Pacote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="112" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/JanteDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="94" column="60" lean-forward="true" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteConfortTableDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/TireDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -425,12 +661,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/pacoteDisplay.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Jante.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -514,12 +750,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/configdisplay.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/AppDesktop.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -567,6 +803,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2059">
@@ -578,13 +822,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="method#avisoPacote#0;class#ConfigDisplay#0" />
+            <element signature="method#removeSelecao#0;class#ConfigDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/configmanager.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="122" selection-start-line="14" selection-start-column="122" selection-end-line="14" selection-end-column="122" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Registo.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -618,85 +873,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheExteriorDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="1320">
           <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="112" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/DetalheInteriorDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="1290">
           <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/JanteDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="94" column="60" lean-forward="true" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/TireDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteConfortTableDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="94" column="28" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="94" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/funcionariodisplay.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/ConfigDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="method#avisoPacote#0;class#ConfigDisplay#0" />
-            <element signature="method#removeSelecao#0;class#ConfigDisplay#0" />
-          </folding>
+        <state relative-caret-position="1065">
+          <caret line="94" column="60" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -707,23 +901,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteConfortTableDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PacoteSportTableDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PinturaDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/TireDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/EngineDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/FuncionarioDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="420">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Fabrica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -770,7 +1002,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
