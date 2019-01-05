@@ -69,8 +69,6 @@ public class Registo implements Initializable {
         alert.setHeaderText("Registo Inválido:");
         alert.setContentText(errormsg);
         alert.showAndWait();
-        String city = cidade.getSelectionModel().getSelectedItem();
-        System.out.println(city);
     }
 
     public void voltar() {

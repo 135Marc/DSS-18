@@ -41,8 +41,6 @@ public class FuncionarioDisplay implements Initializable {
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
         configs.getColumns().addAll(tc1, tc2);
         configs.getItems().addAll(mc.getFabrica().allconfigs());
-        configs.setDisable(true);
-        configs.setDisable(true);
     }
 
 

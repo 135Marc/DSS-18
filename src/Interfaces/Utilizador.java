@@ -46,7 +46,7 @@ public abstract class Utilizador {
     }
 
     public void setOff(){
-        this.setOff();
+        this.isOn = false;
     }
 
     public boolean getIsOn(){

@@ -52,9 +52,11 @@ public class LogIn implements Initializable {
                     username.clear();
                     password.clear();
                     Utilizador u = mc.getUser(user);
+                    mc.getUser(user).setOn();
+                    mc.setId(user);
                     if (u instanceof Cliente) mc.displayConfigManager();
                     else mc.displayFuncFrame();
-                    mc.getUser(user).setOn();
+
                 }
                 else if (passCorreta) showLoginError("Password inválida, tente novamente!");
 

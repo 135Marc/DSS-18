@@ -101,7 +101,10 @@ public class ConfigManager implements Initializable {
         mc.displayConfigEditor();
     }
 
-
+    public void logout(){
+        mc.getUser(mc.getId()).setOff();
+        mc.displayLogin();
+    }
 
 
 }

@@ -75,7 +75,7 @@ public class MainView extends Application {
             FuncionarioDisplay fd = loader.getController();
             fd.init(this);
             fd.setMainController(mc);
-            //fd.populateTable();
+            fd.populateTable();
             mc.setFuncionarioDisplay(fd);
             window.setTitle("Gestor de Configurações");
             window.show();
@@ -90,7 +90,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/configmanager.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,720,464);
+            Scene nova = new Scene(view,800,464);
             window.setScene(nova);
             ConfigManager cm = loader.getController();
             cm.init(this);

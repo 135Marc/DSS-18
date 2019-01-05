@@ -12,6 +12,7 @@
       <Button layoutX="245.0" layoutY="398.0" mnemonicParsing="false" onAction="#addConfig" prefHeight="44.0" prefWidth="95.0" text="Adicionar" />
       <Button fx:id="removebtn" layoutX="402.0" layoutY="398.0" mnemonicParsing="false" onAction="#removeConfig" prefHeight="44.0" prefWidth="85.0" text="Eliminar" />
       <Button fx:id="editbtn" layoutX="550.0" layoutY="398.0" mnemonicParsing="false" onAction="#configFrame" prefHeight="44.0" prefWidth="95.0" text="Editar" />
+      <Button layoutX="722.0" layoutY="403.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" onAction="#logout" text="Log Out" />
       <TextField fx:id="configname" layoutX="32.0" layoutY="412.0" />
       <Label layoutX="82.0" layoutY="382.0" text="Nome" />
    </children>
