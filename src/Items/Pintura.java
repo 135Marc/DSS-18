@@ -16,7 +16,7 @@ public class Pintura extends Item {
     public Pintura(String cor, String tipo, float preco, Set<Integer> lista) {
         super(preco,lista);
         this.cor = cor;
-        this.tipo = tipo;
+        this.tipo = "Pintura " + tipo;
     }
 
     public Pintura (Pintura p) {

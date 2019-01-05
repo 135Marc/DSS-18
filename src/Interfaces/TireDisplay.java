@@ -37,11 +37,23 @@ public class TireDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn<Pneu,String> tc1 = new TableColumn<>("Tipo");
         TableColumn<Pneu,Float> tc2 = new TableColumn<>("Preço(€)");
+        TableColumn<Pneu,Integer> tc3 = new TableColumn<>("Largura");
+        TableColumn<Pneu,Integer> tc4 = new TableColumn<>("Diametro");
+        TableColumn<Pneu,Integer> tc5 = new TableColumn<>("Carga");
+        TableColumn<Pneu,Integer> tc6 = new TableColumn<>("Velocidade");
+        TableColumn<Pneu,String> tc7 = new TableColumn<>("Serie");
+        TableColumn<Pneu,String> tc8 = new TableColumn<>("Construcao");
         tc1.setPrefWidth(150);
         tc2.setPrefWidth(102);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));
-        tabelapneu.getColumns().addAll(tc1,tc2);
+        tc3.setCellValueFactory(new PropertyValueFactory<>("largura"));
+        tc4.setCellValueFactory(new PropertyValueFactory<>("diametrointerior"));
+        tc5.setCellValueFactory(new PropertyValueFactory<>("indexcarga"));
+        tc6.setCellValueFactory(new PropertyValueFactory<>("indexvel"));
+        tc7.setCellValueFactory(new PropertyValueFactory<>("serie"));
+        tc8.setCellValueFactory(new PropertyValueFactory<>("construcao"));
+        tabelapneu.getColumns().addAll(tc1,tc2,tc3,tc4,tc5,tc6,tc7,tc8);
         tabelapneu.getItems().addAll(loadTires());
     }
 
@@ -49,9 +61,9 @@ public class TireDisplay implements Initializable {
         Set<Integer> listaRest = new HashSet<Integer>();
         listaRest.add(4);
         ObservableList<Pneu> listcnfg = FXCollections.observableArrayList(
-                new Pneu(20,2,150,4,"blele","R","Pneu de Merda",100,listaRest),
-                new Pneu(30,5,300,7,"blele","WR","Pneu de Neve",150,listaRest),
-                new Pneu(40,10,200,9,"blele","QR","Pneu de Camião",300,listaRest));
+                new Pneu(20,17,65,4,"blele","R","Pneu de Estrada",100,listaRest),
+                new Pneu(30,15,66,7,"blele","R","Pneu de Neve",150,listaRest),
+                new Pneu(40,16,67,9,"blele","R","Pneu de Camião",300,listaRest));
         return listcnfg;
     }
 

@@ -19,6 +19,7 @@ public class MainController implements Initializable {
     private boolean pacoteEscolhidoConfort = false;
     private Registo regist;
     private LogIn logz;
+    private FuncionarioDisplay fundisp;
     private ConfigManager configmanager;
     private ConfigDisplay configDisplay;
     private ItemDisplay itemdisp;
@@ -54,6 +55,10 @@ public class MainController implements Initializable {
 
     public void setLogIn (LogIn li) {
         this.logz = li;
+    }
+
+    public void setFuncionarioDisplay(FuncionarioDisplay fd) {
+        this.fundisp = fd;
     }
 
     public void setConfigManager(ConfigManager cm) {this.configmanager = cm;}
@@ -97,9 +102,18 @@ public class MainController implements Initializable {
         return app.passwoordMatch(id,password);
     }
 
-    public void addUser(String id, String password) {
-        Utilizador u = new Utilizador(id,password);
-        this.app.registaUser(u);
+    public void addUser(String type,String id, String password) {
+        Utilizador u;
+        if (type.equals("Funcionário")) {
+            u = new Funcionario(id, password);
+            this.app.registaUser(u);
+        }
+        else if (type.equals("Cliente")) {
+            u = new Cliente(id,password);
+            this.app.registaUser(u);
+        }
+
+
     }
 
     public void removeConfig(Configuracao a){
@@ -117,6 +131,10 @@ public class MainController implements Initializable {
 
     public void displayConfigManager() {
         mview.showConfigManager();
+    }
+
+    public void displayFuncFrame() {
+        mview.showFuncionaryDisplay();
     }
 
     public void displayConfigEditor() {mview.showConfigEditor();}

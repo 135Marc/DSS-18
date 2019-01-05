@@ -35,7 +35,6 @@ public class EngineDisplay implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         TableColumn<Motor,String> tc3 = new TableColumn<>("Tipo");
         TableColumn<Motor,Integer> tc4 = new TableColumn<>("Potencia(cv)");
         TableColumn<Motor,String> tc5 = new TableColumn<>("Consumo(l/100km)");
@@ -69,7 +68,6 @@ public class EngineDisplay implements Initializable {
 
     public void adicionarMotor(){
         Motor a = motores.getSelectionModel().getSelectedItem();
-
         if(fazPartePacote(a)) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Erro");

@@ -21,8 +21,6 @@ public class LogIn implements Initializable {
     private TextField username;
     @FXML
     private PasswordField password;
-    @FXML
-    private ChoiceBox<String> regtype;
 
     private  MainController mc;
 
@@ -53,8 +51,10 @@ public class LogIn implements Initializable {
                 if (passCorreta && !mc.getUser(user).getIsOn()) {
                     username.clear();
                     password.clear();
+                    Utilizador u = mc.getUser(user);
+                    if (u instanceof Cliente) mc.displayConfigManager();
+                    else mc.displayFuncFrame();
                     mc.getUser(user).setOn();
-                    mc.displayConfigManager();
                 }
                 else if (passCorreta) showLoginError("Password inválida, tente novamente!");
 
@@ -70,8 +70,7 @@ public class LogIn implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        regtype.getItems().add("Utilizador");
-        regtype.getItems().add("Funcionário");
+
     }
 
 }

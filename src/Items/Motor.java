@@ -19,7 +19,7 @@ public class Motor extends Item {
         super(preco,lista);
         this.potencia = potencia;
         this.consumomedio = consumomedio;
-        this.tipo = tipo;
+        this.tipo = "Motor " + tipo;
     }
 
     public Motor (Motor m){

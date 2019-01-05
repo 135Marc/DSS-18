@@ -5,7 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Utilizador {
+public abstract class Utilizador {
     private String username;
     private String password;
     private boolean isOn;
@@ -52,5 +52,6 @@ public class Utilizador {
     public boolean getIsOn(){
         return this.isOn;
     }
+
 
 }

@@ -53,7 +53,7 @@ public class PacoteSportTableDisplay implements Initializable {
     public void loadDetalhesInteriores() {
         TableColumn<DetalheInterior, String> tc3 = new TableColumn<>("Tipo ");
         TableColumn<DetalheInterior, Float> tc4 = new TableColumn<>("Preco(€)");
-        tc3.setPrefWidth(135);
+        tc3.setPrefWidth(115);
         tc4.setPrefWidth(115);
         tc3.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc4.setCellValueFactory(new PropertyValueFactory<>("preco"));
@@ -64,7 +64,7 @@ public class PacoteSportTableDisplay implements Initializable {
     public void loadDetalhesExteriores() {
         TableColumn<DetalheExterior, String> tc1 = new TableColumn<>("Tipo ");
         TableColumn<DetalheExterior, Float> tc2 = new TableColumn<>("Preco(€)");
-        tc1.setPrefWidth(150);
+        tc1.setPrefWidth(125);
         tc2.setPrefWidth(115);
         tc1.setCellValueFactory(new PropertyValueFactory<>("tipo"));
         tc2.setCellValueFactory(new PropertyValueFactory<>("preco"));

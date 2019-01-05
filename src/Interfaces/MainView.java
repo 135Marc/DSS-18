@@ -37,7 +37,7 @@ public class MainView extends Application {
             li.init(this);
             li.setMainController(mc);
             mc.setLogIn(li);
-            window.setTitle("Autenticar Cliente");
+            window.setTitle("Autenticar Utilizador");
             window.show();
 
         } catch(IOException e) {
@@ -57,7 +57,27 @@ public class MainView extends Application {
             reg.init(this);
             reg.setMainController(mc);
             mc.setRegist(reg);
-            window.setTitle("Registar Cliente");
+            window.setTitle("Registar Utilizador");
+            window.show();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showFuncionaryDisplay() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/Interfaces/funcionariodisplay.fxml"));
+            Pane view = loader.load();
+            Scene nova = new Scene(view,844,564);
+            window.setScene(nova);
+            FuncionarioDisplay fd = loader.getController();
+            fd.init(this);
+            fd.setMainController(mc);
+            //fd.populateTable();
+            mc.setFuncionarioDisplay(fd);
+            window.setTitle("Gestor de Configurações");
             window.show();
 
         } catch(IOException e) {
@@ -186,7 +206,7 @@ public class MainView extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Interfaces/tiredisplay.fxml"));
             Pane view = loader.load();
-            Scene nova = new Scene(view,600,400);
+            Scene nova = new Scene(view,908,400);
             window.setScene(nova);
             TireDisplay tid = loader.getController();
             tid.init(this);

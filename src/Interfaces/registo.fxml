@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="541.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.Registo">
    <children>
-      <Button layoutX="207.0" layoutY="462.0" mnemonicParsing="false" onAction="#registarCliente" prefHeight="40.0" prefWidth="74.0" text="Registar" />
+      <Button layoutX="108.0" layoutY="473.0" mnemonicParsing="false" onAction="#registarCliente" prefHeight="40.0" prefWidth="74.0" text="Registar" />
       <TextField fx:id="name" layoutX="47.0" layoutY="98.0" />
       <Label layoutX="74.0" layoutY="56.0" text="Nome Completo" />
       <TextField fx:id="email" layoutX="47.0" layoutY="177.0" />
@@ -31,5 +31,8 @@
       <Label layoutX="136.0" layoutY="221.0" text="(*)" textFill="#e10505" />
       <Label layoutX="136.0" layoutY="291.0" text="(*)" textFill="#e10505" />
       <Label layoutX="193.0" layoutY="368.0" text="(*)" textFill="#e10505" />
+      <ChoiceBox fx:id="tipo" layoutX="263.0" layoutY="407.0" prefHeight="26.0" prefWidth="171.0" />
+      <Label layoutX="300.0" layoutY="376.0" text="Tipo de registo" />
+      <Button layoutX="280.0" layoutY="473.0" mnemonicParsing="false" onAction="#voltar" prefHeight="40.0" prefWidth="89.0" text="Voltar" />
    </children>
 </AnchorPane>

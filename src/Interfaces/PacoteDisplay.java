@@ -42,7 +42,7 @@ public class PacoteDisplay implements Initializable {
         Jante j = new Jante("Desportiva",10,100,listaRestricap);
         Set<Integer> mRest = new HashSet<Integer>();
         mRest.add(2);
-        Motor m = new Motor("Motos Desportivo",2500,10,1000,mRest);
+        Motor m = new Motor("Desportivo",2500,10,1000,mRest);
         Set<Integer> pRest = new HashSet<Integer>();
         pRest.add(4);
         Pneu p = new Pneu(10,10,10,10,"x","borracha","Pneu Desportivo",500,pRest);
@@ -58,7 +58,7 @@ public class PacoteDisplay implements Initializable {
         VidrosFumados vidro = new VidrosFumados("Vidro Fumados",250,tetoAbrir);
         Set<Integer> acs = new HashSet<Integer>();
         acs.add(22);
-        Ac ar = new Ac("Ar condicionado",100,acs);
+        Ac ar = new Ac("Ar Condicionado",100,acs);
         pac.addItem(j);
         pac.addItem(m);
         pac.addItem(p);
@@ -79,7 +79,7 @@ public class PacoteDisplay implements Initializable {
         Jante j = new Jante("Larga",15,125,listaRestricap);
         Set<Integer> mRest = new HashSet<Integer>();
         mRest.add(2);
-        Motor m = new Motor("Motor Elétrico",2000,7,8500,mRest);
+        Motor m = new Motor("Elétrico",2000,7,8500,mRest);
         Set<Integer> pRest = new HashSet<Integer>();
         pRest.add(4);
         Pneu p = new Pneu(13,12,11,14,"Z","R","Pneu Estrada",500,pRest);

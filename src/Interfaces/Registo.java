@@ -35,6 +35,8 @@ public class Registo implements Initializable {
     private TextField email;
     @FXML
     private ChoiceBox<String> cidade;
+    @FXML
+    private ChoiceBox<String> tipo;
 
     private  MainController mc;
 
@@ -71,13 +73,19 @@ public class Registo implements Initializable {
         System.out.println(city);
     }
 
+    public void voltar() {
+        this.mc.displayLogin();
+    }
+
     public void registarCliente() throws Exception {
         String username = user.getText();
         String password = pw.getText();
         boolean valid = validaRegisto();
         if (!valid) showSignUpError("Verifique se os campos (*) estão bem preenchidos!");
+        else if (tipo.getSelectionModel().isEmpty()) showSignUpError("Tem de escolher um tipo!");
         else {
-            mc.addUser(username, password);
+            String select = tipo.getSelectionModel().getSelectedItem();
+            mc.addUser(select,username, password);
             user.clear();
             pw.clear();
             pwconf.clear();
@@ -91,6 +99,8 @@ public class Registo implements Initializable {
         cidade.getItems().add("Braga");
         cidade.getItems().add("Lisboa");
         cidade.getItems().add("Porto");
+        tipo.getItems().add("Cliente");
+        tipo.getItems().add("Funcionário");
 
     }
 }

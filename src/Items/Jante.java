@@ -22,7 +22,7 @@ public class Jante extends Item{
 
     public Jante(String tipo, int espessura,float preco,Set<Integer> lista){
         super(preco,lista);
-        this.tipo = tipo;
+        this.tipo = "Jante " + tipo;
         this.espessura = espessura;
     }
 
